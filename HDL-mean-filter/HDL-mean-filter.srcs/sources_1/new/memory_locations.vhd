@@ -24,6 +24,7 @@ USE ieee.std_logic_1164.ALL;
 USE ieee.numeric_std.ALL;
 
 
+
 -- Uncomment the following library declaration if using
 -- arithmetic functions with Signed or Unsigned values
 --use IEEE.NUMERIC_STD.ALL;
@@ -48,6 +49,8 @@ entity memory_locations is
            loc_9 : out STD_LOGIC_VECTOR (7 downto 0));
 end memory_locations;
 
+
+
 architecture Behavioral of memory_locations is
 signal row_dec  : integer;
 signal col_dec : integer;
@@ -63,7 +66,19 @@ signal loc_7_dec : integer;
 signal loc_8_dec : integer;
 signal loc_9_dec : integer;
 
+component bram is
+    Port ( addr : in STD_LOGIC_VECTOR (8 downto 0);
+           clk: in std_logic;
+           din: in std_logic_vector (7 downto 0);
+           dout : out STD_LOGIC_VECTOR (7 downto 0);
+           en: in std_logic;
+           we: in std_logic_vector (0 downto 0));
+end component;
+
+ 
+
 begin
+
 row_dec <= to_integer(signed(row)) + 1;
 col_dec <= to_integer(signed(col)) + 1;
 size_dec <= to_integer(signed(size));
@@ -87,4 +102,5 @@ loc_6 <= std_logic_vector(to_unsigned(loc_6_dec, loc_6'length));
 loc_7 <= std_logic_vector(to_unsigned(loc_7_dec, loc_7'length));
 loc_8 <= std_logic_vector(to_unsigned(loc_8_dec, loc_8'length));
 loc_9 <= std_logic_vector(to_unsigned(loc_9_dec, loc_9'length));
+
 end Behavioral;

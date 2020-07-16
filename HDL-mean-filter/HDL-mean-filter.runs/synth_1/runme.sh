@@ -11,9 +11,9 @@ echo "Please update the PATH and LD_LIBRARY_PATH variables below, before executi
 exit
 
 if [ -z "$PATH" ]; then
-  PATH=D:/Windows/ProgramFiles/Xilinx/Vivado/2019.2/ids_lite/ISE/bin/nt64;D:/Windows/ProgramFiles/Xilinx/Vivado/2019.2/ids_lite/ISE/lib/nt64:D:/Windows/ProgramFiles/Xilinx/Vivado/2019.2/bin
+  PATH=F:/xilinx/Vivado/2019.2/ids_lite/ISE/bin/nt64;F:/xilinx/Vivado/2019.2/ids_lite/ISE/lib/nt64:F:/xilinx/Vivado/2019.2/bin
 else
-  PATH=D:/Windows/ProgramFiles/Xilinx/Vivado/2019.2/ids_lite/ISE/bin/nt64;D:/Windows/ProgramFiles/Xilinx/Vivado/2019.2/ids_lite/ISE/lib/nt64:D:/Windows/ProgramFiles/Xilinx/Vivado/2019.2/bin:$PATH
+  PATH=F:/xilinx/Vivado/2019.2/ids_lite/ISE/bin/nt64;F:/xilinx/Vivado/2019.2/ids_lite/ISE/lib/nt64:F:/xilinx/Vivado/2019.2/bin:$PATH
 fi
 export PATH
 
@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='D:/MyStuff/Projects/Vivado/HDL-project/HDL-mean-filter/HDL-mean-filter.runs/synth_1'
+HD_PWD='E:/Acadamics/Semester 7/HDL/HDL-project/HDL-mean-filter/HDL-mean-filter.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
@@ -40,4 +40,4 @@ EAStep()
      fi
 }
 
-EAStep vivado -log bram.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source bram.tcl
+EAStep vivado -log mean_filter_with_bram.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source mean_filter_with_bram.tcl
