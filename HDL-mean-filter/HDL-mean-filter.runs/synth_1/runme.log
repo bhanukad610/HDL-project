@@ -15,29 +15,29 @@ Attempting to get a license for feature 'Synthesis' and/or device 'xc7k70t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7k70t'
 INFO: [Device 21-403] Loading part xc7k70tfbv676-1
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 13476 
+INFO: Helper process launched with PID 15784 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 844.797 ; gain = 234.000
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 845.895 ; gain = 234.254
 ---------------------------------------------------------------------------------
-WARNING: [Synth 8-2551] possible infinite loop; process does not have a wait statement [E:/Acadamics/Semester 7/HDL/HDL-project/HDL-mean-filter/HDL-mean-filter.srcs/sources_1/new/mean_filter.vhd:67]
-INFO: [Synth 8-638] synthesizing module 'mean_filter_with_bram' [E:/Acadamics/Semester 7/HDL/HDL-project/HDL-mean-filter/HDL-mean-filter.srcs/sources_1/new/mean_filter_with_bram.vhd:40]
-INFO: [Synth 8-3491] module 'mean_filter' declared at 'E:/Acadamics/Semester 7/HDL/HDL-project/HDL-mean-filter/HDL-mean-filter.srcs/sources_1/new/mean_filter.vhd:35' bound to instance 'mean_filter_1' of component 'mean_filter' [E:/Acadamics/Semester 7/HDL/HDL-project/HDL-mean-filter/HDL-mean-filter.srcs/sources_1/new/mean_filter_with_bram.vhd:72]
-INFO: [Synth 8-638] synthesizing module 'mean_filter' [E:/Acadamics/Semester 7/HDL/HDL-project/HDL-mean-filter/HDL-mean-filter.srcs/sources_1/new/mean_filter.vhd:44]
-WARNING: [Synth 8-3848] Net pixel_out in module/entity mean_filter does not have driver. [E:/Acadamics/Semester 7/HDL/HDL-project/HDL-mean-filter/HDL-mean-filter.srcs/sources_1/new/mean_filter.vhd:41]
-INFO: [Synth 8-256] done synthesizing module 'mean_filter' (1#1) [E:/Acadamics/Semester 7/HDL/HDL-project/HDL-mean-filter/HDL-mean-filter.srcs/sources_1/new/mean_filter.vhd:44]
-INFO: [Synth 8-3491] module 'bram' declared at 'E:/Acadamics/Semester 7/HDL/HDL-project/HDL-mean-filter/HDL-mean-filter.srcs/sources_1/new/bram.vhd:34' bound to instance 'bram_in' of component 'bram' [E:/Acadamics/Semester 7/HDL/HDL-project/HDL-mean-filter/HDL-mean-filter.srcs/sources_1/new/mean_filter_with_bram.vhd:80]
-INFO: [Synth 8-638] synthesizing module 'bram' [E:/Acadamics/Semester 7/HDL/HDL-project/HDL-mean-filter/HDL-mean-filter.srcs/sources_1/new/bram.vhd:43]
-INFO: [Synth 8-3491] module 'blk_mem_gen_0' declared at 'E:/Acadamics/Semester 7/HDL/HDL-project/HDL-mean-filter/HDL-mean-filter.runs/synth_1/.Xil/Vivado-1340-DESKTOP-5GV2NU3/realtime/blk_mem_gen_0_stub.v:6' bound to instance 'mem_block_1' of component 'blk_mem_gen_0' [E:/Acadamics/Semester 7/HDL/HDL-project/HDL-mean-filter/HDL-mean-filter.srcs/sources_1/new/bram.vhd:56]
-INFO: [Synth 8-6157] synthesizing module 'blk_mem_gen_0' [E:/Acadamics/Semester 7/HDL/HDL-project/HDL-mean-filter/HDL-mean-filter.runs/synth_1/.Xil/Vivado-1340-DESKTOP-5GV2NU3/realtime/blk_mem_gen_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'blk_mem_gen_0' (2#1) [E:/Acadamics/Semester 7/HDL/HDL-project/HDL-mean-filter/HDL-mean-filter.runs/synth_1/.Xil/Vivado-1340-DESKTOP-5GV2NU3/realtime/blk_mem_gen_0_stub.v:6]
-INFO: [Synth 8-256] done synthesizing module 'bram' (3#1) [E:/Acadamics/Semester 7/HDL/HDL-project/HDL-mean-filter/HDL-mean-filter.srcs/sources_1/new/bram.vhd:43]
-INFO: [Synth 8-3491] module 'bram' declared at 'E:/Acadamics/Semester 7/HDL/HDL-project/HDL-mean-filter/HDL-mean-filter.srcs/sources_1/new/bram.vhd:34' bound to instance 'bram_out' of component 'bram' [E:/Acadamics/Semester 7/HDL/HDL-project/HDL-mean-filter/HDL-mean-filter.srcs/sources_1/new/mean_filter_with_bram.vhd:88]
-WARNING: [Synth 8-3848] Net clock in module/entity mean_filter_with_bram does not have driver. [E:/Acadamics/Semester 7/HDL/HDL-project/HDL-mean-filter/HDL-mean-filter.srcs/sources_1/new/mean_filter_with_bram.vhd:61]
-WARNING: [Synth 8-3848] Net din_input in module/entity mean_filter_with_bram does not have driver. [E:/Acadamics/Semester 7/HDL/HDL-project/HDL-mean-filter/HDL-mean-filter.srcs/sources_1/new/mean_filter_with_bram.vhd:63]
-WARNING: [Synth 8-3848] Net en in module/entity mean_filter_with_bram does not have driver. [E:/Acadamics/Semester 7/HDL/HDL-project/HDL-mean-filter/HDL-mean-filter.srcs/sources_1/new/mean_filter_with_bram.vhd:64]
-WARNING: [Synth 8-3848] Net we in module/entity mean_filter_with_bram does not have driver. [E:/Acadamics/Semester 7/HDL/HDL-project/HDL-mean-filter/HDL-mean-filter.srcs/sources_1/new/mean_filter_with_bram.vhd:65]
-WARNING: [Synth 8-3848] Net addr_out in module/entity mean_filter_with_bram does not have driver. [E:/Acadamics/Semester 7/HDL/HDL-project/HDL-mean-filter/HDL-mean-filter.srcs/sources_1/new/mean_filter_with_bram.vhd:68]
-INFO: [Synth 8-256] done synthesizing module 'mean_filter_with_bram' (4#1) [E:/Acadamics/Semester 7/HDL/HDL-project/HDL-mean-filter/HDL-mean-filter.srcs/sources_1/new/mean_filter_with_bram.vhd:40]
+WARNING: [Synth 8-2551] possible infinite loop; process does not have a wait statement [D:/MyStuff/Projects/Vivado/HDL-project/HDL-mean-filter/HDL-mean-filter.srcs/sources_1/new/mean_filter.vhd:67]
+INFO: [Synth 8-638] synthesizing module 'mean_filter_with_bram' [D:/MyStuff/Projects/Vivado/HDL-project/HDL-mean-filter/HDL-mean-filter.srcs/sources_1/new/mean_filter_with_bram.vhd:40]
+INFO: [Synth 8-3491] module 'mean_filter' declared at 'D:/MyStuff/Projects/Vivado/HDL-project/HDL-mean-filter/HDL-mean-filter.srcs/sources_1/new/mean_filter.vhd:35' bound to instance 'mean_filter_1' of component 'mean_filter' [D:/MyStuff/Projects/Vivado/HDL-project/HDL-mean-filter/HDL-mean-filter.srcs/sources_1/new/mean_filter_with_bram.vhd:72]
+INFO: [Synth 8-638] synthesizing module 'mean_filter' [D:/MyStuff/Projects/Vivado/HDL-project/HDL-mean-filter/HDL-mean-filter.srcs/sources_1/new/mean_filter.vhd:44]
+WARNING: [Synth 8-3848] Net pixel_out in module/entity mean_filter does not have driver. [D:/MyStuff/Projects/Vivado/HDL-project/HDL-mean-filter/HDL-mean-filter.srcs/sources_1/new/mean_filter.vhd:41]
+INFO: [Synth 8-256] done synthesizing module 'mean_filter' (1#1) [D:/MyStuff/Projects/Vivado/HDL-project/HDL-mean-filter/HDL-mean-filter.srcs/sources_1/new/mean_filter.vhd:44]
+INFO: [Synth 8-3491] module 'bram' declared at 'D:/MyStuff/Projects/Vivado/HDL-project/HDL-mean-filter/HDL-mean-filter.srcs/sources_1/new/bram.vhd:34' bound to instance 'bram_in' of component 'bram' [D:/MyStuff/Projects/Vivado/HDL-project/HDL-mean-filter/HDL-mean-filter.srcs/sources_1/new/mean_filter_with_bram.vhd:80]
+INFO: [Synth 8-638] synthesizing module 'bram' [D:/MyStuff/Projects/Vivado/HDL-project/HDL-mean-filter/HDL-mean-filter.srcs/sources_1/new/bram.vhd:43]
+INFO: [Synth 8-3491] module 'blk_mem_gen_0' declared at 'D:/MyStuff/Projects/Vivado/HDL-project/HDL-mean-filter/HDL-mean-filter.runs/synth_1/.Xil/Vivado-11404-DESKTOP-U5NAAV0/realtime/blk_mem_gen_0_stub.v:6' bound to instance 'mem_block_1' of component 'blk_mem_gen_0' [D:/MyStuff/Projects/Vivado/HDL-project/HDL-mean-filter/HDL-mean-filter.srcs/sources_1/new/bram.vhd:56]
+INFO: [Synth 8-6157] synthesizing module 'blk_mem_gen_0' [D:/MyStuff/Projects/Vivado/HDL-project/HDL-mean-filter/HDL-mean-filter.runs/synth_1/.Xil/Vivado-11404-DESKTOP-U5NAAV0/realtime/blk_mem_gen_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'blk_mem_gen_0' (2#1) [D:/MyStuff/Projects/Vivado/HDL-project/HDL-mean-filter/HDL-mean-filter.runs/synth_1/.Xil/Vivado-11404-DESKTOP-U5NAAV0/realtime/blk_mem_gen_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'bram' (3#1) [D:/MyStuff/Projects/Vivado/HDL-project/HDL-mean-filter/HDL-mean-filter.srcs/sources_1/new/bram.vhd:43]
+INFO: [Synth 8-3491] module 'bram' declared at 'D:/MyStuff/Projects/Vivado/HDL-project/HDL-mean-filter/HDL-mean-filter.srcs/sources_1/new/bram.vhd:34' bound to instance 'bram_out' of component 'bram' [D:/MyStuff/Projects/Vivado/HDL-project/HDL-mean-filter/HDL-mean-filter.srcs/sources_1/new/mean_filter_with_bram.vhd:88]
+WARNING: [Synth 8-3848] Net clock in module/entity mean_filter_with_bram does not have driver. [D:/MyStuff/Projects/Vivado/HDL-project/HDL-mean-filter/HDL-mean-filter.srcs/sources_1/new/mean_filter_with_bram.vhd:61]
+WARNING: [Synth 8-3848] Net din_input in module/entity mean_filter_with_bram does not have driver. [D:/MyStuff/Projects/Vivado/HDL-project/HDL-mean-filter/HDL-mean-filter.srcs/sources_1/new/mean_filter_with_bram.vhd:63]
+WARNING: [Synth 8-3848] Net en in module/entity mean_filter_with_bram does not have driver. [D:/MyStuff/Projects/Vivado/HDL-project/HDL-mean-filter/HDL-mean-filter.srcs/sources_1/new/mean_filter_with_bram.vhd:64]
+WARNING: [Synth 8-3848] Net we in module/entity mean_filter_with_bram does not have driver. [D:/MyStuff/Projects/Vivado/HDL-project/HDL-mean-filter/HDL-mean-filter.srcs/sources_1/new/mean_filter_with_bram.vhd:65]
+WARNING: [Synth 8-3848] Net addr_out in module/entity mean_filter_with_bram does not have driver. [D:/MyStuff/Projects/Vivado/HDL-project/HDL-mean-filter/HDL-mean-filter.srcs/sources_1/new/mean_filter_with_bram.vhd:68]
+INFO: [Synth 8-256] done synthesizing module 'mean_filter_with_bram' (4#1) [D:/MyStuff/Projects/Vivado/HDL-project/HDL-mean-filter/HDL-mean-filter.srcs/sources_1/new/mean_filter_with_bram.vhd:40]
 WARNING: [Synth 8-3331] design mean_filter has unconnected port pixel_out[7]
 WARNING: [Synth 8-3331] design mean_filter has unconnected port pixel_out[6]
 WARNING: [Synth 8-3331] design mean_filter has unconnected port pixel_out[5]
@@ -55,7 +55,7 @@ WARNING: [Synth 8-3331] design mean_filter has unconnected port pixel_in[2]
 WARNING: [Synth 8-3331] design mean_filter has unconnected port pixel_in[1]
 WARNING: [Synth 8-3331] design mean_filter has unconnected port pixel_in[0]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 916.262 ; gain = 305.465
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 917.613 ; gain = 305.973
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -68,38 +68,38 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 916.262 ; gain = 305.465
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 917.613 ; gain = 305.973
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 916.262 ; gain = 305.465
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 917.613 ; gain = 305.973
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 916.262 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 917.613 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [e:/Acadamics/Semester 7/HDL/HDL-project/HDL-mean-filter/HDL-mean-filter.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'bram_in/mem_block_1'
-Finished Parsing XDC File [e:/Acadamics/Semester 7/HDL/HDL-project/HDL-mean-filter/HDL-mean-filter.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'bram_in/mem_block_1'
-Parsing XDC File [e:/Acadamics/Semester 7/HDL/HDL-project/HDL-mean-filter/HDL-mean-filter.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'bram_out/mem_block_1'
-Finished Parsing XDC File [e:/Acadamics/Semester 7/HDL/HDL-project/HDL-mean-filter/HDL-mean-filter.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'bram_out/mem_block_1'
-Parsing XDC File [E:/Acadamics/Semester 7/HDL/HDL-project/HDL-mean-filter/HDL-mean-filter.runs/synth_1/dont_touch.xdc]
-Finished Parsing XDC File [E:/Acadamics/Semester 7/HDL/HDL-project/HDL-mean-filter/HDL-mean-filter.runs/synth_1/dont_touch.xdc]
+Parsing XDC File [d:/MyStuff/Projects/Vivado/HDL-project/HDL-mean-filter/HDL-mean-filter.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'bram_in/mem_block_1'
+Finished Parsing XDC File [d:/MyStuff/Projects/Vivado/HDL-project/HDL-mean-filter/HDL-mean-filter.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'bram_in/mem_block_1'
+Parsing XDC File [d:/MyStuff/Projects/Vivado/HDL-project/HDL-mean-filter/HDL-mean-filter.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'bram_out/mem_block_1'
+Finished Parsing XDC File [d:/MyStuff/Projects/Vivado/HDL-project/HDL-mean-filter/HDL-mean-filter.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'bram_out/mem_block_1'
+Parsing XDC File [D:/MyStuff/Projects/Vivado/HDL-project/HDL-mean-filter/HDL-mean-filter.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [D:/MyStuff/Projects/Vivado/HDL-project/HDL-mean-filter/HDL-mean-filter.runs/synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 982.770 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 985.008 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 982.770 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 985.008 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 982.770 ; gain = 371.973
+Finished Constraint Validation : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 985.008 ; gain = 373.367
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7k70tfbv676-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 982.770 ; gain = 371.973
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 985.008 ; gain = 373.367
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -107,14 +107,14 @@ Start Applying 'set_property' XDC Constraints
 Applied set_property DONT_TOUCH = true for bram_in/mem_block_1. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for bram_out/mem_block_1. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 982.770 ; gain = 371.973
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 985.008 ; gain = 373.367
 ---------------------------------------------------------------------------------
-WARNING: [Synth 8-327] inferring latch for variable 'addr_in_reg' [E:/Acadamics/Semester 7/HDL/HDL-project/HDL-mean-filter/HDL-mean-filter.srcs/sources_1/new/mean_filter.vhd:71]
-WARNING: [Synth 8-327] inferring latch for variable 'addr_int_reg' [E:/Acadamics/Semester 7/HDL/HDL-project/HDL-mean-filter/HDL-mean-filter.srcs/sources_1/new/mean_filter.vhd:70]
-WARNING: [Synth 8-327] inferring latch for variable 'col_offset_reg' [E:/Acadamics/Semester 7/HDL/HDL-project/HDL-mean-filter/HDL-mean-filter.srcs/sources_1/new/mean_filter.vhd:69]
-WARNING: [Synth 8-327] inferring latch for variable 'row_offset_reg' [E:/Acadamics/Semester 7/HDL/HDL-project/HDL-mean-filter/HDL-mean-filter.srcs/sources_1/new/mean_filter.vhd:69]
+WARNING: [Synth 8-327] inferring latch for variable 'addr_in_reg' [D:/MyStuff/Projects/Vivado/HDL-project/HDL-mean-filter/HDL-mean-filter.srcs/sources_1/new/mean_filter.vhd:71]
+WARNING: [Synth 8-327] inferring latch for variable 'addr_int_reg' [D:/MyStuff/Projects/Vivado/HDL-project/HDL-mean-filter/HDL-mean-filter.srcs/sources_1/new/mean_filter.vhd:70]
+WARNING: [Synth 8-327] inferring latch for variable 'col_offset_reg' [D:/MyStuff/Projects/Vivado/HDL-project/HDL-mean-filter/HDL-mean-filter.srcs/sources_1/new/mean_filter.vhd:69]
+WARNING: [Synth 8-327] inferring latch for variable 'row_offset_reg' [D:/MyStuff/Projects/Vivado/HDL-project/HDL-mean-filter/HDL-mean-filter.srcs/sources_1/new/mean_filter.vhd:69]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 982.770 ; gain = 371.973
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 985.008 ; gain = 373.367
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -169,7 +169,7 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 Warning: Parallel synthesis criteria is not met 
-INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [E:/Acadamics/Semester 7/HDL/HDL-project/HDL-mean-filter/HDL-mean-filter.srcs/sources_1/new/mean_filter.vhd:70]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [D:/MyStuff/Projects/Vivado/HDL-project/HDL-mean-filter/HDL-mean-filter.srcs/sources_1/new/mean_filter.vhd:70]
 WARNING: [Synth 8-3332] Sequential element (mean_filter_1/addr_int_reg[31]) is unused and will be removed from module mean_filter_with_bram.
 WARNING: [Synth 8-3332] Sequential element (mean_filter_1/addr_int_reg[30]) is unused and will be removed from module mean_filter_with_bram.
 WARNING: [Synth 8-3332] Sequential element (mean_filter_1/addr_int_reg[29]) is unused and will be removed from module mean_filter_with_bram.
@@ -194,7 +194,7 @@ WARNING: [Synth 8-3332] Sequential element (mean_filter_1/addr_int_reg[11]) is u
 WARNING: [Synth 8-3332] Sequential element (mean_filter_1/addr_int_reg[10]) is unused and will be removed from module mean_filter_with_bram.
 WARNING: [Synth 8-3332] Sequential element (mean_filter_1/addr_int_reg[9]) is unused and will be removed from module mean_filter_with_bram.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 982.770 ; gain = 371.973
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 985.008 ; gain = 373.367
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -206,13 +206,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 993.172 ; gain = 382.375
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:41 ; elapsed = 00:00:44 . Memory (MB): peak = 995.379 ; gain = 383.738
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 993.246 ; gain = 382.449
+Finished Timing Optimization : Time (s): cpu = 00:00:41 ; elapsed = 00:00:44 . Memory (MB): peak = 995.379 ; gain = 383.738
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -224,7 +224,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 1004.387 ; gain = 393.590
+Finished Technology Mapping : Time (s): cpu = 00:00:41 ; elapsed = 00:00:44 . Memory (MB): peak = 1006.789 ; gain = 395.148
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -248,13 +248,13 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:26 ; elapsed = 00:00:26 . Memory (MB): peak = 1020.254 ; gain = 409.457
+Finished IO Insertion : Time (s): cpu = 00:00:49 ; elapsed = 00:00:52 . Memory (MB): peak = 1021.602 ; gain = 409.961
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:26 ; elapsed = 00:00:26 . Memory (MB): peak = 1020.254 ; gain = 409.457
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:49 ; elapsed = 00:00:52 . Memory (MB): peak = 1021.602 ; gain = 409.961
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -273,25 +273,25 @@ Report Check Netlist:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:26 ; elapsed = 00:00:26 . Memory (MB): peak = 1020.254 ; gain = 409.457
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:49 ; elapsed = 00:00:52 . Memory (MB): peak = 1021.602 ; gain = 409.961
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:26 ; elapsed = 00:00:26 . Memory (MB): peak = 1020.254 ; gain = 409.457
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:49 ; elapsed = 00:00:52 . Memory (MB): peak = 1021.602 ; gain = 409.961
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:26 ; elapsed = 00:00:26 . Memory (MB): peak = 1020.254 ; gain = 409.457
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:49 ; elapsed = 00:00:52 . Memory (MB): peak = 1021.602 ; gain = 409.961
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:26 ; elapsed = 00:00:26 . Memory (MB): peak = 1020.254 ; gain = 409.457
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:49 ; elapsed = 00:00:52 . Memory (MB): peak = 1021.602 ; gain = 409.961
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -332,18 +332,18 @@ Report Instance Areas:
 |4     |  mean_filter_1 |mean_filter     |   234|
 +------+----------------+----------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:26 ; elapsed = 00:00:26 . Memory (MB): peak = 1020.254 ; gain = 409.457
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:49 ; elapsed = 00:00:52 . Memory (MB): peak = 1021.602 ; gain = 409.961
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 27 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:19 ; elapsed = 00:00:25 . Memory (MB): peak = 1020.254 ; gain = 342.949
-Synthesis Optimization Complete : Time (s): cpu = 00:00:27 ; elapsed = 00:00:27 . Memory (MB): peak = 1020.254 ; gain = 409.457
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:36 ; elapsed = 00:00:48 . Memory (MB): peak = 1021.602 ; gain = 342.566
+Synthesis Optimization Complete : Time (s): cpu = 00:00:49 ; elapsed = 00:00:52 . Memory (MB): peak = 1021.602 ; gain = 409.961
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1020.254 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1021.602 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 109 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1032.359 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1032.285 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 82 instances were transformed.
   LD => LDCE: 82 instances
@@ -351,10 +351,10 @@ INFO: [Project 1-111] Unisim Transformation Summary:
 INFO: [Common 17-83] Releasing license: Synthesis
 24 Infos, 50 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1032.359 ; gain = 694.305
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1032.359 ; gain = 0.000
+synth_design: Time (s): cpu = 00:01:00 ; elapsed = 00:01:03 . Memory (MB): peak = 1032.285 ; gain = 693.449
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1032.285 ; gain = 0.000
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
-INFO: [Common 17-1381] The checkpoint 'E:/Acadamics/Semester 7/HDL/HDL-project/HDL-mean-filter/HDL-mean-filter.runs/synth_1/mean_filter_with_bram.dcp' has been generated.
+INFO: [Common 17-1381] The checkpoint 'D:/MyStuff/Projects/Vivado/HDL-project/HDL-mean-filter/HDL-mean-filter.runs/synth_1/mean_filter_with_bram.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file mean_filter_with_bram_utilization_synth.rpt -pb mean_filter_with_bram_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Fri Jul 17 00:20:49 2020...
+INFO: [Common 17-206] Exiting Vivado at Fri Jul 17 12:23:43 2020...
