@@ -52,11 +52,14 @@ component mean_filter is
            col : in STD_LOGIC_VECTOR (3 downto 0);
            size : in STD_LOGIC_VECTOR (3 downto 0);
            addr_in : out  STD_LOGIC_VECTOR (8 downto 0);
+           addr_in_img : in  STD_LOGIC_VECTOR (8 downto 0);
+           addr_out_img : out  STD_LOGIC_VECTOR (8 downto 0);
            pixel_in : in STD_LOGIC_VECTOR (7 downto 0);
            pixel_out :out STD_LOGIC_VECTOR (7 downto 0));
 end component;
 
 signal addr : STD_LOGIC_VECTOR (8 downto 0);
+signal addr_in_img : STD_LOGIC_VECTOR (8 downto 0);
 signal pixel_in : STD_LOGIC_VECTOR (7 downto 0);
 signal clock : STD_LOGIC;
 
@@ -65,7 +68,7 @@ signal en : STD_LOGIC;
 signal we : std_logic_vector (0 downto 0);
 
 signal pixel_out : STD_LOGIC_VECTOR (7 downto 0);
-signal addr_out : STD_LOGIC_VECTOR (8 downto 0);
+signal addr_out_img : STD_LOGIC_VECTOR (8 downto 0);
 signal bram_out_din : STD_LOGIC_VECTOR (7 downto 0);
 
 begin
@@ -74,6 +77,8 @@ port map (     row => row,
                col => col,
                size => size,
                addr_in => addr,
+               addr_in_img => addr_in_img,
+               addr_out_img => addr_out_img,
                pixel_in => pixel_in,
                pixel_out => pixel_out);
 
@@ -86,7 +91,7 @@ port map (     addr => addr,
                we => we);
                
 bram_out : bram
-port map (     addr => addr_out,
+port map (     addr => addr_out_img,
                clk => clock,
                din => pixel_out,
                dout => bram_out_din,

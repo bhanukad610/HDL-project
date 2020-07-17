@@ -37,6 +37,8 @@ entity mean_filter is
            col : in STD_LOGIC_VECTOR (3 downto 0);
            size : in STD_LOGIC_VECTOR (3 downto 0);
            addr_in : out  STD_LOGIC_VECTOR (8 downto 0);
+           addr_in_img : in  STD_LOGIC_VECTOR (8 downto 0);
+           addr_out_img : out  STD_LOGIC_VECTOR (8 downto 0);
            pixel_in : in STD_LOGIC_VECTOR (7 downto 0);
            pixel_out :out STD_LOGIC_VECTOR (7 downto 0));
 end mean_filter;
@@ -78,6 +80,8 @@ process
         end if;
   end if;
   sum <= sum / 9;
+  addr_out_img <= addr_in_img;
+  pixel_out <= std_logic_vector(to_unsigned(sum, pixel_out'length));
  end process;
  
 end Behavioral;
