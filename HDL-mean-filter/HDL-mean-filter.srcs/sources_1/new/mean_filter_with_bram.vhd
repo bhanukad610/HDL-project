@@ -32,9 +32,11 @@ use IEEE.STD_LOGIC_1164.ALL;
 --use UNISIM.VComponents.all;
 
 entity mean_filter_with_bram is
-  Port (row : in STD_LOGIC_VECTOR (3 downto 0);
-           col : in STD_LOGIC_VECTOR (3 downto 0);
-           size : in STD_LOGIC_VECTOR (3 downto 0) );
+  Port (row : in STD_LOGIC_VECTOR (4 downto 0);
+           col : in STD_LOGIC_VECTOR (4 downto 0);
+           clock : in STD_LOGIC;
+           size : in STD_LOGIC_VECTOR (4 downto 0);
+           pixel_out_filter :out STD_LOGIC_VECTOR (7 downto 0));
 end mean_filter_with_bram;
 
 architecture Behavioral of mean_filter_with_bram is
@@ -48,9 +50,9 @@ component bram is
 end component;
 
 component mean_filter is
-  Port ( row : in STD_LOGIC_VECTOR (3 downto 0);
-           col : in STD_LOGIC_VECTOR (3 downto 0);
-           size : in STD_LOGIC_VECTOR (3 downto 0);
+  Port ( row : in STD_LOGIC_VECTOR (4 downto 0);
+           col : in STD_LOGIC_VECTOR (4 downto 0);
+           size : in STD_LOGIC_VECTOR (4 downto 0);
            addr_in : out  STD_LOGIC_VECTOR (8 downto 0);
            addr_in_img : in  STD_LOGIC_VECTOR (8 downto 0);
            addr_out_img : out  STD_LOGIC_VECTOR (8 downto 0);
@@ -61,17 +63,23 @@ end component;
 signal addr : STD_LOGIC_VECTOR (8 downto 0);
 signal addr_in_img : STD_LOGIC_VECTOR (8 downto 0);
 signal pixel_in : STD_LOGIC_VECTOR (7 downto 0);
-signal clock : STD_LOGIC;
 
 signal din_input : STD_LOGIC_VECTOR (7 downto 0);
-signal en : STD_LOGIC;
-signal we : std_logic_vector (0 downto 0);
+signal we_in : std_logic_vector (0 downto 0);
+signal we_out : std_logic_vector (0 downto 0);
+signal en_in: std_logic;
+signal en_out: std_logic;
 
 signal pixel_out : STD_LOGIC_VECTOR (7 downto 0);
 signal addr_out_img : STD_LOGIC_VECTOR (8 downto 0);
 signal bram_out_din : STD_LOGIC_VECTOR (7 downto 0);
 
 begin
+we_in <= "0";
+we_out <= "1";
+en_in <= '1';
+en_out <= '0';
+pixel_out_filter <= pixel_out;
 mean_filter_1 : mean_filter
 port map (     row => row,
                col => col,
@@ -87,15 +95,15 @@ port map (     addr => addr,
                clk => clock,
                din => din_input,
                dout => pixel_in,
-               en => en,
-               we => we);
+               en => en_in,
+               we => we_in);
                
 bram_out : bram
 port map (     addr => addr_out_img,
                clk => clock,
                din => pixel_out,
                dout => bram_out_din,
-               en => en,
-               we => we);
+               en => en_out,
+               we => we_out);
 
 end Behavioral;

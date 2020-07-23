@@ -1,0 +1,9 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../HDL-mean-filter.srcs/sources_1/new/bram.vhd" \
+"../../../../HDL-mean-filter.srcs/sources_1/new/mean_filter.vhd" \
+"../../../../HDL-mean-filter.srcs/sources_1/new/mean_filter_with_bram.vhd" \
+"../../../../HDL-mean-filter.srcs/sim_1/new/mean_filter_with_bram_tb.vhd" \
+
+# Do not sort compile order
+nosort

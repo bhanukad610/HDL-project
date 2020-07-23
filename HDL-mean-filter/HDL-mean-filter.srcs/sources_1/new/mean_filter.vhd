@@ -33,9 +33,9 @@ USE ieee.numeric_std.ALL;
 --use UNISIM.VComponents.all;
 
 entity mean_filter is
-  Port ( row : in STD_LOGIC_VECTOR (3 downto 0);
-           col : in STD_LOGIC_VECTOR (3 downto 0);
-           size : in STD_LOGIC_VECTOR (3 downto 0);
+  Port ( row : in STD_LOGIC_VECTOR (4 downto 0);
+           col : in STD_LOGIC_VECTOR (4 downto 0);
+           size : in STD_LOGIC_VECTOR (4 downto 0);
            addr_in : out  STD_LOGIC_VECTOR (8 downto 0);
            addr_in_img : in  STD_LOGIC_VECTOR (8 downto 0);
            addr_out_img : out  STD_LOGIC_VECTOR (8 downto 0);
@@ -48,9 +48,6 @@ architecture Behavioral of mean_filter is
 signal row_dec  : integer;
 signal col_dec : integer;
 signal size_dec : integer;
-
-
-
 
 signal sum : integer;
 
@@ -68,7 +65,7 @@ size_dec <= to_integer(signed(size));
 
 process
   begin
-  if (row_offset = 1 and col_offset = 1) then
+  if (row_offset /= 1 and col_offset /= 1) then
         addr_int <= (col_dec + col_offset) * size_dec + (row_dec + row_offset);
         addr_in <= std_logic_vector(to_unsigned(addr_int, addr_in'length));
         dout_bram <= pixel_in;
@@ -82,6 +79,7 @@ process
   sum <= sum / 9;
   addr_out_img <= addr_in_img;
   pixel_out <= std_logic_vector(to_unsigned(sum, pixel_out'length));
+  wait;
  end process;
  
 end Behavioral;

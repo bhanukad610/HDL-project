@@ -1,0 +1,1689 @@
+/*
+
+Xilinx Vivado v2019.2 (64-bit) [Major: 2019, Minor: 2]
+SW Build: 2708876 on Wed Nov  6 21:40:23 MST 2019
+IP Build: 2700528 on Thu Nov  7 00:09:20 MST 2019
+
+Process ID (PID): 3548
+License: Customer
+
+Current time: 	Sat Jul 18 10:12:41 IST 2020
+Time zone: 	India Standard Time (Asia/Colombo)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 8
+
+Screen size: 1920x1080
+Screen resolution (DPI): 150
+Available screens: 1
+Available disk space: 57 GB
+Default font: family=Segoe UI,name=Segoe UI,style=plain,size=18
+
+Java version: 	9.0.4 64-bit
+Java home: 	F:/xilinx/Vivado/2019.2/tps/win64/jre9.0.4
+Java executable location: 	F:/xilinx/Vivado/2019.2/tps/win64/jre9.0.4/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	Bhanuka Dissanayake
+User home directory: C:/Users/Bhanuka Dissanayake
+User working directory: E:/Acadamics/Semester 7/HDL/HDL-project/HDL-mean-filter
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: F:/xilinx/Vivado
+HDI_APPROOT: F:/xilinx/Vivado/2019.2
+RDI_DATADIR: F:/xilinx/Vivado/2019.2/data
+RDI_BINDIR: F:/xilinx/Vivado/2019.2/bin
+
+Vivado preferences file location: C:/Users/Bhanuka Dissanayake/AppData/Roaming/Xilinx/Vivado/2019.2/vivado.xml
+Vivado preferences directory: C:/Users/Bhanuka Dissanayake/AppData/Roaming/Xilinx/Vivado/2019.2/
+Vivado layouts directory: C:/Users/Bhanuka Dissanayake/AppData/Roaming/Xilinx/Vivado/2019.2/layouts
+PlanAhead jar file location: 	F:/xilinx/Vivado/2019.2/lib/classes/planAhead.jar
+Vivado log file location: 	E:/Acadamics/Semester 7/HDL/HDL-project/HDL-mean-filter/vivado.log
+Vivado journal file location: 	E:/Acadamics/Semester 7/HDL/HDL-project/HDL-mean-filter/vivado.jou
+Engine tmp dir: 	E:/Acadamics/Semester 7/HDL/HDL-project/HDL-mean-filter/.Xil/Vivado-3548-DESKTOP-5GV2NU3
+
+Xilinx Environment Variables
+----------------------------
+XILINX: F:/xilinx/Vivado/2019.2/ids_lite/ISE
+XILINX_DSP: F:/xilinx/Vivado/2019.2/ids_lite/ISE
+XILINX_PLANAHEAD: F:/xilinx/Vivado/2019.2
+XILINX_VIVADO: F:/xilinx/Vivado/2019.2
+XILINX_VIVADO_HLS: F:/xilinx/Vivado/2019.2
+
+
+GUI allocated memory:	136 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 591 MB
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// bB (cr):  Open Project : addNotify
+// Opening Vivado Project: E:\Acadamics\Semester 7\HDL\HDL-project\HDL-mean-filter\HDL-mean-filter.xpr. Version: Vivado v2019.2 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project {E:/Acadamics/Semester 7/HDL/HDL-project/HDL-mean-filter/HDL-mean-filter.xpr} 
+// HMemoryUtils.trashcanNow. Engine heap size: 611 MB. GUI used memory: 54 MB. Current time: 7/18/20, 10:12:43 AM IST
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 75 MB (+76511kb) [00:00:32]
+// [Engine Memory]: 666 MB (+546757kb) [00:00:32]
+// [GUI Memory]: 90 MB (+11800kb) [00:00:33]
+// [GUI Memory]: 106 MB (+11169kb) [00:00:34]
+// [Engine Memory]: 708 MB (+9479kb) [00:00:35]
+// WARNING: HEventQueue.dispatchEvent() is taking  4321 ms.
+// Tcl Message: open_project {E:/Acadamics/Semester 7/HDL/HDL-project/HDL-mean-filter/HDL-mean-filter.xpr} 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'F:/xilinx/Vivado/2019.2/data/ip'. 
+// HMemoryUtils.trashcanNow. Engine heap size: 711 MB. GUI used memory: 59 MB. Current time: 7/18/20, 10:12:59 AM IST
+// Tcl Message: open_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:20 . Memory (MB): peak = 736.898 ; gain = 128.531 
+// Project name: HDL-mean-filter; location: E:/Acadamics/Semester 7/HDL/HDL-project/HDL-mean-filter; part: xc7k70tfbv676-1
+// [GUI Memory]: 117 MB (+6136kb) [00:00:36]
+dismissDialog("Open Project"); // bB (cr)
+// Tcl Message: update_compile_order -fileset sources_1 
+// PAPropertyPanels.initPanels (mean_filter_with_bram.vhd) elapsed time: 0.2s
+// Elapsed time: 33 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, mean_filter_with_bram(Behavioral) (mean_filter_with_bram.vhd)]", 1, true); // B (F, cr) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, mean_filter_with_bram(Behavioral) (mean_filter_with_bram.vhd)]", 1, true, false, false, false, false, true); // B (F, cr) - Double Click - Node
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // P (aI, cr)
+// Elapsed time: 853 seconds
+selectCodeEditor("mean_filter_with_bram.vhd", 283, 369); // ch (w, cr)
+selectCodeEditor("mean_filter_with_bram.vhd", 283, 369, false, false, false, false, true); // ch (w, cr) - Double Click
+// Elapsed time: 28 seconds
+selectCodeEditor("mean_filter_with_bram.vhd", 142, 317); // ch (w, cr)
+selectCodeEditor("mean_filter_with_bram.vhd", 142, 317, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("mean_filter_with_bram.vhd", 469, 283); // ch (w, cr)
+// Elapsed time: 200 seconds
+unMinimizeFrame(PAResourceOtoP.PAViews_SOURCES, "Sources"); // aA
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 9); // B (F, cr)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1]", 10); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, bram_tb(bench) (bram_tb.vhd)]", 11, true); // B (F, cr) - Node
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 10, false); // u (O, cr)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // ai (ao, cr)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// al (cr): Save Project: addNotify
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a (al)
+// bB (cr):  Save Constraints : addNotify
+// e (cr):  Run Simulation : addNotify
+dismissDialog("Save Project"); // al (cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: LAUNCH_SIM
+// Tcl Message: launch_simulation 
+// Tcl Message: Command: launch_simulation  
+// Tcl Message: INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator... 
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: LOAD_FEATURE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// Tcl Message: INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-98] Fetching design files from 'sim_1'... 
+// Tcl Message: INFO: [USF-XSim-2] XSim::Compile design 
+// Tcl Message: INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/Acadamics/Semester 7/HDL/HDL-project/HDL-mean-filter/HDL-mean-filter.sim/sim_1/behav/xsim' 
+// Tcl Message: "xvlog --incr --relax -prj bram_tb_vlog.prj" 
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: "xvhdl --incr --relax -prj bram_tb_vhdl.prj" 
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '3' seconds INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/Acadamics/Semester 7/HDL/HDL-project/HDL-mean-filter/HDL-mean-filter.sim/sim_1/behav/xsim' 
+// Tcl Message: "xelab -wto 0c1efe39b5044287b7305e71e5c7efd0 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_4 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot bram_tb_behav xil_defaultlib.bram_tb xil_defaultlib.glbl -log elaborate.log" 
+// Tcl Message: Vivado Simulator 2019.2 Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved. Running: F:/xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 0c1efe39b5044287b7305e71e5c7efd0 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_4 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot bram_tb_behav xil_defaultlib.bram_tb xil_defaultlib.glbl -log elaborate.log  Using 2 slave threads. Starting static elaboration Pass Through NonSizing Optimizer Completed static elaboration INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel 
+// TclEventType: LAUNCH_SIM
+// TclEventType: LOAD_FEATURE
+// Tcl Message: INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds INFO: [USF-XSim-4] XSim::Simulate design INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/Acadamics/Semester 7/HDL/HDL-project/HDL-mean-filter/HDL-mean-filter.sim/sim_1/behav/xsim' INFO: [USF-XSim-98] *** Running xsim 
+// Tcl Message:    with args "bram_tb_behav -key {Behavioral:sim_1:Functional:bram_tb} -tclbatch {bram_tb.tcl} -log {simulate.log}" 
+// Tcl Message: INFO: [USF-XSim-8] Loading simulator feature 
+// Tcl Message: Vivado Simulator 2019.2 
+// TclEventType: SIMULATION_CREATE_SIMULATION_OBJECT
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// WARNING: HEventQueue.dispatchEvent() is taking  1208 ms.
+// Tcl Message: Time resolution is 1 ps 
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// Elapsed time: 17 seconds
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// [GUI Memory]: 124 MB (+1981kb) [00:19:50]
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// TclEventType: WAVEFORM_DELAYED_MODEL_EVENT
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// Waveform: addNotify
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 742 MB. GUI used memory: 67 MB. Current time: 7/18/20, 10:32:15 AM IST
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// Tcl Message: source bram_tb.tcl 
+// Tcl Message: # set curr_wave [current_wave_config] # if { [string length $curr_wave] == 0 } { #   if { [llength [get_objects]] > 0} { #     add_wave / #     set_property needs_save false [current_wave_config] #   } else { #      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console." #   } # } 
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_DELAYED_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_OBJECT_TREE_RESTORED
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_CURRENT_STACK_CHANGED
+// TclEventType: SIMULATION_UPDATE_STACK_FRAMES
+// TclEventType: SIMULATION_CURRENT_STACK_FRAME_CHANGED
+// TclEventType: SIMULATION_UPDATE_LOCALS
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: # run 1000ns 
+// Tcl Message:  Block Memory Generator module loading initial data...  Block Memory Generator data initialization complete. Block Memory Generator module bram_tb.uut.mem_block_1.inst.native_mem_module.blk_mem_gen_v8_4_4_inst is using a behavioral model for simulation which will not precisely model memory collision behavior. 
+// Tcl Message: INFO: [USF-XSim-96] XSim completed. Design snapshot 'bram_tb_behav' loaded. INFO: [USF-XSim-97] XSim simulation ran for 1000ns 
+// Tcl Message: launch_simulation: Time (s): cpu = 00:00:10 ; elapsed = 00:00:18 . Memory (MB): peak = 788.828 ; gain = 29.414 
+// [Engine Memory]: 745 MB (+1523kb) [00:19:51]
+// 'd' command handler elapsed time: 22 seconds
+dismissDialog("Run Simulation"); // e (cr)
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // P (aI, cr)
+// HMemoryUtils.trashcanNow. Engine heap size: 749 MB. GUI used memory: 69 MB. Current time: 7/18/20, 10:32:19 AM IST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 749 MB. GUI used memory: 70 MB. Current time: 7/18/20, 10:32:22 AM IST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 749 MB. GUI used memory: 70 MB. Current time: 7/18/20, 10:32:22 AM IST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 749 MB. GUI used memory: 70 MB. Current time: 7/18/20, 10:32:22 AM IST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 749 MB. GUI used memory: 70 MB. Current time: 7/18/20, 10:32:22 AM IST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 749 MB. GUI used memory: 70 MB. Current time: 7/18/20, 10:32:22 AM IST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 749 MB. GUI used memory: 70 MB. Current time: 7/18/20, 10:32:22 AM IST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 749 MB. GUI used memory: 70 MB. Current time: 7/18/20, 10:32:22 AM IST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 749 MB. GUI used memory: 70 MB. Current time: 7/18/20, 10:32:22 AM IST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 749 MB. GUI used memory: 70 MB. Current time: 7/18/20, 10:32:23 AM IST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 749 MB. GUI used memory: 70 MB. Current time: 7/18/20, 10:32:23 AM IST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 749 MB. GUI used memory: 70 MB. Current time: 7/18/20, 10:32:23 AM IST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 749 MB. GUI used memory: 70 MB. Current time: 7/18/20, 10:32:23 AM IST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 749 MB. GUI used memory: 70 MB. Current time: 7/18/20, 10:32:23 AM IST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 749 MB. GUI used memory: 71 MB. Current time: 7/18/20, 10:32:23 AM IST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 749 MB. GUI used memory: 70 MB. Current time: 7/18/20, 10:32:23 AM IST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// Elapsed time: 14 seconds
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 198, 207); // n (o, cr)
+// HMemoryUtils.trashcanNow. Engine heap size: 749 MB. GUI used memory: 69 MB. Current time: 7/18/20, 10:32:33 AM IST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 749 MB. GUI used memory: 69 MB. Current time: 7/18/20, 10:32:34 AM IST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 749 MB. GUI used memory: 69 MB. Current time: 7/18/20, 10:32:34 AM IST
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 749 MB. GUI used memory: 69 MB. Current time: 7/18/20, 10:32:35 AM IST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 749 MB. GUI used memory: 69 MB. Current time: 7/18/20, 10:32:35 AM IST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 749 MB. GUI used memory: 69 MB. Current time: 7/18/20, 10:32:36 AM IST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 749 MB. GUI used memory: 69 MB. Current time: 7/18/20, 10:32:37 AM IST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 749 MB. GUI used memory: 69 MB. Current time: 7/18/20, 10:32:41 AM IST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 749 MB. GUI used memory: 76 MB. Current time: 7/18/20, 10:32:45 AM IST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 749 MB. GUI used memory: 69 MB. Current time: 7/18/20, 10:32:45 AM IST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 749 MB. GUI used memory: 69 MB. Current time: 7/18/20, 10:32:45 AM IST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 749 MB. GUI used memory: 79 MB. Current time: 7/18/20, 10:32:45 AM IST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 749 MB. GUI used memory: 69 MB. Current time: 7/18/20, 10:32:45 AM IST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 749 MB. GUI used memory: 69 MB. Current time: 7/18/20, 10:32:46 AM IST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 749 MB. GUI used memory: 71 MB. Current time: 7/18/20, 10:32:46 AM IST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 749 MB. GUI used memory: 69 MB. Current time: 7/18/20, 10:32:46 AM IST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 749 MB. GUI used memory: 82 MB. Current time: 7/18/20, 10:32:46 AM IST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 749 MB. GUI used memory: 42 MB. Current time: 7/18/20, 10:32:46 AM IST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 749 MB. GUI used memory: 82 MB. Current time: 7/18/20, 10:32:46 AM IST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 749 MB. GUI used memory: 69 MB. Current time: 7/18/20, 10:32:46 AM IST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 749 MB. GUI used memory: 80 MB. Current time: 7/18/20, 10:32:47 AM IST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 749 MB. GUI used memory: 69 MB. Current time: 7/18/20, 10:32:47 AM IST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 749 MB. GUI used memory: 75 MB. Current time: 7/18/20, 10:32:47 AM IST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 749 MB. GUI used memory: 69 MB. Current time: 7/18/20, 10:32:47 AM IST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 749 MB. GUI used memory: 76 MB. Current time: 7/18/20, 10:32:47 AM IST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 749 MB. GUI used memory: 69 MB. Current time: 7/18/20, 10:32:47 AM IST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 749 MB. GUI used memory: 69 MB. Current time: 7/18/20, 10:32:48 AM IST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 749 MB. GUI used memory: 69 MB. Current time: 7/18/20, 10:32:48 AM IST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 749 MB. GUI used memory: 69 MB. Current time: 7/18/20, 10:32:48 AM IST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 749 MB. GUI used memory: 69 MB. Current time: 7/18/20, 10:32:48 AM IST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 749 MB. GUI used memory: 69 MB. Current time: 7/18/20, 10:32:48 AM IST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 749 MB. GUI used memory: 69 MB. Current time: 7/18/20, 10:32:48 AM IST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 749 MB. GUI used memory: 74 MB. Current time: 7/18/20, 10:32:49 AM IST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 749 MB. GUI used memory: 69 MB. Current time: 7/18/20, 10:32:49 AM IST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 749 MB. GUI used memory: 69 MB. Current time: 7/18/20, 10:32:49 AM IST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 749 MB. GUI used memory: 79 MB. Current time: 7/18/20, 10:32:49 AM IST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 749 MB. GUI used memory: 69 MB. Current time: 7/18/20, 10:32:49 AM IST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 749 MB. GUI used memory: 76 MB. Current time: 7/18/20, 10:32:49 AM IST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 749 MB. GUI used memory: 69 MB. Current time: 7/18/20, 10:32:49 AM IST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 749 MB. GUI used memory: 79 MB. Current time: 7/18/20, 10:32:49 AM IST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 749 MB. GUI used memory: 82 MB. Current time: 7/18/20, 10:32:50 AM IST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 749 MB. GUI used memory: 69 MB. Current time: 7/18/20, 10:32:50 AM IST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 749 MB. GUI used memory: 69 MB. Current time: 7/18/20, 10:32:50 AM IST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 749 MB. GUI used memory: 83 MB. Current time: 7/18/20, 10:33:01 AM IST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 749 MB. GUI used memory: 69 MB. Current time: 7/18/20, 10:33:01 AM IST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 749 MB. GUI used memory: 79 MB. Current time: 7/18/20, 10:33:01 AM IST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 749 MB. GUI used memory: 69 MB. Current time: 7/18/20, 10:33:02 AM IST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 749 MB. GUI used memory: 73 MB. Current time: 7/18/20, 10:33:02 AM IST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 749 MB. GUI used memory: 69 MB. Current time: 7/18/20, 10:33:02 AM IST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 749 MB. GUI used memory: 74 MB. Current time: 7/18/20, 10:33:02 AM IST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 749 MB. GUI used memory: 69 MB. Current time: 7/18/20, 10:33:02 AM IST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 749 MB. GUI used memory: 69 MB. Current time: 7/18/20, 10:33:02 AM IST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 749 MB. GUI used memory: 73 MB. Current time: 7/18/20, 10:33:02 AM IST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 749 MB. GUI used memory: 69 MB. Current time: 7/18/20, 10:33:03 AM IST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 749 MB. GUI used memory: 76 MB. Current time: 7/18/20, 10:33:03 AM IST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 749 MB. GUI used memory: 69 MB. Current time: 7/18/20, 10:33:03 AM IST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 749 MB. GUI used memory: 74 MB. Current time: 7/18/20, 10:33:03 AM IST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 749 MB. GUI used memory: 69 MB. Current time: 7/18/20, 10:33:03 AM IST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 749 MB. GUI used memory: 69 MB. Current time: 7/18/20, 10:33:03 AM IST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 749 MB. GUI used memory: 69 MB. Current time: 7/18/20, 10:33:03 AM IST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 749 MB. GUI used memory: 77 MB. Current time: 7/18/20, 10:33:04 AM IST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 749 MB. GUI used memory: 69 MB. Current time: 7/18/20, 10:33:04 AM IST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 749 MB. GUI used memory: 76 MB. Current time: 7/18/20, 10:33:04 AM IST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 749 MB. GUI used memory: 69 MB. Current time: 7/18/20, 10:33:04 AM IST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 749 MB. GUI used memory: 69 MB. Current time: 7/18/20, 10:33:04 AM IST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 749 MB. GUI used memory: 69 MB. Current time: 7/18/20, 10:33:05 AM IST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 749 MB. GUI used memory: 69 MB. Current time: 7/18/20, 10:33:05 AM IST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 749 MB. GUI used memory: 69 MB. Current time: 7/18/20, 10:33:05 AM IST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 749 MB. GUI used memory: 77 MB. Current time: 7/18/20, 10:33:05 AM IST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 749 MB. GUI used memory: 69 MB. Current time: 7/18/20, 10:33:05 AM IST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 749 MB. GUI used memory: 78 MB. Current time: 7/18/20, 10:33:05 AM IST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 749 MB. GUI used memory: 69 MB. Current time: 7/18/20, 10:33:05 AM IST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 749 MB. GUI used memory: 69 MB. Current time: 7/18/20, 10:33:05 AM IST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 749 MB. GUI used memory: 69 MB. Current time: 7/18/20, 10:33:07 AM IST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 749 MB. GUI used memory: 74 MB. Current time: 7/18/20, 10:33:08 AM IST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 749 MB. GUI used memory: 69 MB. Current time: 7/18/20, 10:33:08 AM IST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 749 MB. GUI used memory: 79 MB. Current time: 7/18/20, 10:33:08 AM IST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 749 MB. GUI used memory: 69 MB. Current time: 7/18/20, 10:33:10 AM IST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 749 MB. GUI used memory: 76 MB. Current time: 7/18/20, 10:33:10 AM IST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 749 MB. GUI used memory: 69 MB. Current time: 7/18/20, 10:33:10 AM IST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 749 MB. GUI used memory: 76 MB. Current time: 7/18/20, 10:33:10 AM IST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 749 MB. GUI used memory: 69 MB. Current time: 7/18/20, 10:33:10 AM IST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 749 MB. GUI used memory: 69 MB. Current time: 7/18/20, 10:33:10 AM IST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 749 MB. GUI used memory: 85 MB. Current time: 7/18/20, 10:33:12 AM IST
+// Elapsed time: 39 seconds
+unMinimizeFrame(PAResourceOtoP.PAViews_SOURCES, "Sources"); // aA
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// [Engine Memory]: 788 MB (+5758kb) [00:20:53]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, mean_filter_with_bram(Behavioral) (mean_filter_with_bram.vhd), bram_in : bram(Behavioral) (bram.vhd)]", 3, true); // B (F, cr) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, mean_filter_with_bram(Behavioral) (mean_filter_with_bram.vhd), bram_in : bram(Behavioral) (bram.vhd)]", 3, true, false, false, false, false, true); // B (F, cr) - Double Click - Node
+// Elapsed time: 14 seconds
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mean_filter_with_bram.vhd", 0); // i (h, cr)
+// HMemoryUtils.trashcanNow. Engine heap size: 816 MB. GUI used memory: 69 MB. Current time: 7/18/20, 10:33:38 AM IST
+selectCodeEditor("mean_filter_with_bram.vhd", 356, 139); // ch (w, cr)
+selectCodeEditor("mean_filter_with_bram.vhd", 356, 139, false, false, false, false, true); // ch (w, cr) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, mean_filter_with_bram(Behavioral) (mean_filter_with_bram.vhd), bram_in : bram(Behavioral) (bram.vhd)]", 3, true); // B (F, cr) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, mean_filter_with_bram(Behavioral) (mean_filter_with_bram.vhd), bram_in : bram(Behavioral) (bram.vhd)]", 3, true, false, false, false, false, true); // B (F, cr) - Double Click - Node
+selectCodeEditor("bram.vhd", 116, 161); // ch (w, cr)
+typeControlKey((HResource) null, "bram.vhd", 'c'); // ch (w, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Untitled 1", 1); // i (h, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mean_filter_with_bram.vhd", 0); // i (h, cr)
+selectCodeEditor("mean_filter_with_bram.vhd", 365, 130); // ch (w, cr)
+typeControlKey((HResource) null, "mean_filter_with_bram.vhd", 'v'); // ch (w, cr)
+selectCodeEditor("mean_filter_with_bram.vhd", 292, 390); // ch (w, cr)
+// Elapsed time: 19 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Untitled 1", 1); // i (h, cr)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 816 MB. GUI used memory: 69 MB. Current time: 7/18/20, 10:34:19 AM IST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 816 MB. GUI used memory: 69 MB. Current time: 7/18/20, 10:34:19 AM IST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 816 MB. GUI used memory: 69 MB. Current time: 7/18/20, 10:34:19 AM IST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 816 MB. GUI used memory: 69 MB. Current time: 7/18/20, 10:34:20 AM IST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 816 MB. GUI used memory: 69 MB. Current time: 7/18/20, 10:34:20 AM IST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 816 MB. GUI used memory: 92 MB. Current time: 7/18/20, 10:47:01 AM IST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 816 MB. GUI used memory: 69 MB. Current time: 7/18/20, 10:47:02 AM IST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 816 MB. GUI used memory: 75 MB. Current time: 7/18/20, 10:47:02 AM IST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 816 MB. GUI used memory: 69 MB. Current time: 7/18/20, 10:47:02 AM IST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 816 MB. GUI used memory: 69 MB. Current time: 7/18/20, 10:47:02 AM IST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 816 MB. GUI used memory: 69 MB. Current time: 7/18/20, 10:47:02 AM IST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 816 MB. GUI used memory: 76 MB. Current time: 7/18/20, 10:47:02 AM IST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 816 MB. GUI used memory: 81 MB. Current time: 7/18/20, 10:47:02 AM IST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 816 MB. GUI used memory: 69 MB. Current time: 7/18/20, 10:47:03 AM IST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 816 MB. GUI used memory: 69 MB. Current time: 7/18/20, 10:47:03 AM IST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 816 MB. GUI used memory: 69 MB. Current time: 7/18/20, 10:47:03 AM IST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 816 MB. GUI used memory: 70 MB. Current time: 7/18/20, 10:47:04 AM IST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 816 MB. GUI used memory: 69 MB. Current time: 7/18/20, 10:47:04 AM IST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 816 MB. GUI used memory: 69 MB. Current time: 7/18/20, 10:47:05 AM IST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 816 MB. GUI used memory: 69 MB. Current time: 7/18/20, 10:47:05 AM IST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 816 MB. GUI used memory: 69 MB. Current time: 7/18/20, 10:47:05 AM IST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 816 MB. GUI used memory: 69 MB. Current time: 7/18/20, 10:47:05 AM IST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// Elapsed time: 773 seconds
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 211, 26); // n (o, cr)
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 816 MB. GUI used memory: 69 MB. Current time: 7/18/20, 10:47:10 AM IST
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 206, -136); // n (o, cr)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 816 MB. GUI used memory: 69 MB. Current time: 7/18/20, 10:47:13 AM IST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 816 MB. GUI used memory: 69 MB. Current time: 7/18/20, 10:47:14 AM IST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 816 MB. GUI used memory: 69 MB. Current time: 7/18/20, 10:47:14 AM IST
+// Elapsed time: 218 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mean_filter_with_bram.vhd", 0); // i (h, cr)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, mean_filter_with_bram(Behavioral) (mean_filter_with_bram.vhd), bram_in : bram(Behavioral) (bram.vhd)]", 3); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, mean_filter_with_bram(Behavioral) (mean_filter_with_bram.vhd), bram_out : bram(Behavioral) (bram.vhd)]", 5, true); // B (F, cr) - Node
+// PAPropertyPanels.initPanels (blk_mem_gen_0.xci) elapsed time: 0.3s
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, mean_filter_with_bram(Behavioral) (mean_filter_with_bram.vhd), bram_in : bram(Behavioral) (bram.vhd), mem_block_1 : blk_mem_gen_0 (blk_mem_gen_0.xci)]", 4, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, mean_filter_with_bram(Behavioral) (mean_filter_with_bram.vhd), bram_in : bram(Behavioral) (bram.vhd), mem_block_1 : blk_mem_gen_0 (blk_mem_gen_0.xci)]", 4, false, false, false, false, false, true); // B (F, cr) - Double Click
+// Run Command: PAResourceCommand.PACommandNames_RECUSTOMIZE_CORE
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, mean_filter_with_bram(Behavioral) (mean_filter_with_bram.vhd), bram_in : bram(Behavioral) (bram.vhd), mem_block_1 : blk_mem_gen_0 (blk_mem_gen_0.xci)]", 4, false); // B (F, cr)
+// TclEventType: LOAD_FEATURE
+// O (cr):  Re-customize IP : addNotify
+// [Engine Memory]: 851 MB (+25216kb) [00:38:36]
+// r (cr): Re-customize IP: addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  1547 ms.
+dismissDialog("Re-customize IP"); // O (cr)
+// HMemoryUtils.trashcanNow. Engine heap size: 852 MB. GUI used memory: 73 MB. Current time: 7/18/20, 10:51:03 AM IST
+// Elapsed time: 25 seconds
+dismissDialog("Re-customize IP"); // r (cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "bram.vhd", 2); // i (h, cr)
+selectCodeEditor("bram.vhd", 388, 188); // ch (w, cr)
+// Elapsed time: 100 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Untitled 1", 1); // i (h, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mean_filter_with_bram.vhd", 0); // i (h, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Untitled 1", 1); // i (h, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mean_filter_with_bram.vhd", 1); // i (h, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, mean_filter_with_bram_tb(bench) (mean_filter_with_bram_tb.vhd)]", 13, true); // B (F, cr) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, mean_filter_with_bram_tb(bench) (mean_filter_with_bram_tb.vhd)]", 13, true, false, false, false, false, true); // B (F, cr) - Double Click - Node
+// [GUI Memory]: 131 MB (+715kb) [00:41:03]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, bram_tb(bench) (bram_tb.vhd)]", 12, true); // B (F, cr) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, bram_tb(bench) (bram_tb.vhd)]", 12, true); // B (F, cr) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, bram_tb(bench) (bram_tb.vhd)]", 12, true, false, false, false, false, true); // B (F, cr) - Double Click - Node
+// Elapsed time: 12 seconds
+selectCodeEditor("bram_tb.vhd", 40, 113); // ch (w, cr)
+typeControlKey((HResource) null, "bram_tb.vhd", 'c'); // ch (w, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mean_filter_with_bram_tb.vhd", 3); // i (h, cr)
+selectCodeEditor("mean_filter_with_bram_tb.vhd", 527, 394); // ch (w, cr)
+selectCodeEditor("mean_filter_with_bram_tb.vhd", 503, 404); // ch (w, cr)
+selectCodeEditor("mean_filter_with_bram_tb.vhd", 42, 411); // ch (w, cr)
+typeControlKey((HResource) null, "mean_filter_with_bram_tb.vhd", 'v'); // ch (w, cr)
+selectCodeEditor("mean_filter_with_bram_tb.vhd", 470, 411); // ch (w, cr)
+typeControlKey(null, null, 'z');
+selectCodeEditor("mean_filter_with_bram_tb.vhd", 108, 74); // ch (w, cr)
+selectCodeEditor("mean_filter_with_bram_tb.vhd", 108, 74); // ch (w, cr)
+selectCodeEditor("mean_filter_with_bram_tb.vhd", 108, 74, false, false, false, false, true); // ch (w, cr) - Double Click
+typeControlKey((HResource) null, "mean_filter_with_bram_tb.vhd", 'c'); // ch (w, cr)
+selectCodeEditor("mean_filter_with_bram_tb.vhd", 124, 462); // ch (w, cr)
+typeControlKey((HResource) null, "mean_filter_with_bram_tb.vhd", 'v'); // ch (w, cr)
+// Elapsed time: 34 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "bram_tb.vhd", 4); // i (h, cr)
+selectCodeEditor("bram_tb.vhd", 545, 389); // ch (w, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mean_filter_with_bram_tb.vhd", 3); // i (h, cr)
+selectCodeEditor("mean_filter_with_bram_tb.vhd", 160, 476); // ch (w, cr)
+selectCodeEditor("mean_filter_with_bram_tb.vhd", 179, 450); // ch (w, cr)
+// Elapsed time: 13 seconds
+selectCodeEditor("mean_filter_with_bram_tb.vhd", 109, 159); // ch (w, cr)
+selectCodeEditor("mean_filter_with_bram_tb.vhd", 109, 159, false, false, false, false, true); // ch (w, cr) - Double Click
+typeControlKey((HResource) null, "mean_filter_with_bram_tb.vhd", 'c'); // ch (w, cr)
+selectCodeEditor("mean_filter_with_bram_tb.vhd", 85, 347); // ch (w, cr)
+selectCodeEditor("mean_filter_with_bram_tb.vhd", 85, 354); // ch (w, cr)
+typeControlKey((HResource) null, "mean_filter_with_bram_tb.vhd", 'v'); // ch (w, cr)
+// Elapsed time: 43 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "bram_tb.vhd", 4); // i (h, cr)
+// Elapsed time: 16 seconds
+selectCodeEditor("bram_tb.vhd", 43, 286); // ch (w, cr)
+selectCodeEditor("bram_tb.vhd", 192, 381); // ch (w, cr)
+selectCodeEditor("bram_tb.vhd", 196, 390); // ch (w, cr)
+typeControlKey((HResource) null, "bram_tb.vhd", 'c'); // ch (w, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mean_filter_with_bram_tb.vhd", 3); // i (h, cr)
+selectCodeEditor("mean_filter_with_bram_tb.vhd", 143, 415); // ch (w, cr)
+selectCodeEditor("mean_filter_with_bram_tb.vhd", 145, 400); // ch (w, cr)
+selectCodeEditor("mean_filter_with_bram_tb.vhd", 143, 393); // ch (w, cr)
+// Elapsed time: 12 seconds
+typeControlKey((HResource) null, "mean_filter_with_bram_tb.vhd", 'v'); // ch (w, cr)
+selectCodeEditor("mean_filter_with_bram_tb.vhd", 275, 473); // ch (w, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "bram_tb.vhd", 4); // i (h, cr)
+selectCodeEditor("bram_tb.vhd", 77, 299); // ch (w, cr)
+// Elapsed time: 36 seconds
+selectCodeEditor("bram_tb.vhd", 166, 529); // ch (w, cr)
+typeControlKey((HResource) null, "bram_tb.vhd", 'c'); // ch (w, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mean_filter_with_bram_tb.vhd", 3); // i (h, cr)
+selectCodeEditor("mean_filter_with_bram_tb.vhd", 188, 512); // ch (w, cr)
+typeControlKey((HResource) null, "mean_filter_with_bram_tb.vhd", 'v'); // ch (w, cr)
+selectCodeEditor("mean_filter_with_bram_tb.vhd", 320, 373); // ch (w, cr)
+selectCodeEditor("mean_filter_with_bram_tb.vhd", 69, 392); // ch (w, cr)
+selectCodeEditor("mean_filter_with_bram_tb.vhd", 69, 392, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("mean_filter_with_bram_tb.vhd", 258, 334); // ch (w, cr)
+selectCodeEditor("mean_filter_with_bram_tb.vhd", 129, 465); // ch (w, cr)
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey((HResource) null, "mean_filter_with_bram_tb.vhd", 'v'); // ch (w, cr)
+selectCodeEditor("mean_filter_with_bram_tb.vhd", 17, 264); // ch (w, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "bram_tb.vhd", 4); // i (h, cr)
+selectCodeEditor("bram_tb.vhd", 343, 272); // ch (w, cr)
+selectCodeEditor("bram_tb.vhd", 90, 418); // ch (w, cr)
+selectCodeEditor("bram_tb.vhd", 90, 418, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("bram_tb.vhd", 426, 195); // ch (w, cr)
+selectCodeEditor("bram_tb.vhd", 474, 187); // ch (w, cr)
+selectCodeEditor("bram_tb.vhd", 148, 181); // ch (w, cr)
+selectCodeEditor("bram_tb.vhd", 579, 163); // ch (w, cr)
+typeControlKey((HResource) null, "bram_tb.vhd", 'c'); // ch (w, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mean_filter_with_bram_tb.vhd", 3); // i (h, cr)
+selectCodeEditor("mean_filter_with_bram_tb.vhd", 96, 175); // ch (w, cr)
+selectCodeEditor("mean_filter_with_bram_tb.vhd", 114, 156); // ch (w, cr)
+selectCodeEditor("mean_filter_with_bram_tb.vhd", 569, 143); // ch (w, cr)
+typeControlKey((HResource) null, "mean_filter_with_bram_tb.vhd", 'v'); // ch (w, cr)
+selectCodeEditor("mean_filter_with_bram_tb.vhd", 375, 181); // ch (w, cr)
+selectCodeEditor("mean_filter_with_bram_tb.vhd", 109, 292); // ch (w, cr)
+selectCodeEditor("mean_filter_with_bram_tb.vhd", 406, 154); // ch (w, cr)
+selectCodeEditor("mean_filter_with_bram_tb.vhd", 89, 238); // ch (w, cr)
+selectCodeEditor("mean_filter_with_bram_tb.vhd", 89, 238, false, false, false, false, true); // ch (w, cr) - Double Click
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "bram_tb.vhd", 4); // i (h, cr)
+selectCodeEditor("bram_tb.vhd", 175, 314); // ch (w, cr)
+// Elapsed time: 11 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mean_filter_with_bram_tb.vhd", 3); // i (h, cr)
+selectCodeEditor("mean_filter_with_bram_tb.vhd", 205, 337); // ch (w, cr)
+selectCodeEditor("mean_filter_with_bram_tb.vhd", 282, 387); // ch (w, cr)
+typeControlKey((HResource) null, "mean_filter_with_bram_tb.vhd", 'v'); // ch (w, cr)
+selectCodeEditor("mean_filter_with_bram_tb.vhd", 64, 536); // ch (w, cr)
+selectCodeEditor("mean_filter_with_bram_tb.vhd", 245, 290); // ch (w, cr)
+selectCodeEditor("mean_filter_with_bram_tb.vhd", 146, 263); // ch (w, cr)
+selectCodeEditor("mean_filter_with_bram_tb.vhd", 146, 263, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("mean_filter_with_bram_tb.vhd", 162, 259); // ch (w, cr)
+selectCodeEditor("mean_filter_with_bram_tb.vhd", 162, 259, false, false, false, false, true); // ch (w, cr) - Double Click
+typeControlKey((HResource) null, "mean_filter_with_bram_tb.vhd", 'c'); // ch (w, cr)
+selectCodeEditor("mean_filter_with_bram_tb.vhd", 222, 329); // ch (w, cr)
+typeControlKey((HResource) null, "mean_filter_with_bram_tb.vhd", 'v'); // ch (w, cr)
+// Elapsed time: 12 seconds
+selectCodeEditor("mean_filter_with_bram_tb.vhd", 318, 85); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("mean_filter_with_bram_tb.vhd", 203, 376); // ch (w, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, mean_filter_with_bram_tb(bench) (mean_filter_with_bram_tb.vhd)]", 15, true); // B (F, cr) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, mean_filter_with_bram_tb(bench) (mean_filter_with_bram_tb.vhd)]", 15, true, false, false, false, true, false); // B (F, cr) - Popup Trigger - Node
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // af (ao, Popup.HeavyWeightWindow)
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // af (ao, Popup.HeavyWeightWindow)
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // af (ao, Popup.HeavyWeightWindow)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // af (ao, Popup.HeavyWeightWindow)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // af (ao, Popup.HeavyWeightWindow)
+selectMenuItem(PAResourceCommand.PACommandNames_SET_AS_TOP, "Set as Top"); // ai (ao, Popup.HeavyWeightWindow)
+// Run Command: PAResourceCommand.PACommandNames_SET_AS_TOP
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: set_property top mean_filter_with_bram_tb [get_filesets sim_1] 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: set_property top_lib xil_defaultlib [get_filesets sim_1] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sim_1 
+selectCodeEditor("mean_filter_with_bram_tb.vhd", 345, 231); // ch (w, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mean_filter_with_bram.vhd", 1); // i (h, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mean_filter_with_bram_tb.vhd", 3); // i (h, cr)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 10, false); // u (O, cr)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // ai (ao, cr)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// al (cr): Save Project: addNotify
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a (al)
+// bB (cr):  Save Constraints : addNotify
+// TclEventType: DG_GRAPH_STALE
+// e (cr):  Run Simulation : addNotify
+dismissDialog("Save Project"); // al (cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: LAUNCH_SIM
+// Tcl Message: launch_simulation 
+// Tcl Message: Command: launch_simulation  
+// Tcl Message: boost::filesystem::remove: The process cannot access the file because it is being used by another process: "E:/Acadamics/Semester 7/HDL/HDL-project/HDL-mean-filter/HDL-mean-filter.sim/sim_1/behav/xsim/simulate.log" 
+// CommandFailedException: ERROR: [Common 17-69] Command failed: boost::filesystem::remove: The process cannot access the file because it is being used by another process: "E:/Acadamics/Semester 7/HDL/HDL-project/HDL-mean-filter/HDL-mean-filter.sim/sim_1/behav/xsim/simulate.log" 
+// HOptionPane Error: 'boost::filesystem::remove: The process cannot access the file because it is being used by another process: "E:/Acadamics/Semester 7/HDL/HDL-project/ HDL-mean-filter/HDL-mean-filter.sim/sim_1/behav/xsim/simulate.log" (Run Simulation)'
+// 'd' command handler elapsed time: 3 seconds
+selectButton("OptionPane.button", "OK"); // JButton (A, G)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "bram.vhd", 2); // i (h, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mean_filter_with_bram_tb.vhd", 3); // i (h, cr)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 10, false); // u (O, cr)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // ai (ao, cr)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// e (cr):  Run Simulation : addNotify
+// TclEventType: LAUNCH_SIM
+// Tcl Message: launch_simulation 
+// Tcl Message: Command: launch_simulation  
+// Tcl Message: boost::filesystem::remove: The process cannot access the file because it is being used by another process: "E:/Acadamics/Semester 7/HDL/HDL-project/HDL-mean-filter/HDL-mean-filter.sim/sim_1/behav/xsim/simulate.log" 
+// CommandFailedException: ERROR: [Common 17-69] Command failed: boost::filesystem::remove: The process cannot access the file because it is being used by another process: "E:/Acadamics/Semester 7/HDL/HDL-project/HDL-mean-filter/HDL-mean-filter.sim/sim_1/behav/xsim/simulate.log" 
+// HOptionPane Error: 'boost::filesystem::remove: The process cannot access the file because it is being used by another process: "E:/Acadamics/Semester 7/HDL/HDL-project/ HDL-mean-filter/HDL-mean-filter.sim/sim_1/behav/xsim/simulate.log" (Run Simulation)'
+// 'd' command handler elapsed time: 6 seconds
+selectButton("OptionPane.button", "OK"); // JButton (A, G)
+selectButton(PAResourceTtoZ.TaskBanner_CLOSE, (String) null); // k (aA, cr)
+closeTask("Simulation", "Behavioral Simulation - Functional - sim_1 - bram_tb", "DesignTask.SIMULATION");
+// A (cr): Confirm Close: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+// bB (cr):  Close : addNotify
+// TclEventType: WAVEFORM_CLOSE_WCFG
+dismissDialog("Confirm Close"); // A (cr)
+// TclEventType: SIMULATION_CLOSE_SIMULATION
+// Tcl Message: close_sim 
+// Tcl Message: INFO: [Simtcl 6-16] Simulation closed 
+dismissDialog("Close"); // bB (cr)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 10, false); // u (O, cr)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // ai (ao, cr)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// e (cr):  Run Simulation : addNotify
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// Tcl Message: launch_simulation 
+// Tcl Message: Command: launch_simulation  
+// Tcl Message: "xvlog --incr --relax -prj mean_filter_with_bram_tb_vlog.prj" "xvhdl --incr --relax -prj mean_filter_with_bram_tb_vhdl.prj" 
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: INFO: [VRFC 10-163] Analyzing VHDL file "E:/Acadamics/Semester 7/HDL/HDL-project/HDL-mean-filter/HDL-mean-filter.srcs/sources_1/new/mean_filter.vhd" into library xil_defaultlib INFO: [VRFC 10-3107] analyzing entity 'mean_filter' INFO: [VRFC 10-163] Analyzing VHDL file "E:/Acadamics/Semester 7/HDL/HDL-project/HDL-mean-filter/HDL-mean-filter.srcs/sources_1/new/mean_filter_with_bram.vhd" into library xil_defaultlib INFO: [VRFC 10-3107] analyzing entity 'mean_filter_with_bram' INFO: [VRFC 10-163] Analyzing VHDL file "E:/Acadamics/Semester 7/HDL/HDL-project/HDL-mean-filter/HDL-mean-filter.srcs/sim_1/new/mean_filter_with_bram_tb.vhd" into library xil_defaultlib INFO: [VRFC 10-3107] analyzing entity 'mean_filter_with_bram_tb' 
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '2' seconds INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/Acadamics/Semester 7/HDL/HDL-project/HDL-mean-filter/HDL-mean-filter.sim/sim_1/behav/xsim' 
+// TclEventType: LAUNCH_SIM
+// Tcl Message: INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds INFO: [USF-XSim-99] Step results log file:'E:/Acadamics/Semester 7/HDL/HDL-project/HDL-mean-filter/HDL-mean-filter.sim/sim_1/behav/xsim/elaborate.log' 
+// Tcl Message: ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'E:/Acadamics/Semester 7/HDL/HDL-project/HDL-mean-filter/HDL-mean-filter.sim/sim_1/behav/xsim/elaborate.log' file for more information. ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation. 
+// Tcl Message: ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors. 
+// CommandFailedException: ERROR: [Common 17-69] Command failed: ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.  
+// HOptionPane Error: 'ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.  (Run Simulation)'
+// 'd' command handler elapsed time: 6 seconds
+selectButton("OptionPane.button", "OK"); // JButton (A, G)
+// a (cr): Critical Messages: addNotify
+selectList(PAResourceAtoD.CmdMsgDialog_MESSAGES, "[USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'E:/Acadamics/Semester 7/HDL/HDL-project/HDL-mean-filter/HDL-mean-filter.sim/sim_1/behav/xsim/elaborate.log' file for more information.", 0); // b (F, a)
+selectList(PAResourceAtoD.CmdMsgDialog_MESSAGES, "[USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'E:/Acadamics/Semester 7/HDL/HDL-project/HDL-mean-filter/HDL-mean-filter.sim/sim_1/behav/xsim/elaborate.log' file for more information.", 0); // b (F, a)
+selectList(PAResourceAtoD.CmdMsgDialog_MESSAGES, "[USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'E:/Acadamics/Semester 7/HDL/HDL-project/HDL-mean-filter/HDL-mean-filter.sim/sim_1/behav/xsim/elaborate.log' file for more information.", 0, false, false, false, false, true); // b (F, a) - Double Click
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Critical Messages"); // a (cr)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, General Messages, [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'E:/Acadamics/Semester 7/HDL/HDL-project/HDL-mean-filter/HDL-mean-filter.sim/sim_1/behav/xsim/elaborate.log' file for more information.. ]", 2, false); // ah (O, cr)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, General Messages, [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'E:/Acadamics/Semester 7/HDL/HDL-project/HDL-mean-filter/HDL-mean-filter.sim/sim_1/behav/xsim/elaborate.log' file for more information.. ]", 2, false, false, false, false, false, true); // ah (O, cr) - Double Click
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, General Messages, [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'E:/Acadamics/Semester 7/HDL/HDL-project/HDL-mean-filter/HDL-mean-filter.sim/sim_1/behav/xsim/elaborate.log' file for more information.. ]", 2, false); // ah (O, cr)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, General Messages, [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'E:/Acadamics/Semester 7/HDL/HDL-project/HDL-mean-filter/HDL-mean-filter.sim/sim_1/behav/xsim/elaborate.log' file for more information.. ]", 2, false, false, false, false, false, true); // ah (O, cr) - Double Click
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, General Messages, [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.. ]", 3, false); // ah (O, cr)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, General Messages, [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.. ]", 3, false, false, false, false, false, true); // ah (O, cr) - Double Click
+// Elapsed time: 11 seconds
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, General Messages, [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'E:/Acadamics/Semester 7/HDL/HDL-project/HDL-mean-filter/HDL-mean-filter.sim/sim_1/behav/xsim/elaborate.log' file for more information.. ]", 2, false); // ah (O, cr)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, General Messages, [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'E:/Acadamics/Semester 7/HDL/HDL-project/HDL-mean-filter/HDL-mean-filter.sim/sim_1/behav/xsim/elaborate.log' file for more information.. ]", 2, false, false, false, false, false, true); // ah (O, cr) - Double Click
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Simulation, sim_1]", 5, true); // ah (O, cr) - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Simulation, sim_1]", 5, true, false, false, false, false, true); // ah (O, cr) - Double Click - Node
+expandTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Simulation, sim_1]", 5); // ah (O, cr)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Simulation, sim_1, [VRFC 10-3353] formal port 'en' has no actual or default value [E:/Acadamics/Semester 7/HDL/HDL-project/HDL-mean-filter/HDL-mean-filter.srcs/sources_1/new/mean_filter_with_bram.vhd:38]. ]", 6, false); // ah (O, cr)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Simulation, sim_1, [VRFC 10-3353] formal port 'en' has no actual or default value [E:/Acadamics/Semester 7/HDL/HDL-project/HDL-mean-filter/HDL-mean-filter.srcs/sources_1/new/mean_filter_with_bram.vhd:38]. ]", 6, false, false, false, false, false, true); // ah (O, cr) - Double Click
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Simulation, sim_1, [VRFC 10-3353] formal port 'en' has no actual or default value [E:/Acadamics/Semester 7/HDL/HDL-project/HDL-mean-filter/HDL-mean-filter.srcs/sources_1/new/mean_filter_with_bram.vhd:38]. ]", 6, false); // ah (O, cr)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;E:\Acadamics\Semester 7\HDL\HDL-project\HDL-mean-filter\HDL-mean-filter.srcs\sources_1\new\mean_filter_with_bram.vhd;-;;-;16;-;line;-;38;-;;-;16;-;"); // ah (O, cr)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Simulation, sim_1, [VRFC 10-3353] formal port 'en' has no actual or default value [E:/Acadamics/Semester 7/HDL/HDL-project/HDL-mean-filter/HDL-mean-filter.srcs/sources_1/new/mean_filter_with_bram.vhd:38]. ]", 6, false, false, false, false, false, true); // ah (O, cr) - Double Click
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Simulation, sim_1, [VRFC 10-3353] formal port 'en' has no actual or default value [E:/Acadamics/Semester 7/HDL/HDL-project/HDL-mean-filter/HDL-mean-filter.srcs/sources_1/new/mean_filter_with_bram.vhd:38]. ]", 6, false); // ah (O, cr)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;E:\Acadamics\Semester 7\HDL\HDL-project\HDL-mean-filter\HDL-mean-filter.srcs\sources_1\new\mean_filter_with_bram.vhd;-;;-;16;-;line;-;38;-;;-;16;-;"); // ah (O, cr)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Simulation, sim_1, [VRFC 10-3353] formal port 'en' has no actual or default value [E:/Acadamics/Semester 7/HDL/HDL-project/HDL-mean-filter/HDL-mean-filter.srcs/sources_1/new/mean_filter_with_bram.vhd:38]. ]", 6, false); // ah (O, cr)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;E:\Acadamics\Semester 7\HDL\HDL-project\HDL-mean-filter\HDL-mean-filter.srcs\sources_1\new\mean_filter_with_bram.vhd;-;;-;16;-;line;-;38;-;;-;16;-;"); // ah (O, cr)
+// HMemoryUtils.trashcanNow. Engine heap size: 852 MB. GUI used memory: 74 MB. Current time: 7/18/20, 11:21:04 AM IST
+// Elapsed time: 1397 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "bram.vhd", 2); // i (h, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mean_filter_with_bram_tb.vhd", 3); // i (h, cr)
+// Elapsed time: 12 seconds
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Simulation, sim_1, [VRFC 10-3353] formal port 'en' has no actual or default value [E:/Acadamics/Semester 7/HDL/HDL-project/HDL-mean-filter/HDL-mean-filter.srcs/sources_1/new/mean_filter_with_bram.vhd:38]. ]", 6, false); // ah (O, cr)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;E:\Acadamics\Semester 7\HDL\HDL-project\HDL-mean-filter\HDL-mean-filter.srcs\sources_1\new\mean_filter_with_bram.vhd;-;;-;16;-;line;-;38;-;;-;16;-;"); // ah (O, cr)
+unmaximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // P (aI, cr)
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // P (aI, cr)
+selectCodeEditor("mean_filter_with_bram.vhd", 506, 254); // ch (w, cr)
+typeControlKey((HResource) null, "mean_filter_with_bram.vhd", 'c'); // ch (w, cr)
+// Elapsed time: 58 seconds
+selectCodeEditor("mean_filter_with_bram.vhd", 644, 251); // ch (w, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mean_filter_with_bram_tb.vhd", 3); // i (h, cr)
+selectCodeEditor("mean_filter_with_bram_tb.vhd", 82, 553); // ch (w, cr)
+typeControlKey((HResource) null, "mean_filter_with_bram_tb.vhd", 'v'); // ch (w, cr)
+selectCodeEditor("mean_filter_with_bram_tb.vhd", 50, 57); // ch (w, cr)
+selectCodeEditor("mean_filter_with_bram_tb.vhd", 92, 96); // ch (w, cr)
+selectCodeEditor("mean_filter_with_bram_tb.vhd", 56, 65); // ch (w, cr)
+selectCodeEditor("mean_filter_with_bram_tb.vhd", 37, 63); // ch (w, cr)
+typeControlKey((HResource) null, "mean_filter_with_bram_tb.vhd", 'c'); // ch (w, cr)
+selectCodeEditor("mean_filter_with_bram_tb.vhd", 43, 328); // ch (w, cr)
+typeControlKey((HResource) null, "mean_filter_with_bram_tb.vhd", 'v'); // ch (w, cr)
+selectCodeEditor("mean_filter_with_bram_tb.vhd", 243, 496); // ch (w, cr)
+selectCodeEditor("mean_filter_with_bram_tb.vhd", 417, 287); // ch (w, cr)
+// Elapsed time: 12 seconds
+selectCodeEditor("mean_filter_with_bram_tb.vhd", 48, 373); // ch (w, cr)
+selectCodeEditor("mean_filter_with_bram_tb.vhd", 493, 294); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 15 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "bram.vhd", 2); // i (h, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "bram_tb.vhd", 4); // i (h, cr)
+selectCodeEditor("bram_tb.vhd", 20, 220); // ch (w, cr)
+typeControlKey((HResource) null, "bram_tb.vhd", 'c'); // ch (w, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mean_filter_with_bram_tb.vhd", 3); // i (h, cr)
+selectCodeEditor("mean_filter_with_bram_tb.vhd", 541, 179); // ch (w, cr)
+typeControlKey((HResource) null, "mean_filter_with_bram_tb.vhd", 'v'); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("mean_filter_with_bram_tb.vhd", 157, 332); // ch (w, cr)
+selectCodeEditor("mean_filter_with_bram_tb.vhd", 157, 332, false, false, false, false, true); // ch (w, cr) - Double Click
+typeControlKey((HResource) null, "mean_filter_with_bram_tb.vhd", 'c'); // ch (w, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "bram_tb.vhd", 4); // i (h, cr)
+selectCodeEditor("bram_tb.vhd", 530, 212); // ch (w, cr)
+selectCodeEditor("bram_tb.vhd", 40, 387); // ch (w, cr)
+typeControlKey((HResource) null, "bram_tb.vhd", 'c'); // ch (w, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mean_filter_with_bram_tb.vhd", 3); // i (h, cr)
+selectCodeEditor("mean_filter_with_bram_tb.vhd", 285, 222); // ch (w, cr)
+typeControlKey((HResource) null, "mean_filter_with_bram_tb.vhd", 'v'); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "bram_tb.vhd", 4); // i (h, cr)
+selectCodeEditor("bram_tb.vhd", 251, 354); // ch (w, cr)
+selectCodeEditor("bram_tb.vhd", 41, 413); // ch (w, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mean_filter_with_bram_tb.vhd", 3); // i (h, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mean_filter_with_bram.vhd", 1); // i (h, cr)
+selectCodeEditor("mean_filter_with_bram.vhd", 495, 242); // ch (w, cr)
+unMinimizeFrame(PAResourceOtoP.PAViews_SOURCES, "Sources"); // aA
+// Elapsed time: 12 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, mean_filter_with_bram(Behavioral) (mean_filter_with_bram.vhd), mean_filter_1 : mean_filter(Behavioral) (mean_filter.vhd)]", 2, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, mean_filter_with_bram(Behavioral) (mean_filter_with_bram.vhd), mean_filter_1 : mean_filter(Behavioral) (mean_filter.vhd)]", 2, false, false, false, false, false, true); // B (F, cr) - Double Click
+unmaximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // P (aI, cr)
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // P (aI, cr)
+selectCodeEditor("mean_filter.vhd", 535, 209); // ch (w, cr)
+// Elapsed time: 24 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "bram_tb.vhd", 4); // i (h, cr)
+selectCodeEditor("bram_tb.vhd", 626, 380); // ch (w, cr)
+// Elapsed time: 14 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mean_filter_with_bram_tb.vhd", 3); // i (h, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mean_filter_with_bram.vhd", 1); // i (h, cr)
+selectCodeEditor("mean_filter_with_bram.vhd", 243, 371); // ch (w, cr)
+selectCodeEditor("mean_filter_with_bram.vhd", 243, 371, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("mean_filter_with_bram.vhd", 219, 515); // ch (w, cr)
+selectCodeEditor("mean_filter_with_bram.vhd", 237, 511); // ch (w, cr)
+selectCodeEditor("mean_filter_with_bram.vhd", 237, 511, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("mean_filter_with_bram.vhd", 245, 515); // ch (w, cr)
+selectCodeEditor("mean_filter_with_bram.vhd", 245, 515, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("mean_filter_with_bram.vhd", 486, 420); // ch (w, cr)
+selectCodeEditor("mean_filter_with_bram.vhd", 236, 486); // ch (w, cr)
+selectCodeEditor("mean_filter_with_bram.vhd", 236, 486, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("mean_filter_with_bram.vhd", 245, 488); // ch (w, cr)
+selectCodeEditor("mean_filter_with_bram.vhd", 245, 488, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("mean_filter_with_bram.vhd", 240, 289); // ch (w, cr)
+selectCodeEditor("mean_filter_with_bram.vhd", 240, 289, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("mean_filter_with_bram.vhd", 583, 192); // ch (w, cr)
+selectCodeEditor("mean_filter_with_bram.vhd", 396, 279); // ch (w, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mean_filter.vhd", 5); // i (h, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "bram_tb.vhd", 4); // i (h, cr)
+selectCodeEditor("bram_tb.vhd", 834, 255); // ch (w, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mean_filter.vhd", 5); // i (h, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mean_filter_with_bram_tb.vhd", 3); // i (h, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mean_filter_with_bram.vhd", 1); // i (h, cr)
+selectCodeEditor("mean_filter_with_bram.vhd", 591, 135); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mean_filter_with_bram_tb.vhd", 3); // i (h, cr)
+selectCodeEditor("mean_filter_with_bram_tb.vhd", 199, 233); // ch (w, cr)
+selectCodeEditor("mean_filter_with_bram_tb.vhd", 596, 365); // ch (w, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mean_filter_with_bram.vhd", 1); // i (h, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mean_filter_with_bram_tb.vhd", 3); // i (h, cr)
+selectCodeEditor("mean_filter_with_bram_tb.vhd", 287, 237); // ch (w, cr)
+selectCodeEditor("mean_filter_with_bram_tb.vhd", 142, 289); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("mean_filter_with_bram_tb.vhd", 798, 210); // ch (w, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mean_filter_with_bram.vhd", 1); // i (h, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "bram_tb.vhd", 4); // i (h, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mean_filter_with_bram_tb.vhd", 3); // i (h, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mean_filter_with_bram.vhd", 1); // i (h, cr)
+selectCodeEditor("mean_filter_with_bram.vhd", 248, 291); // ch (w, cr)
+selectCodeEditor("mean_filter_with_bram.vhd", 248, 291, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("mean_filter_with_bram.vhd", 494, 174); // ch (w, cr)
+selectCodeEditor("mean_filter_with_bram.vhd", 245, 470); // ch (w, cr)
+selectCodeEditor("mean_filter_with_bram.vhd", 245, 470, false, false, false, false, true); // ch (w, cr) - Double Click
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 11 seconds
+selectCodeEditor("mean_filter_with_bram.vhd", 693, 399); // ch (w, cr)
+selectCodeEditor("mean_filter_with_bram.vhd", 259, 460); // ch (w, cr)
+selectCodeEditor("mean_filter_with_bram.vhd", 708, 196); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mean_filter.vhd", 5); // i (h, cr)
+selectCodeEditor("mean_filter.vhd", 687, 106); // ch (w, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "bram_tb.vhd", 4); // i (h, cr)
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mean_filter_with_bram_tb.vhd", 3); // i (h, cr)
+selectCodeEditor("mean_filter_with_bram_tb.vhd", 722, 77); // ch (w, cr)
+// Elapsed time: 17 seconds
+selectCodeEditor("mean_filter_with_bram_tb.vhd", 446, 344); // ch (w, cr)
+selectCodeEditor("mean_filter_with_bram_tb.vhd", 377, 396); // ch (w, cr)
+selectCodeEditor("mean_filter_with_bram_tb.vhd", 317, 438); // ch (w, cr)
+selectCodeEditor("mean_filter_with_bram_tb.vhd", 372, 444); // ch (w, cr)
+selectCodeEditor("mean_filter_with_bram_tb.vhd", 576, 407); // ch (w, cr)
+selectCodeEditor("mean_filter_with_bram_tb.vhd", 577, 390); // ch (w, cr)
+selectCodeEditor("mean_filter_with_bram_tb.vhd", 584, 416); // ch (w, cr)
+selectCodeEditor("mean_filter_with_bram_tb.vhd", 583, 413, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("mean_filter_with_bram_tb.vhd", 100, 422); // ch (w, cr)
+selectCodeEditor("mean_filter_with_bram_tb.vhd", 100, 422, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("mean_filter_with_bram_tb.vhd", 100, 422); // ch (w, cr)
+selectCodeEditor("mean_filter_with_bram_tb.vhd", 100, 422); // ch (w, cr)
+selectCodeEditor("mean_filter_with_bram_tb.vhd", 100, 422); // ch (w, cr)
+selectCodeEditor("mean_filter_with_bram_tb.vhd", 99, 416); // ch (w, cr)
+selectCodeEditor("mean_filter_with_bram_tb.vhd", 94, 433); // ch (w, cr)
+selectCodeEditor("mean_filter_with_bram_tb.vhd", 97, 438); // ch (w, cr)
+selectCodeEditor("mean_filter_with_bram_tb.vhd", 95, 440); // ch (w, cr)
+selectCodeEditor("mean_filter_with_bram_tb.vhd", 396, 446); // ch (w, cr)
+selectCodeEditor("mean_filter_with_bram_tb.vhd", 562, 411); // ch (w, cr)
+selectCodeEditor("mean_filter_with_bram_tb.vhd", 99, 402); // ch (w, cr)
+selectCodeEditor("mean_filter_with_bram_tb.vhd", 101, 402, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("mean_filter_with_bram_tb.vhd", 614, 402); // ch (w, cr)
+selectCodeEditor("mean_filter_with_bram_tb.vhd", 614, 443); // ch (w, cr)
+selectCodeEditor("mean_filter_with_bram_tb.vhd", 614, 443); // ch (w, cr)
+selectCodeEditor("mean_filter_with_bram_tb.vhd", 606, 469); // ch (w, cr)
+selectCodeEditor("mean_filter_with_bram_tb.vhd", 606, 469, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("mean_filter_with_bram_tb.vhd", 606, 469); // ch (w, cr)
+selectCodeEditor("mean_filter_with_bram_tb.vhd", 606, 469); // ch (w, cr)
+selectCodeEditor("mean_filter_with_bram_tb.vhd", 587, 488); // ch (w, cr)
+selectCodeEditor("mean_filter_with_bram_tb.vhd", 555, 528); // ch (w, cr)
+selectCodeEditor("mean_filter_with_bram_tb.vhd", 542, 528); // ch (w, cr)
+selectCodeEditor("mean_filter_with_bram_tb.vhd", 532, 491); // ch (w, cr)
+selectCodeEditor("mean_filter_with_bram_tb.vhd", 499, 536); // ch (w, cr)
+selectCodeEditor("mean_filter_with_bram_tb.vhd", 454, 533); // ch (w, cr)
+selectCodeEditor("mean_filter_with_bram_tb.vhd", 12, 539); // ch (w, cr)
+selectCodeEditor("mean_filter_with_bram_tb.vhd", 3, 453); // ch (w, cr)
+selectCodeEditor("mean_filter_with_bram_tb.vhd", 14, 422); // ch (w, cr)
+selectCodeEditor("mean_filter_with_bram_tb.vhd", 28, 389); // ch (w, cr)
+selectCodeEditor("mean_filter_with_bram_tb.vhd", 47, 350); // ch (w, cr)
+selectCodeEditor("mean_filter_with_bram_tb.vhd", 91, 309); // ch (w, cr)
+selectCodeEditor("mean_filter_with_bram_tb.vhd", 69, 346); // ch (w, cr)
+selectCodeEditor("mean_filter_with_bram_tb.vhd", 20, 347); // ch (w, cr)
+selectCodeEditor("mean_filter_with_bram_tb.vhd", 3, 329); // ch (w, cr)
+selectCodeEditor("mean_filter_with_bram_tb.vhd", 189, 337); // ch (w, cr)
+selectCodeEditor("mean_filter_with_bram_tb.vhd", 150, 500); // ch (w, cr)
+selectCodeEditor("mean_filter_with_bram_tb.vhd", 91, 548); // ch (w, cr)
+selectCodeEditor("mean_filter_with_bram_tb.vhd", 0, 560); // ch (w, cr)
+selectCodeEditor("mean_filter_with_bram_tb.vhd", 155, 257); // ch (w, cr)
+selectCodeEditor("mean_filter_with_bram_tb.vhd", 99, 122); // ch (w, cr)
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // aa (q, cr)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // aa (q, cr)
+selectMenu(PAResourceItoN.MainMenuMgr_EDIT, "Edit"); // aa (q, cr)
+dismissMenu(PAResourceItoN.MainMenuMgr_EDIT, "Edit"); // aa (q, cr)
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // aa (q, cr)
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // aa (q, cr)
+selectCodeEditor("mean_filter_with_bram_tb.vhd", 764, 253); // ch (w, cr)
+selectCodeEditor("mean_filter_with_bram_tb.vhd", 744, 226); // ch (w, cr)
+selectCodeEditor("mean_filter_with_bram_tb.vhd", 694, 285); // ch (w, cr)
+selectCodeEditor("mean_filter_with_bram_tb.vhd", 685, 274); // ch (w, cr)
+selectCodeEditor("mean_filter_with_bram_tb.vhd", 681, 255); // ch (w, cr)
+selectCodeEditor("mean_filter_with_bram_tb.vhd", 682, 241); // ch (w, cr)
+selectCodeEditor("mean_filter_with_bram_tb.vhd", 663, 260); // ch (w, cr)
+selectCodeEditor("mean_filter_with_bram_tb.vhd", 645, 276); // ch (w, cr)
+selectCodeEditor("mean_filter_with_bram_tb.vhd", 644, 264); // ch (w, cr)
+selectCodeEditor("mean_filter_with_bram_tb.vhd", 643, 250); // ch (w, cr)
+selectCodeEditor("mean_filter_with_bram_tb.vhd", 643, 244); // ch (w, cr)
+selectCodeEditor("mean_filter_with_bram_tb.vhd", 627, 253); // ch (w, cr)
+selectCodeEditor("mean_filter_with_bram_tb.vhd", 600, 276); // ch (w, cr)
+// Elapsed time: 23 seconds
+selectCodeEditor("mean_filter_with_bram_tb.vhd", 1220, 300); // ch (w, cr)
+selectCodeEditor("mean_filter_with_bram_tb.vhd", 1206, 317); // ch (w, cr)
+selectCodeEditor("mean_filter_with_bram_tb.vhd", 1193, 336); // ch (w, cr)
+// Elapsed time: 50 seconds
+selectCodeEditor("mean_filter_with_bram_tb.vhd", 1081, 394, false, false, false, true, false); // ch (w, cr) - Popup Trigger
+selectCodeEditor("mean_filter_with_bram_tb.vhd", 792, 365); // ch (w, cr)
+// Elapsed time: 612 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 10, false); // u (O, cr)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // ai (ao, cr)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// al (cr): Save Project: addNotify
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a (al)
+// bB (cr):  Save Constraints : addNotify
+// TclEventType: DG_GRAPH_STALE
+// e (cr):  Run Simulation : addNotify
+dismissDialog("Save Project"); // al (cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// Tcl Message: launch_simulation 
+// Tcl Message: Command: launch_simulation  
+// Tcl Message: "xvlog --incr --relax -prj mean_filter_with_bram_tb_vlog.prj" "xvhdl --incr --relax -prj mean_filter_with_bram_tb_vhdl.prj" 
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: INFO: [VRFC 10-163] Analyzing VHDL file "E:/Acadamics/Semester 7/HDL/HDL-project/HDL-mean-filter/HDL-mean-filter.srcs/sources_1/new/mean_filter_with_bram.vhd" into library xil_defaultlib INFO: [VRFC 10-3107] analyzing entity 'mean_filter_with_bram' INFO: [VRFC 10-163] Analyzing VHDL file "E:/Acadamics/Semester 7/HDL/HDL-project/HDL-mean-filter/HDL-mean-filter.srcs/sim_1/new/mean_filter_with_bram_tb.vhd" into library xil_defaultlib INFO: [VRFC 10-3107] analyzing entity 'mean_filter_with_bram_tb' 
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '2' seconds INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/Acadamics/Semester 7/HDL/HDL-project/HDL-mean-filter/HDL-mean-filter.sim/sim_1/behav/xsim' 
+// TclEventType: LAUNCH_SIM
+// Tcl Message: INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds INFO: [USF-XSim-99] Step results log file:'E:/Acadamics/Semester 7/HDL/HDL-project/HDL-mean-filter/HDL-mean-filter.sim/sim_1/behav/xsim/elaborate.log' 
+// Tcl Message: ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'E:/Acadamics/Semester 7/HDL/HDL-project/HDL-mean-filter/HDL-mean-filter.sim/sim_1/behav/xsim/elaborate.log' file for more information. ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation. 
+// Tcl Message: ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors. 
+// CommandFailedException: ERROR: [Common 17-69] Command failed: ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.  
+// HOptionPane Error: 'ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.  (Run Simulation)'
+// 'd' command handler elapsed time: 7 seconds
+selectButton("OptionPane.button", "OK"); // JButton (A, G)
+// a (cr): Critical Messages: addNotify
+selectButton(PAResourceAtoD.CmdMsgDialog_OPEN_MESSAGES_VIEW, "Open Messages View"); // a (a)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Critical Messages"); // a (cr)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, General Messages, [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.. ]", 3, true); // ah (O, cr) - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Simulation, sim_1]", 5, true); // ah (O, cr) - Node
+collapseTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Simulation, sim_1]", 5); // ah (O, cr)
+expandTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Simulation, sim_1]", 5); // ah (O, cr)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Simulation, sim_1, [VRFC 10-3353] formal port 'en' has no actual or default value [E:/Acadamics/Semester 7/HDL/HDL-project/HDL-mean-filter/HDL-mean-filter.srcs/sources_1/new/mean_filter_with_bram.vhd:38]. ]", 6, false); // ah (O, cr)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;E:\Acadamics\Semester 7\HDL\HDL-project\HDL-mean-filter\HDL-mean-filter.srcs\sources_1\new\mean_filter_with_bram.vhd;-;;-;16;-;line;-;38;-;;-;16;-;"); // ah (O, cr)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Simulation, sim_1, [VRFC 10-3353] formal port 'en' has no actual or default value [E:/Acadamics/Semester 7/HDL/HDL-project/HDL-mean-filter/HDL-mean-filter.srcs/sources_1/new/mean_filter_with_bram.vhd:38]. ]", 6, false, false, false, false, false, true); // ah (O, cr) - Double Click
+// Elapsed time: 50 seconds
+selectCodeEditor("mean_filter_with_bram.vhd", 338, 189); // ch (w, cr)
+selectCodeEditor("mean_filter_with_bram.vhd", 469, 204); // ch (w, cr)
+selectCodeEditor("mean_filter_with_bram.vhd", 718, 205); // ch (w, cr)
+selectCodeEditor("mean_filter_with_bram.vhd", 610, 209); // ch (w, cr)
+// Elapsed time: 15 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "bram.vhd", 2); // i (h, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mean_filter.vhd", 4); // i (h, cr)
+selectCodeEditor("mean_filter.vhd", 567, 215); // ch (w, cr)
+unMinimizeFrame(PAResourceOtoP.PAViews_SOURCES, "Sources"); // aA
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, bram_tb(bench) (bram_tb.vhd)]", 14, true); // B (F, cr) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, bram_tb(bench) (bram_tb.vhd)]", 14, true, false, false, false, false, true); // B (F, cr) - Double Click - Node
+selectCodeEditor("bram_tb.vhd", 640, 197); // ch (w, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mean_filter_with_bram_tb.vhd", 3); // i (h, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "bram_tb.vhd", 5); // i (h, cr)
+// Elapsed time: 11 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mean_filter.vhd", 4); // i (h, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mean_filter_with_bram_tb.vhd", 3); // i (h, cr)
+selectCodeEditor("mean_filter_with_bram_tb.vhd", 583, 89); // ch (w, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mean_filter.vhd", 4); // i (h, cr)
+selectCodeEditor("mean_filter.vhd", 647, 207); // ch (w, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mean_filter_with_bram_tb.vhd", 3); // i (h, cr)
+// Elapsed time: 13 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "bram.vhd", 2); // i (h, cr)
+selectCodeEditor("bram.vhd", 523, 58); // ch (w, cr)
+// Elapsed time: 11 seconds
+selectCodeEditor("bram.vhd", 629, 233); // ch (w, cr)
+selectCodeEditor("bram.vhd", 632, 211); // ch (w, cr)
+// [GUI Memory]: 139 MB (+893kb) [01:35:44]
+// HMemoryUtils.trashcanNow. Engine heap size: 852 MB. GUI used memory: 72 MB. Current time: 7/18/20, 11:51:04 AM IST
+// Elapsed time: 419 seconds
+selectCodeEditor("bram.vhd", 625, 181); // ch (w, cr)
+// Elapsed time: 20 seconds
+selectCodeEditor("bram.vhd", 619, 304); // ch (w, cr)
+selectCodeEditor("bram.vhd", 631, 283); // ch (w, cr)
+selectCodeEditor("bram.vhd", 641, 260); // ch (w, cr)
+selectCodeEditor("bram.vhd", 651, 238); // ch (w, cr)
+selectCodeEditor("bram.vhd", 658, 221); // ch (w, cr)
+selectCodeEditor("bram.vhd", 666, 201); // ch (w, cr)
+selectCodeEditor("bram.vhd", 672, 190); // ch (w, cr)
+selectCodeEditor("bram.vhd", 672, 212); // ch (w, cr)
+selectCodeEditor("bram.vhd", 672, 242); // ch (w, cr)
+selectCodeEditor("bram.vhd", 672, 273); // ch (w, cr)
+selectCodeEditor("bram.vhd", 669, 302); // ch (w, cr)
+selectCodeEditor("bram.vhd", 667, 318); // ch (w, cr)
+selectCodeEditor("bram.vhd", 669, 296); // ch (w, cr)
+selectCodeEditor("bram.vhd", 674, 273); // ch (w, cr)
+selectCodeEditor("bram.vhd", 661, 308); // ch (w, cr)
+selectCodeEditor("bram.vhd", 660, 293); // ch (w, cr)
+selectCodeEditor("bram.vhd", 662, 271); // ch (w, cr)
+selectCodeEditor("bram.vhd", 662, 236); // ch (w, cr)
+selectCodeEditor("bram.vhd", 662, 215); // ch (w, cr)
+// Elapsed time: 330 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "bram_tb.vhd", 5); // i (h, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mean_filter.vhd", 4); // i (h, cr)
+selectCodeEditor("mean_filter.vhd", 752, 344); // ch (w, cr)
+// Elapsed time: 15 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "bram_tb.vhd", 5); // i (h, cr)
+// Elapsed time: 10 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "bram.vhd", 2); // i (h, cr)
+selectCodeEditor("bram.vhd", 603, 90); // ch (w, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mean_filter_with_bram_tb.vhd", 3); // i (h, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mean_filter_with_bram.vhd", 1); // i (h, cr)
+selectCodeEditor("mean_filter_with_bram.vhd", 624, 258); // ch (w, cr)
+selectCodeEditor("mean_filter_with_bram.vhd", 487, 307); // ch (w, cr)
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+// Elapsed time: 31 seconds
+selectCodeEditor("mean_filter_with_bram.vhd", 450, 166); // ch (w, cr)
+// Elapsed time: 14 seconds
+selectCodeEditor("mean_filter_with_bram.vhd", 104, 244); // ch (w, cr)
+selectCodeEditor("mean_filter_with_bram.vhd", 556, 235); // ch (w, cr)
+typeControlKey((HResource) null, "mean_filter_with_bram.vhd", 'c'); // ch (w, cr)
+selectCodeEditor("mean_filter_with_bram.vhd", 655, 228); // ch (w, cr)
+typeControlKey((HResource) null, "mean_filter_with_bram.vhd", 'v'); // ch (w, cr)
+selectCodeEditor("mean_filter_with_bram.vhd", 127, 263); // ch (w, cr)
+selectCodeEditor("mean_filter_with_bram.vhd", 484, 239); // ch (w, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mean_filter.vhd", 4); // i (h, cr)
+selectCodeEditor("mean_filter.vhd", 299, 41); // ch (w, cr)
+typeControlKey((HResource) null, "mean_filter.vhd", 'c'); // ch (w, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mean_filter_with_bram_tb.vhd", 3); // i (h, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mean_filter_with_bram.vhd", 1); // i (h, cr)
+typeControlKey((HResource) null, "mean_filter_with_bram.vhd", 'v'); // ch (w, cr)
+selectCodeEditor("mean_filter_with_bram.vhd", 540, 231); // ch (w, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "bram_tb.vhd", 5); // i (h, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mean_filter_with_bram_tb.vhd", 3); // i (h, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mean_filter_with_bram.vhd", 1); // i (h, cr)
+// Elapsed time: 11 seconds
+selectCodeEditor("mean_filter_with_bram.vhd", 655, 197); // ch (w, cr)
+selectCodeEditor("mean_filter_with_bram.vhd", 584, 231); // ch (w, cr)
+selectCodeEditor("mean_filter_with_bram.vhd", 488, 68); // ch (w, cr)
+// Elapsed time: 15 seconds
+selectCodeEditor("mean_filter_with_bram.vhd", 93, 231); // ch (w, cr)
+selectCodeEditor("mean_filter_with_bram.vhd", 93, 231, false, false, false, false, true); // ch (w, cr) - Double Click
+typeControlKey((HResource) null, "mean_filter_with_bram.vhd", 'c'); // ch (w, cr)
+selectCodeEditor("mean_filter_with_bram.vhd", 245, 287); // ch (w, cr)
+selectCodeEditor("mean_filter_with_bram.vhd", 245, 287, false, false, false, false, true); // ch (w, cr) - Double Click
+typeControlKey((HResource) null, "mean_filter_with_bram.vhd", 'v'); // ch (w, cr)
+selectCodeEditor("mean_filter_with_bram.vhd", 115, 167); // ch (w, cr)
+selectCodeEditor("mean_filter_with_bram.vhd", 114, 166, false, false, false, false, true); // ch (w, cr) - Double Click
+typeControlKey((HResource) null, "mean_filter_with_bram.vhd", 'c'); // ch (w, cr)
+selectCodeEditor("mean_filter_with_bram.vhd", 244, 490); // ch (w, cr)
+selectCodeEditor("mean_filter_with_bram.vhd", 244, 490, false, false, false, false, true); // ch (w, cr) - Double Click
+typeControlKey((HResource) null, "mean_filter_with_bram.vhd", 'v'); // ch (w, cr)
+selectCodeEditor("mean_filter_with_bram.vhd", 392, 398); // ch (w, cr)
+selectCodeEditor("mean_filter_with_bram.vhd", 99, 215); // ch (w, cr)
+selectCodeEditor("mean_filter_with_bram.vhd", 99, 215, false, false, false, false, true); // ch (w, cr) - Double Click
+typeControlKey((HResource) null, "mean_filter_with_bram.vhd", 'c'); // ch (w, cr)
+selectCodeEditor("mean_filter_with_bram.vhd", 76, 388); // ch (w, cr)
+typeControlKey((HResource) null, "mean_filter_with_bram.vhd", 'v'); // ch (w, cr)
+selectCodeEditor("mean_filter_with_bram.vhd", 615, 179); // ch (w, cr)
+selectCodeEditor("mean_filter_with_bram.vhd", 610, 195); // ch (w, cr)
+selectCodeEditor("mean_filter_with_bram.vhd", 609, 206); // ch (w, cr)
+// Elapsed time: 10 seconds
+selectCodeEditor("mean_filter_with_bram.vhd", 109, 257); // ch (w, cr)
+selectCodeEditor("mean_filter_with_bram.vhd", 125, 256); // ch (w, cr)
+selectCodeEditor("mean_filter_with_bram.vhd", 203, 238); // ch (w, cr)
+selectCodeEditor("mean_filter_with_bram.vhd", 100, 140); // ch (w, cr)
+selectCodeEditor("mean_filter_with_bram.vhd", 100, 140, false, false, false, false, true); // ch (w, cr) - Double Click
+typeControlKey((HResource) null, "mean_filter_with_bram.vhd", 'c'); // ch (w, cr)
+selectCodeEditor("mean_filter_with_bram.vhd", 172, 306); // ch (w, cr)
+typeControlKey((HResource) null, "mean_filter_with_bram.vhd", 'v'); // ch (w, cr)
+// Elapsed time: 26 seconds
+selectCodeEditor("mean_filter_with_bram.vhd", 118, 291); // ch (w, cr)
+selectCodeEditor("mean_filter_with_bram.vhd", 526, 137); // ch (w, cr)
+typeControlKey((HResource) null, "mean_filter_with_bram.vhd", 'c'); // ch (w, cr)
+selectCodeEditor("mean_filter_with_bram.vhd", 674, 139); // ch (w, cr)
+selectCodeEditor("mean_filter_with_bram.vhd", 161, 64); // ch (w, cr)
+selectCodeEditor("mean_filter_with_bram.vhd", 119, 67); // ch (w, cr)
+typeControlKey((HResource) null, "mean_filter_with_bram.vhd", 'c'); // ch (w, cr)
+selectCodeEditor("mean_filter_with_bram.vhd", 565, 224); // ch (w, cr)
+typeControlKey((HResource) null, "mean_filter_with_bram.vhd", 'v'); // ch (w, cr)
+selectCodeEditor("mean_filter_with_bram.vhd", 99, 237); // ch (w, cr)
+selectCodeEditor("mean_filter_with_bram.vhd", 324, 236); // ch (w, cr)
+typeControlKey((HResource) null, "mean_filter_with_bram.vhd", 'c'); // ch (w, cr)
+selectCodeEditor("mean_filter_with_bram.vhd", 313, 235); // ch (w, cr)
+// Elapsed time: 13 seconds
+selectCodeEditor("mean_filter_with_bram.vhd", 168, 242); // ch (w, cr)
+selectCodeEditor("mean_filter_with_bram.vhd", 168, 242, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("mean_filter_with_bram.vhd", 283, 237); // ch (w, cr)
+typeControlKey((HResource) null, "mean_filter_with_bram.vhd", 'c'); // ch (w, cr)
+selectCodeEditor("mean_filter_with_bram.vhd", 370, 226); // ch (w, cr)
+typeControlKey((HResource) null, "mean_filter_with_bram.vhd", 'v'); // ch (w, cr)
+selectCodeEditor("mean_filter_with_bram.vhd", 134, 265); // ch (w, cr)
+selectCodeEditor("mean_filter_with_bram.vhd", 96, 242); // ch (w, cr)
+selectCodeEditor("mean_filter_with_bram.vhd", 96, 242, false, false, false, false, true); // ch (w, cr) - Double Click
+typeControlKey((HResource) null, "mean_filter_with_bram.vhd", 'c'); // ch (w, cr)
+selectCodeEditor("mean_filter_with_bram.vhd", 228, 334); // ch (w, cr)
+selectCodeEditor("mean_filter_with_bram.vhd", 238, 334); // ch (w, cr)
+selectCodeEditor("mean_filter_with_bram.vhd", 238, 334, false, false, false, false, true); // ch (w, cr) - Double Click
+typeControlKey((HResource) null, "mean_filter_with_bram.vhd", 'v'); // ch (w, cr)
+selectCodeEditor("mean_filter_with_bram.vhd", 235, 462); // ch (w, cr)
+selectCodeEditor("mean_filter_with_bram.vhd", 235, 462, false, false, false, false, true); // ch (w, cr) - Double Click
+typeControlKey((HResource) null, "mean_filter_with_bram.vhd", 'v'); // ch (w, cr)
+selectCodeEditor("mean_filter_with_bram.vhd", 115, 123); // ch (w, cr)
+selectCodeEditor("mean_filter_with_bram.vhd", 115, 123, false, false, false, false, true); // ch (w, cr) - Double Click
+typeControlKey((HResource) null, "mean_filter_with_bram.vhd", 'c'); // ch (w, cr)
+selectCodeEditor("mean_filter_with_bram.vhd", 256, 465); // ch (w, cr)
+selectCodeEditor("mean_filter_with_bram.vhd", 256, 465, false, false, false, false, true); // ch (w, cr) - Double Click
+typeControlKey((HResource) null, "mean_filter_with_bram.vhd", 'v'); // ch (w, cr)
+selectCodeEditor("mean_filter_with_bram.vhd", 548, 414); // ch (w, cr)
+selectCodeEditor("mean_filter_with_bram.vhd", 169, 304); // ch (w, cr)
+typeControlKey((HResource) null, "mean_filter_with_bram.vhd", 'v'); // ch (w, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "bram_tb.vhd", 5); // i (h, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mean_filter_with_bram.vhd", 1); // i (h, cr)
+selectCodeEditor("mean_filter_with_bram.vhd", 175, 360); // ch (w, cr)
+typeControlKey((HResource) null, "mean_filter_with_bram.vhd", 'c'); // ch (w, cr)
+selectCodeEditor("mean_filter_with_bram.vhd", 44, 328); // ch (w, cr)
+typeControlKey((HResource) null, "mean_filter_with_bram.vhd", 'v'); // ch (w, cr)
+selectCodeEditor("mean_filter_with_bram.vhd", 65, 328); // ch (w, cr)
+selectCodeEditor("mean_filter_with_bram.vhd", 122, 339); // ch (w, cr)
+selectCodeEditor("mean_filter_with_bram.vhd", 322, 316); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 10, false); // u (O, cr)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // ai (ao, cr)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// e (cr):  Run Simulation : addNotify
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// Tcl Message: launch_simulation 
+// Tcl Message: Command: launch_simulation  
+// Tcl Message: "xvlog --incr --relax -prj mean_filter_with_bram_tb_vlog.prj" "xvhdl --incr --relax -prj mean_filter_with_bram_tb_vhdl.prj" 
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: INFO: [VRFC 10-163] Analyzing VHDL file "E:/Acadamics/Semester 7/HDL/HDL-project/HDL-mean-filter/HDL-mean-filter.srcs/sources_1/new/mean_filter_with_bram.vhd" into library xil_defaultlib INFO: [VRFC 10-3107] analyzing entity 'mean_filter_with_bram' 
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '2' seconds INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/Acadamics/Semester 7/HDL/HDL-project/HDL-mean-filter/HDL-mean-filter.sim/sim_1/behav/xsim' 
+// TclEventType: LAUNCH_SIM
+// Tcl Message: INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds INFO: [USF-XSim-99] Step results log file:'E:/Acadamics/Semester 7/HDL/HDL-project/HDL-mean-filter/HDL-mean-filter.sim/sim_1/behav/xsim/elaborate.log' 
+// Tcl Message: ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'E:/Acadamics/Semester 7/HDL/HDL-project/HDL-mean-filter/HDL-mean-filter.sim/sim_1/behav/xsim/elaborate.log' file for more information. ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation. 
+// Tcl Message: ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors. 
+// CommandFailedException: ERROR: [Common 17-69] Command failed: ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.  
+// HOptionPane Error: 'ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.  (Run Simulation)'
+// 'd' command handler elapsed time: 4 seconds
+selectButton("OptionPane.button", "OK"); // JButton (A, G)
+// a (cr): Critical Messages: addNotify
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (a)
+dismissDialog("Critical Messages"); // a (cr)
+unMinimizeFrame(PAResourceOtoP.PAViews_MESSAGES, "Messages"); // aA
+expandTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, General Messages, [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'E:/Acadamics/Semester 7/HDL/HDL-project/HDL-mean-filter/HDL-mean-filter.sim/sim_1/behav/xsim/elaborate.log' file for more information.. ]", 2); // ah (O, cr)
+collapseTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, General Messages, [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'E:/Acadamics/Semester 7/HDL/HDL-project/HDL-mean-filter/HDL-mean-filter.sim/sim_1/behav/xsim/elaborate.log' file for more information.. ]", 2); // ah (O, cr)
+collapseTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Simulation, sim_1]", 5); // ah (O, cr)
+expandTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Simulation, sim_1]", 5); // ah (O, cr)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Simulation, sim_1, [VRFC 10-3353] formal port 'en' has no actual or default value [E:/Acadamics/Semester 7/HDL/HDL-project/HDL-mean-filter/HDL-mean-filter.srcs/sources_1/new/mean_filter_with_bram.vhd:38]. ]", 6, false); // ah (O, cr)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Simulation, sim_1, [VRFC 10-3353] formal port 'en' has no actual or default value [E:/Acadamics/Semester 7/HDL/HDL-project/HDL-mean-filter/HDL-mean-filter.srcs/sources_1/new/mean_filter_with_bram.vhd:38]. ]", 6, false); // ah (O, cr)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Simulation, sim_1, [VRFC 10-3353] formal port 'en' has no actual or default value [E:/Acadamics/Semester 7/HDL/HDL-project/HDL-mean-filter/HDL-mean-filter.srcs/sources_1/new/mean_filter_with_bram.vhd:38]. ]", 6, false); // ah (O, cr)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation]", 9, true); // u (O, cr) - Node
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 10, false); // u (O, cr)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // ai (ao, cr)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// e (cr):  Run Simulation : addNotify
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// Tcl Message: launch_simulation 
+// Tcl Message: Command: launch_simulation  
+// Tcl Message: "xvlog --incr --relax -prj mean_filter_with_bram_tb_vlog.prj" "xvhdl --incr --relax -prj mean_filter_with_bram_tb_vhdl.prj" 
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '2' seconds INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/Acadamics/Semester 7/HDL/HDL-project/HDL-mean-filter/HDL-mean-filter.sim/sim_1/behav/xsim' 
+// TclEventType: LAUNCH_SIM
+// Tcl Message: INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds INFO: [USF-XSim-99] Step results log file:'E:/Acadamics/Semester 7/HDL/HDL-project/HDL-mean-filter/HDL-mean-filter.sim/sim_1/behav/xsim/elaborate.log' 
+// Tcl Message: ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'E:/Acadamics/Semester 7/HDL/HDL-project/HDL-mean-filter/HDL-mean-filter.sim/sim_1/behav/xsim/elaborate.log' file for more information. ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation. 
+// Tcl Message: ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors. 
+// CommandFailedException: ERROR: [Common 17-69] Command failed: ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.  
+// HOptionPane Error: 'ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.  (Run Simulation)'
+// 'd' command handler elapsed time: 4 seconds
+selectButton("OptionPane.button", "OK"); // JButton (A, G)
+// a (cr): Critical Messages: addNotify
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (a)
+dismissDialog("Critical Messages"); // a (cr)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Simulation, sim_1, [VRFC 10-3353] formal port 'en' has no actual or default value [E:/Acadamics/Semester 7/HDL/HDL-project/HDL-mean-filter/HDL-mean-filter.srcs/sources_1/new/mean_filter_with_bram.vhd:38]. ]", 7, false); // ah (O, cr)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;E:\Acadamics\Semester 7\HDL\HDL-project\HDL-mean-filter\HDL-mean-filter.srcs\sources_1\new\mean_filter_with_bram.vhd;-;;-;16;-;line;-;38;-;;-;16;-;"); // ah (O, cr)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Simulation, sim_1, [VRFC 10-3353] formal port 'en' has no actual or default value [E:/Acadamics/Semester 7/HDL/HDL-project/HDL-mean-filter/HDL-mean-filter.srcs/sources_1/new/mean_filter_with_bram.vhd:38]. ]", 7, false); // ah (O, cr)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;E:\Acadamics\Semester 7\HDL\HDL-project\HDL-mean-filter\HDL-mean-filter.srcs\sources_1\new\mean_filter_with_bram.vhd;-;;-;16;-;line;-;38;-;;-;16;-;"); // ah (O, cr)
+unmaximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // P (aI, cr)
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // P (aI, cr)
+// Elapsed time: 10 seconds
+selectCodeEditor("mean_filter_with_bram.vhd", 362, 265); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mean_filter_with_bram_tb.vhd", 3); // i (h, cr)
+selectCodeEditor("mean_filter_with_bram_tb.vhd", 383, 108); // ch (w, cr)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 10, false); // u (O, cr)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // ai (ao, cr)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// e (cr):  Run Simulation : addNotify
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// Tcl Message: launch_simulation 
+// Tcl Message: Command: launch_simulation  
+// Tcl Message: "xvlog --incr --relax -prj mean_filter_with_bram_tb_vlog.prj" "xvhdl --incr --relax -prj mean_filter_with_bram_tb_vhdl.prj" 
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: INFO: [VRFC 10-163] Analyzing VHDL file "E:/Acadamics/Semester 7/HDL/HDL-project/HDL-mean-filter/HDL-mean-filter.srcs/sources_1/new/mean_filter_with_bram.vhd" into library xil_defaultlib INFO: [VRFC 10-3107] analyzing entity 'mean_filter_with_bram' 
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '1' seconds INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/Acadamics/Semester 7/HDL/HDL-project/HDL-mean-filter/HDL-mean-filter.sim/sim_1/behav/xsim' 
+// TclEventType: LAUNCH_SIM
+// Tcl Message: INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds INFO: [USF-XSim-99] Step results log file:'E:/Acadamics/Semester 7/HDL/HDL-project/HDL-mean-filter/HDL-mean-filter.sim/sim_1/behav/xsim/elaborate.log' 
+// Tcl Message: ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'E:/Acadamics/Semester 7/HDL/HDL-project/HDL-mean-filter/HDL-mean-filter.sim/sim_1/behav/xsim/elaborate.log' file for more information. ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation. 
+// Tcl Message: ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors. 
+// CommandFailedException: ERROR: [Common 17-69] Command failed: ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.  
+// HOptionPane Error: 'ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.  (Run Simulation)'
+// 'd' command handler elapsed time: 4 seconds
+selectButton("OptionPane.button", "OK"); // JButton (A, G)
+// a (cr): Critical Messages: addNotify
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (a)
+dismissDialog("Critical Messages"); // a (cr)
+unMinimizeFrame(PAResourceOtoP.PAViews_MESSAGES, "Messages"); // aA
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 10, false); // u (O, cr)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // ai (ao, cr)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// e (cr):  Run Simulation : addNotify
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// Tcl Message: launch_simulation 
+// Tcl Message: Command: launch_simulation  
+// Tcl Message: "xvlog --incr --relax -prj mean_filter_with_bram_tb_vlog.prj" "xvhdl --incr --relax -prj mean_filter_with_bram_tb_vhdl.prj" 
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '2' seconds INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/Acadamics/Semester 7/HDL/HDL-project/HDL-mean-filter/HDL-mean-filter.sim/sim_1/behav/xsim' 
+// TclEventType: LAUNCH_SIM
+// Tcl Message: INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds INFO: [USF-XSim-99] Step results log file:'E:/Acadamics/Semester 7/HDL/HDL-project/HDL-mean-filter/HDL-mean-filter.sim/sim_1/behav/xsim/elaborate.log' 
+// Tcl Message: ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'E:/Acadamics/Semester 7/HDL/HDL-project/HDL-mean-filter/HDL-mean-filter.sim/sim_1/behav/xsim/elaborate.log' file for more information. ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation. 
+// Tcl Message: ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors. 
+// CommandFailedException: ERROR: [Common 17-69] Command failed: ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.  
+// HOptionPane Error: 'ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.  (Run Simulation)'
+// 'd' command handler elapsed time: 4 seconds
+selectButton("OptionPane.button", "OK"); // JButton (A, G)
+// a (cr): Critical Messages: addNotify
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (a)
+dismissDialog("Critical Messages"); // a (cr)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Simulation, sim_1, [VRFC 10-664] expression has 3 elements ; expected 4 [E:/Acadamics/Semester 7/HDL/HDL-project/HDL-mean-filter/HDL-mean-filter.srcs/sim_1/new/mean_filter_with_bram_tb.vhd:34]. ]", 7, false); // ah (O, cr)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;E:\Acadamics\Semester 7\HDL\HDL-project\HDL-mean-filter\HDL-mean-filter.srcs\sim_1\new\mean_filter_with_bram_tb.vhd;-;;-;16;-;line;-;34;-;;-;16;-;"); // ah (O, cr)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Simulation, sim_1, [VRFC 10-664] expression has 3 elements ; expected 4 [E:/Acadamics/Semester 7/HDL/HDL-project/HDL-mean-filter/HDL-mean-filter.srcs/sim_1/new/mean_filter_with_bram_tb.vhd:34]. ]", 7, false); // ah (O, cr)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;E:\Acadamics\Semester 7\HDL\HDL-project\HDL-mean-filter\HDL-mean-filter.srcs\sim_1\new\mean_filter_with_bram_tb.vhd;-;;-;16;-;line;-;34;-;;-;16;-;"); // ah (O, cr)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Simulation, sim_1, [VRFC 10-664] expression has 3 elements ; expected 4 [E:/Acadamics/Semester 7/HDL/HDL-project/HDL-mean-filter/HDL-mean-filter.srcs/sim_1/new/mean_filter_with_bram_tb.vhd:34]. ]", 7, false); // ah (O, cr)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;E:\Acadamics\Semester 7\HDL\HDL-project\HDL-mean-filter\HDL-mean-filter.srcs\sim_1\new\mean_filter_with_bram_tb.vhd;-;;-;16;-;line;-;34;-;;-;16;-;"); // ah (O, cr)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Simulation, sim_1, [VRFC 10-664] expression has 3 elements ; expected 4 [E:/Acadamics/Semester 7/HDL/HDL-project/HDL-mean-filter/HDL-mean-filter.srcs/sim_1/new/mean_filter_with_bram_tb.vhd:34]. ]", 7, false); // ah (O, cr)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;E:\Acadamics\Semester 7\HDL\HDL-project\HDL-mean-filter\HDL-mean-filter.srcs\sim_1\new\mean_filter_with_bram_tb.vhd;-;;-;16;-;line;-;34;-;;-;16;-;"); // ah (O, cr)
+// Elapsed time: 11 seconds
+selectCodeEditor("mean_filter_with_bram_tb.vhd", 587, 112); // ch (w, cr)
+// Elapsed time: 13 seconds
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Simulation, sim_1, [VRFC 10-664] expression has 3 elements ; expected 4 [E:/Acadamics/Semester 7/HDL/HDL-project/HDL-mean-filter/HDL-mean-filter.srcs/sim_1/new/mean_filter_with_bram_tb.vhd:34]. ]", 7, false); // ah (O, cr)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;E:\Acadamics\Semester 7\HDL\HDL-project\HDL-mean-filter\HDL-mean-filter.srcs\sim_1\new\mean_filter_with_bram_tb.vhd;-;;-;16;-;line;-;34;-;;-;16;-;"); // ah (O, cr)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Simulation, sim_1, [VRFC 10-664] expression has 3 elements ; expected 4 [E:/Acadamics/Semester 7/HDL/HDL-project/HDL-mean-filter/HDL-mean-filter.srcs/sim_1/new/mean_filter_with_bram_tb.vhd:34]. ]", 7, false); // ah (O, cr)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;E:\Acadamics\Semester 7\HDL\HDL-project\HDL-mean-filter\HDL-mean-filter.srcs\sim_1\new\mean_filter_with_bram_tb.vhd;-;;-;16;-;line;-;34;-;;-;16;-;"); // ah (O, cr)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Simulation, sim_1, [VRFC 10-664] expression has 3 elements ; expected 4 [E:/Acadamics/Semester 7/HDL/HDL-project/HDL-mean-filter/HDL-mean-filter.srcs/sim_1/new/mean_filter_with_bram_tb.vhd:34]. ]", 7, false); // ah (O, cr)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;E:\Acadamics\Semester 7\HDL\HDL-project\HDL-mean-filter\HDL-mean-filter.srcs\sim_1\new\mean_filter_with_bram_tb.vhd;-;;-;16;-;line;-;34;-;;-;16;-;"); // ah (O, cr)
+selectCodeEditor("mean_filter_with_bram_tb.vhd", 219, 71); // ch (w, cr)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Simulation, sim_1, [VRFC 10-664] expression has 3 elements ; expected 4 [E:/Acadamics/Semester 7/HDL/HDL-project/HDL-mean-filter/HDL-mean-filter.srcs/sim_1/new/mean_filter_with_bram_tb.vhd:34]. ]", 7, false); // ah (O, cr)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;E:\Acadamics\Semester 7\HDL\HDL-project\HDL-mean-filter\HDL-mean-filter.srcs\sim_1\new\mean_filter_with_bram_tb.vhd;-;;-;16;-;line;-;34;-;;-;16;-;"); // ah (O, cr)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Simulation, sim_1, [VRFC 10-664] expression has 3 elements ; expected 4 [E:/Acadamics/Semester 7/HDL/HDL-project/HDL-mean-filter/HDL-mean-filter.srcs/sim_1/new/mean_filter_with_bram_tb.vhd:34]. ]", 7, false); // ah (O, cr)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;E:\Acadamics\Semester 7\HDL\HDL-project\HDL-mean-filter\HDL-mean-filter.srcs\sim_1\new\mean_filter_with_bram_tb.vhd;-;;-;16;-;line;-;34;-;;-;16;-;"); // ah (O, cr)
+selectCodeEditor("mean_filter_with_bram_tb.vhd", 387, 163); // ch (w, cr)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Simulation, sim_1, [VRFC 10-664] expression has 3 elements ; expected 4 [E:/Acadamics/Semester 7/HDL/HDL-project/HDL-mean-filter/HDL-mean-filter.srcs/sim_1/new/mean_filter_with_bram_tb.vhd:34]. ]", 7, false); // ah (O, cr)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;E:\Acadamics\Semester 7\HDL\HDL-project\HDL-mean-filter\HDL-mean-filter.srcs\sim_1\new\mean_filter_with_bram_tb.vhd;-;;-;16;-;line;-;34;-;;-;16;-;"); // ah (O, cr)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Simulation, sim_1, [VRFC 10-664] expression has 3 elements ; expected 4 [E:/Acadamics/Semester 7/HDL/HDL-project/HDL-mean-filter/HDL-mean-filter.srcs/sim_1/new/mean_filter_with_bram_tb.vhd:34]. ]", 7, false); // ah (O, cr)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;E:\Acadamics\Semester 7\HDL\HDL-project\HDL-mean-filter\HDL-mean-filter.srcs\sim_1\new\mean_filter_with_bram_tb.vhd;-;;-;16;-;line;-;34;-;;-;16;-;"); // ah (O, cr)
+// Elapsed time: 358 seconds
+selectCodeEditor("mean_filter_with_bram_tb.vhd", 319, 126); // ch (w, cr)
+// Elapsed time: 23 seconds
+unmaximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // P (aI, cr)
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // P (aI, cr)
+// Elapsed time: 181 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "bram_tb.vhd", 5); // i (h, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mean_filter.vhd", 4); // i (h, cr)
+selectCodeEditor("mean_filter.vhd", 840, 16); // ch (w, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mean_filter.vhd", 4); // i (h, cr)
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // u (O, cr)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// al (cr): Save Project: addNotify
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a (al)
+// bB (cr):  Save Constraints : addNotify
+// TclEventType: DG_GRAPH_STALE
+// bB (cr):  Resetting Runs : addNotify
+dismissDialog("Save Project"); // al (cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (cr): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// bB (cr):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f (cr)
+// TclEventType: RUN_LAUNCH
+// Tcl Message: launch_runs synth_1 -jobs 4 
+// Tcl Message: INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'E:/Acadamics/Semester 7/HDL/HDL-project/HDL-mean-filter/HDL-mean-filter.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci' is already up-to-date 
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Sat Jul 18 12:17:58 2020] Launched synth_1... Run output will be captured here: E:/Acadamics/Semester 7/HDL/HDL-project/HDL-mean-filter/HDL-mean-filter.runs/synth_1/runme.log 
+// 'k' command handler elapsed time: 4 seconds
+// TclEventType: RUN_STATUS_CHANGE
+dismissDialog("Starting Design Runs"); // bB (cr)
+// Elapsed time: 16 seconds
+selectCodeEditor("bram_tb.vhd", 265, 168); // ch (w, cr)
+selectCodeEditor("bram_tb.vhd", 280, 137); // ch (w, cr)
+selectCodeEditor("bram_tb.vhd", 303, 131); // ch (w, cr)
+selectCodeEditor("bram_tb.vhd", 317, 125); // ch (w, cr)
+selectCodeEditor("bram_tb.vhd", 328, 119); // ch (w, cr)
+selectCodeEditor("bram_tb.vhd", 327, 121); // ch (w, cr)
+selectCodeEditor("bram_tb.vhd", 322, 129); // ch (w, cr)
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// aj (cr): Synthesis Completed: addNotify
+// Elapsed time: 42 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_GOTO_NETLIST_DESIGN, "Open Synthesized Design"); // a (Q, aj)
+selectRadioButton(PAResourceCommand.PACommandNames_REPORTS_WINDOW, "View Reports"); // a (Q, aj)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aj)
+// Run Command: PAResourceCommand.PACommandNames_REPORTS_WINDOW
+dismissDialog("Synthesis Completed"); // aj (cr)
+// Elapsed time: 22 seconds
+selectCodeEditor("bram_tb.vhd", 538, 164); // ch (w, cr)
+// HMemoryUtils.trashcanNow. Engine heap size: 852 MB. GUI used memory: 103 MB. Current time: 7/18/20, 12:21:04 PM IST
+// Elapsed time: 156 seconds
+selectCodeEditor("bram_tb.vhd", 715, 239); // ch (w, cr)
+selectCodeEditor("bram_tb.vhd", 734, 250); // ch (w, cr)
+// Elapsed time: 22 seconds
+selectCodeEditor("bram_tb.vhd", 755, 284); // ch (w, cr)
+selectCodeEditor("bram_tb.vhd", 755, 287); // ch (w, cr)
+selectCodeEditor("bram_tb.vhd", 764, 282); // ch (w, cr)
+selectCodeEditor("bram_tb.vhd", 773, 277); // ch (w, cr)
+selectCodeEditor("bram_tb.vhd", 780, 270); // ch (w, cr)
+selectCodeEditor("bram_tb.vhd", 789, 256); // ch (w, cr)
+selectCodeEditor("bram_tb.vhd", 793, 245); // ch (w, cr)
+selectCodeEditor("bram_tb.vhd", 797, 239); // ch (w, cr)
+selectCodeEditor("bram_tb.vhd", 803, 223); // ch (w, cr)
+selectCodeEditor("bram_tb.vhd", 814, 193); // ch (w, cr)
+selectCodeEditor("bram_tb.vhd", 822, 180); // ch (w, cr)
+selectCodeEditor("bram_tb.vhd", 828, 162); // ch (w, cr)
+selectCodeEditor("bram_tb.vhd", 331, 186); // ch (w, cr)
+selectCodeEditor("bram_tb.vhd", 625, 235); // ch (w, cr)
+selectCodeEditor("bram_tb.vhd", 621, 199); // ch (w, cr)
+selectCodeEditor("bram_tb.vhd", 578, 236); // ch (w, cr)
+selectCodeEditor("bram_tb.vhd", 584, 216); // ch (w, cr)
+selectCodeEditor("bram_tb.vhd", 507, 272); // ch (w, cr)
+selectCodeEditor("bram_tb.vhd", 426, 313); // ch (w, cr)
+selectCodeEditor("bram_tb.vhd", 431, 300); // ch (w, cr)
+selectCodeEditor("bram_tb.vhd", 436, 293); // ch (w, cr)
+// Elapsed time: 380 seconds
+selectCodeEditor("bram_tb.vhd", 606, 215); // ch (w, cr)
+selectCodeEditor("bram_tb.vhd", 573, 233); // ch (w, cr)
+selectCodeEditor("bram_tb.vhd", 271, 257); // ch (w, cr)
+selectCodeEditor("bram_tb.vhd", 194, 194); // ch (w, cr)
+selectCodeEditor("bram_tb.vhd", 301, 168); // ch (w, cr)
+selectCodeEditor("bram_tb.vhd", 290, 181); // ch (w, cr)
+// Elapsed time: 11 seconds
+selectCodeEditor("bram_tb.vhd", 55, 217); // ch (w, cr)
+selectCodeEditor("bram_tb.vhd", 56, 239); // ch (w, cr)
+// HMemoryUtils.trashcanNow. Engine heap size: 852 MB. GUI used memory: 72 MB. Current time: 7/18/20, 12:51:04 PM IST
+// HMemoryUtils.trashcanNow. Engine heap size: 852 MB. GUI used memory: 71 MB. Current time: 7/18/20, 1:21:05 PM IST
+// HMemoryUtils.trashcanNow. Engine heap size: 852 MB. GUI used memory: 71 MB. Current time: 7/18/20, 1:51:05 PM IST
+// Elapsed time: 5271 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mean_filter_with_bram_tb.vhd", 3); // i (h, cr)
+selectCodeEditor("mean_filter_with_bram_tb.vhd", 380, 199); // ch (w, cr)
+// Elapsed time: 50 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "bram_tb.vhd", 4); // i (h, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mean_filter_with_bram_tb.vhd", 3); // i (h, cr)
+selectCodeEditor("mean_filter_with_bram_tb.vhd", 197, 208); // ch (w, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "bram_tb.vhd", 4); // i (h, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mean_filter_with_bram_tb.vhd", 3); // i (h, cr)
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "bram_tb.vhd", 4); // i (h, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mean_filter_with_bram_tb.vhd", 3); // i (h, cr)
+selectCodeEditor("mean_filter_with_bram_tb.vhd", 325, 188); // ch (w, cr)
+// Elapsed time: 143 seconds
+selectCodeEditor("mean_filter_with_bram_tb.vhd", 587, 141); // ch (w, cr)
+selectCodeEditor("mean_filter_with_bram_tb.vhd", 590, 140); // ch (w, cr)
+selectCodeEditor("mean_filter_with_bram_tb.vhd", 588, 143); // ch (w, cr)
+selectCodeEditor("mean_filter_with_bram_tb.vhd", 594, 139); // ch (w, cr)
+// Elapsed time: 16 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "bram_tb.vhd", 4); // i (h, cr)
+selectCodeEditor("bram_tb.vhd", 553, 103); // ch (w, cr)
+// Elapsed time: 67 seconds
+selectCodeEditor("bram_tb.vhd", 501, 211); // ch (w, cr)
+selectCodeEditor("bram_tb.vhd", 512, 195); // ch (w, cr)
+// Elapsed time: 20 seconds
+selectCodeEditor("bram_tb.vhd", 485, 194); // ch (w, cr)
+selectCodeEditor("bram_tb.vhd", 44, 179); // ch (w, cr)
+selectCodeEditor("bram_tb.vhd", 526, 197); // ch (w, cr)
+selectCodeEditor("bram_tb.vhd", 522, 196, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("bram_tb.vhd", 323, 187); // ch (w, cr)
+selectCodeEditor("bram_tb.vhd", 475, 189); // ch (w, cr)
+selectCodeEditor("bram_tb.vhd", 308, 141); // ch (w, cr)
+selectCodeEditor("bram_tb.vhd", 38, 168); // ch (w, cr)
+selectCodeEditor("bram_tb.vhd", 503, 179); // ch (w, cr)
+selectCodeEditor("bram_tb.vhd", 44, 169); // ch (w, cr)
+selectCodeEditor("bram_tb.vhd", 491, 186); // ch (w, cr)
+selectCodeEditor("bram_tb.vhd", 491, 186, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("bram_tb.vhd", 491, 186); // ch (w, cr)
+selectCodeEditor("bram_tb.vhd", 491, 186); // ch (w, cr)
+selectCodeEditor("bram_tb.vhd", 491, 186); // ch (w, cr)
+selectCodeEditor("bram_tb.vhd", 491, 186); // ch (w, cr)
+selectCodeEditor("bram_tb.vhd", 491, 186); // ch (w, cr)
+selectCodeEditor("bram_tb.vhd", 491, 186); // ch (w, cr)
+selectCodeEditor("bram_tb.vhd", 486, 174); // ch (w, cr)
+// Elapsed time: 17 seconds
+selectCodeEditor("bram_tb.vhd", 509, 191); // ch (w, cr)
+selectCodeEditor("bram_tb.vhd", 225, 213); // ch (w, cr)
+selectCodeEditor("bram_tb.vhd", 170, 265); // ch (w, cr)
+selectCodeEditor("bram_tb.vhd", 175, 294); // ch (w, cr)
+selectCodeEditor("bram_tb.vhd", 175, 295); // ch (w, cr)
+selectCodeEditor("bram_tb.vhd", 6, 214); // ch (w, cr)
+selectCodeEditor("bram_tb.vhd", 11, 219); // ch (w, cr)
+selectCodeEditor("bram_tb.vhd", 11, 219); // ch (w, cr)
+// Elapsed time: 10 seconds
+selectCodeEditor("bram_tb.vhd", 155, 75); // ch (w, cr)
+selectCodeEditor("bram_tb.vhd", 154, 78); // ch (w, cr)
+selectCodeEditor("bram_tb.vhd", 154, 78, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("bram_tb.vhd", 154, 78); // ch (w, cr)
+selectCodeEditor("bram_tb.vhd", 154, 80); // ch (w, cr)
+selectCodeEditor("bram_tb.vhd", 154, 80); // ch (w, cr)
+selectCodeEditor("bram_tb.vhd", 173, 62); // ch (w, cr)
+// Elapsed time: 56 seconds
+selectCodeEditor("bram_tb.vhd", 85, 94); // ch (w, cr)
+selectCodeEditor("bram_tb.vhd", 496, 105); // ch (w, cr)
+selectCodeEditor("bram_tb.vhd", 74, 69); // ch (w, cr)
+selectCodeEditor("bram_tb.vhd", 85, 87); // ch (w, cr)
+selectCodeEditor("bram_tb.vhd", 85, 87, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("bram_tb.vhd", 281, 104); // ch (w, cr)
+selectCodeEditor("bram_tb.vhd", 281, 105); // ch (w, cr)
+selectCodeEditor("bram_tb.vhd", 103, 87); // ch (w, cr)
+// Elapsed time: 11 seconds
+selectCodeEditor("bram_tb.vhd", 80, 92); // ch (w, cr)
+selectCodeEditor("bram_tb.vhd", 87, 88); // ch (w, cr)
+selectCodeEditor("bram_tb.vhd", 44, 64); // ch (w, cr)
+selectCodeEditor("bram_tb.vhd", 501, 161); // ch (w, cr)
+selectCodeEditor("bram_tb.vhd", 499, 161); // ch (w, cr)
+selectCodeEditor("bram_tb.vhd", 88, 69); // ch (w, cr)
+selectCodeEditor("bram_tb.vhd", 39, 61); // ch (w, cr)
+selectCodeEditor("bram_tb.vhd", 200, 162); // ch (w, cr)
+selectCodeEditor("bram_tb.vhd", 195, 162); // ch (w, cr)
+// Elapsed time: 56 seconds
+selectCodeEditor("bram_tb.vhd", 324, 181); // ch (w, cr)
+selectCodeEditor("bram_tb.vhd", 573, 195); // ch (w, cr)
+selectCodeEditor("bram_tb.vhd", 532, 195); // ch (w, cr)
+selectCodeEditor("bram_tb.vhd", 95, 192); // ch (w, cr)
+// Elapsed time: 352 seconds
+selectCodeEditor("bram_tb.vhd", 567, 256, false, false, false, true, false); // ch (w, cr) - Popup Trigger
+selectCodeEditor("bram_tb.vhd", 559, 256); // ch (w, cr)
+// HMemoryUtils.trashcanNow. Engine heap size: 852 MB. GUI used memory: 71 MB. Current time: 7/18/20, 2:21:05 PM IST
+// HMemoryUtils.trashcanNow. Engine heap size: 852 MB. GUI used memory: 71 MB. Current time: 7/18/20, 2:51:06 PM IST
+// Elapsed time: 2477 seconds
+selectCodeEditor("bram_tb.vhd", 727, 132); // ch (w, cr)
+// HMemoryUtils.trashcanNow. Engine heap size: 852 MB. GUI used memory: 71 MB. Current time: 7/18/20, 3:21:06 PM IST
+// HMemoryUtils.trashcanNow. Engine heap size: 852 MB. GUI used memory: 71 MB. Current time: 7/18/20, 3:51:06 PM IST
