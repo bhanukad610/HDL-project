@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7k70tfbv676-1" LaunchTime="1595505658">
+<GenRun Id="synth_1" LaunchPart="xc7k70tfbv676-1" LaunchTime="1595674595">
   <File Type="PA-TCL" Name="mean_filter_with_bram.tcl"/>
   <File Type="REPORTS-TCL" Name="mean_filter_with_bram_reports.tcl"/>
   <File Type="RDS-RDS" Name="mean_filter_with_bram.vds"/>

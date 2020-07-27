@@ -1,9 +1,8 @@
 Vivado Simulator 2019.2
 Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
-Running: F:/xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 0c1efe39b5044287b7305e71e5c7efd0 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_4 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot mean_filter_with_bram_tb_behav xil_defaultlib.mean_filter_with_bram_tb xil_defaultlib.glbl -log elaborate.log 
+Running: F:/xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 0c1efe39b5044287b7305e71e5c7efd0 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip -L xpm --snapshot mean_filter_tb_behav xil_defaultlib.mean_filter_tb -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
-Pass Through NonSizing Optimizer
 Completed static elaboration
 Starting simulation data flow analysis
 Completed simulation data flow analysis
@@ -12,16 +11,6 @@ Compiling package std.standard
 Compiling package std.textio
 Compiling package ieee.std_logic_1164
 Compiling package ieee.numeric_std
-Compiling package vl.vl_types
-Compiling module xil_defaultlib.glbl
 Compiling architecture behavioral of entity xil_defaultlib.mean_filter [mean_filter_default]
-Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_output_stage(...
-Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_output_stage(...
-Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_softecc_outpu...
-Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_mem_module(C_...
-Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4(C_FAMILY="kin...
-Compiling module xil_defaultlib.blk_mem_gen_0
-Compiling architecture behavioral of entity xil_defaultlib.bram [bram_default]
-Compiling architecture behavioral of entity xil_defaultlib.mean_filter_with_bram [mean_filter_with_bram_default]
-Compiling architecture bench of entity xil_defaultlib.mean_filter_with_bram_tb
-Built simulation snapshot mean_filter_with_bram_tb_behav
+Compiling architecture bench of entity xil_defaultlib.mean_filter_tb
+Built simulation snapshot mean_filter_tb_behav

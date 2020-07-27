@@ -11,6 +11,7 @@ architecture bench of mean_filter_with_bram_tb is
     Port (row : in STD_LOGIC_VECTOR (4 downto 0);
              col : in STD_LOGIC_VECTOR (4 downto 0);
              clock : in STD_LOGIC;
+             reset_in :in STD_LOGIC;
              size : in STD_LOGIC_VECTOR (4 downto 0);
              pixel_out_filter :out STD_LOGIC_VECTOR (7 downto 0));
   end component;
@@ -18,17 +19,21 @@ architecture bench of mean_filter_with_bram_tb is
   signal row: STD_LOGIC_VECTOR (4 downto 0);
   signal col: STD_LOGIC_VECTOR (4 downto 0);
   signal clock: STD_LOGIC;
-  signal size: STD_LOGIC_VECTOR (4 downto 0) ;
+  signal reset_in: STD_LOGIC;
+  signal size: STD_LOGIC_VECTOR (4 downto 0);
   signal pixel_out_filter: STD_LOGIC_VECTOR (7 downto 0);
+  
   constant clock_period: time := 20 ns;
 
 begin
 
-  uut: mean_filter_with_bram port map ( row   => row,
-                                        col   => col,
-                                        clock => clock,
-                                        size  => size,
+  uut: mean_filter_with_bram port map ( row              => row,
+                                        col              => col,
+                                        clock            => clock,
+                                        reset_in         => reset_in,
+                                        size             => size,
                                         pixel_out_filter => pixel_out_filter );
+
 
   stimulus: process
   begin
@@ -37,6 +42,7 @@ begin
     row <= "10100";
     col <= "00100";
     size <= "10000";
+    reset_in <= '0';
     -- Put test bench stimulus code here
 
     wait;

@@ -35,7 +35,9 @@ entity mean_filter_with_bram is
   Port (row : in STD_LOGIC_VECTOR (4 downto 0);
            col : in STD_LOGIC_VECTOR (4 downto 0);
            clock : in STD_LOGIC;
+           reset_in :in STD_LOGIC;
            size : in STD_LOGIC_VECTOR (4 downto 0);
+           addr_in_img : in  STD_LOGIC_VECTOR (8 downto 0);
            pixel_out_filter :out STD_LOGIC_VECTOR (7 downto 0));
 end mean_filter_with_bram;
 
@@ -51,17 +53,18 @@ end component;
 
 component mean_filter is
   Port ( row : in STD_LOGIC_VECTOR (4 downto 0);
-           col : in STD_LOGIC_VECTOR (4 downto 0);
-           size : in STD_LOGIC_VECTOR (4 downto 0);
+           col : in STD_LOGIC_VECTOR (4 downto 0);           
            addr_in : out  STD_LOGIC_VECTOR (8 downto 0);
            addr_in_img : in  STD_LOGIC_VECTOR (8 downto 0);
            addr_out_img : out  STD_LOGIC_VECTOR (8 downto 0);
            pixel_in : in STD_LOGIC_VECTOR (7 downto 0);
-           pixel_out :out STD_LOGIC_VECTOR (7 downto 0));
+           pixel_out :out STD_LOGIC_VECTOR (7 downto 0);
+           clk  : in STD_LOGIC;
+           reset_in :in STD_LOGIC);
 end component;
 
 signal addr : STD_LOGIC_VECTOR (8 downto 0);
-signal addr_in_img : STD_LOGIC_VECTOR (8 downto 0);
+--signal addr_in_img : STD_LOGIC_VECTOR (8 downto 0);
 signal pixel_in : STD_LOGIC_VECTOR (7 downto 0);
 
 signal din_input : STD_LOGIC_VECTOR (7 downto 0);
@@ -80,14 +83,16 @@ we_out <= "1";
 en_in <= '1';
 en_out <= '0';
 pixel_out_filter <= pixel_out;
+addr_in_img <= addr_in_img;
 mean_filter_1 : mean_filter
 port map (     row => row,
                col => col,
-               size => size,
+               clk => clock,
                addr_in => addr,
                addr_in_img => addr_in_img,
                addr_out_img => addr_out_img,
                pixel_in => pixel_in,
+               reset_in => reset_in,
                pixel_out => pixel_out);
 
 bram_in : bram
