@@ -1,0 +1,12 @@
+
+{ 
+    crc :  17886527676165773818  , 
+    ccp_crc :  0  , 
+    cmdline : " -wto 0c1efe39b5044287b7305e71e5c7efd0 --incr --debug typical --relax --mt 2 -L axi_lite_ipif_v3_0_4 -L lib_pkg_v1_0_2 -L lib_srl_fifo_v1_0_2 -L lib_cdc_v1_0_2 -L axi_uartlite_v2_0_24 -L xil_defaultlib -L secureip -L xpm --snapshot uart_transmit_with_uartlite_tb_behav xil_defaultlib.uart_transmit_with_uartlite_tb" , 
+    buildDate : "Nov  6 2019" , 
+    buildTime : "21:57:16" , 
+    linkCmd : "D:\\Windows\\ProgramFiles\\Xilinx\\Vivado\\2019.2\\data\\..\\tps\\mingw\\6.2.0\\win64.o\\nt\\bin\\gcc.exe -Wa,-W  -O -Wl,--stack,104857600 -o \"xsim.dir/uart_transmit_with_uartlite_tb_behav/xsimk.exe\"   \"xsim.dir/uart_transmit_with_uartlite_tb_behav/obj/xsim_0.win64.obj\" \"xsim.dir/uart_transmit_with_uartlite_tb_behav/obj/xsim_1.win64.obj\" -L\"D:\\Windows\\ProgramFiles\\Xilinx\\Vivado\\2019.2\\lib\\win64.o\" -lrdi_simulator_kernel   -lrdi_simbridge_kernel" , 
+    aggregate_nets : 
+    [ 
+    ] 
+} 

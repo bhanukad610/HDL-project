@@ -25,15 +25,19 @@ set_param synth.vivado.isSynthRun true
 set_msg_config -source 4 -id {IP_Flow 19-2162} -severity warning -new_severity info
 set_property webtalk.parent_dir D:/MyStuff/Projects/Vivado/HDL-project/HDL-mean-filter/HDL-mean-filter.cache/wt [current_project]
 set_property parent.project_path D:/MyStuff/Projects/Vivado/HDL-project/HDL-mean-filter/HDL-mean-filter.xpr [current_project]
-set_property XPM_LIBRARIES XPM_MEMORY [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
 set_property ip_output_repo d:/MyStuff/Projects/Vivado/HDL-project/HDL-mean-filter/HDL-mean-filter.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 add_files D:/MyStuff/Projects/Vivado/HDL-project/HDL-mean-filter/HDL-mean-filter.srcs/sources_1/ip/blk_mem_gen_0/test.coe
-read_vhdl -library xil_defaultlib D:/MyStuff/Projects/Vivado/HDL-project/HDL-mean-filter/HDL-mean-filter.srcs/sources_1/new/bram.vhd
-read_ip -quiet D:/MyStuff/Projects/Vivado/HDL-project/HDL-mean-filter/HDL-mean-filter.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci
-set_property used_in_implementation false [get_files -all d:/MyStuff/Projects/Vivado/HDL-project/HDL-mean-filter/HDL-mean-filter.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_ooc.xdc]
+read_vhdl -library xil_defaultlib {
+  D:/MyStuff/Projects/Vivado/HDL-project/HDL-mean-filter/HDL-mean-filter.srcs/sources_1/new/uart_transmit.vhd
+  D:/MyStuff/Projects/Vivado/HDL-project/HDL-mean-filter/HDL-mean-filter.srcs/sources_1/new/uart_transmit_with_uartlite.vhd
+}
+read_ip -quiet D:/MyStuff/Projects/Vivado/HDL-project/HDL-mean-filter/HDL-mean-filter.srcs/sources_1/ip/axi_uartlite_0/axi_uartlite_0.xci
+set_property used_in_implementation false [get_files -all d:/MyStuff/Projects/Vivado/HDL-project/HDL-mean-filter/HDL-mean-filter.srcs/sources_1/ip/axi_uartlite_0/axi_uartlite_0_board.xdc]
+set_property used_in_implementation false [get_files -all d:/MyStuff/Projects/Vivado/HDL-project/HDL-mean-filter/HDL-mean-filter.srcs/sources_1/ip/axi_uartlite_0/axi_uartlite_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all d:/MyStuff/Projects/Vivado/HDL-project/HDL-mean-filter/HDL-mean-filter.srcs/sources_1/ip/axi_uartlite_0/axi_uartlite_0.xdc]
 
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
@@ -43,17 +47,15 @@ set_property used_in_implementation false [get_files -all d:/MyStuff/Projects/Vi
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc dont_touch.xdc
-set_property used_in_implementation false [get_files dont_touch.xdc]
 set_param ips.enableIPCacheLiteLoad 1
 close [open __synthesis_is_running__ w]
 
-synth_design -top bram -part xc7k70tfbv676-1
+synth_design -top uart_transmit_with_uartlite -part xc7k70tfbv676-1
 
 
 # disable binary constraint mode for synth run checkpoints
 set_param constraints.enableBinaryConstraints false
-write_checkpoint -force -noxdef bram.dcp
-create_report "synth_1_synth_report_utilization_0" "report_utilization -file bram_utilization_synth.rpt -pb bram_utilization_synth.pb"
+write_checkpoint -force -noxdef uart_transmit_with_uartlite.dcp
+create_report "synth_1_synth_report_utilization_0" "report_utilization -file uart_transmit_with_uartlite_utilization_synth.rpt -pb uart_transmit_with_uartlite_utilization_synth.pb"
 file delete __synthesis_is_running__
 close [open __synthesis_is_complete__ w]

@@ -1,9 +1,8 @@
 Vivado Simulator 2019.2
 Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
-Running: D:/Windows/ProgramFiles/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 0c1efe39b5044287b7305e71e5c7efd0 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_4 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot bram_tb_behav xil_defaultlib.bram_tb xil_defaultlib.glbl -log elaborate.log 
+Running: D:/Windows/ProgramFiles/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 0c1efe39b5044287b7305e71e5c7efd0 --incr --debug typical --relax --mt 2 -L axi_lite_ipif_v3_0_4 -L lib_pkg_v1_0_2 -L lib_srl_fifo_v1_0_2 -L lib_cdc_v1_0_2 -L axi_uartlite_v2_0_24 -L xil_defaultlib -L secureip -L xpm --snapshot uart_transmit_with_uartlite_tb_behav xil_defaultlib.uart_transmit_with_uartlite_tb -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
-Pass Through NonSizing Optimizer
 Completed static elaboration
 Starting simulation data flow analysis
 Completed simulation data flow analysis
@@ -12,14 +11,37 @@ Compiling package std.standard
 Compiling package std.textio
 Compiling package ieee.std_logic_1164
 Compiling package ieee.numeric_std
-Compiling package vl.vl_types
-Compiling module xil_defaultlib.glbl
-Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_output_stage(...
-Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_output_stage(...
-Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_softecc_outpu...
-Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_mem_module(C_...
-Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4(C_FAMILY="kin...
-Compiling module xil_defaultlib.blk_mem_gen_0
-Compiling architecture behavioral of entity xil_defaultlib.bram [bram_default]
-Compiling architecture bench of entity xil_defaultlib.bram_tb
-Built simulation snapshot bram_tb_behav
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package axi_lite_ipif_v3_0_4.ipif_pkg
+Compiling package synopsys.attributes
+Compiling package ieee.std_logic_misc
+Compiling package unisim.vcomponents
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling package lib_pkg_v1_0_2.lib_pkg
+Compiling architecture behavioral of entity xil_defaultlib.uart_transmit [uart_transmit_default]
+Compiling architecture rtl of entity axi_uartlite_v2_0_24.baudrate [\baudrate(c_ratio=651)\]
+Compiling architecture fdre_v of entity unisim.FDRE [fdre_default]
+Compiling architecture fdr_v of entity unisim.FDR [fdr_default]
+Compiling architecture implementation of entity lib_cdc_v1_0_2.cdc_sync [\cdc_sync(c_mtbf_stages=4)\]
+Compiling architecture imp of entity lib_srl_fifo_v1_0_2.cntr_incr_decr_addn_f [\cntr_incr_decr_addn_f(c_size=5,...]
+Compiling architecture behavioral of entity lib_srl_fifo_v1_0_2.dynshreg_f [\dynshreg_f(c_depth=16,c_dwidth=...]
+Compiling architecture imp of entity lib_srl_fifo_v1_0_2.srl_fifo_rbu_f [\srl_fifo_rbu_f(c_dwidth=8,c_fam...]
+Compiling architecture imp of entity lib_srl_fifo_v1_0_2.srl_fifo_f [\srl_fifo_f(c_dwidth=8,c_family=...]
+Compiling architecture rtl of entity axi_uartlite_v2_0_24.uartlite_rx [\uartlite_rx(c_family="kintex7")...]
+Compiling architecture rtl of entity axi_uartlite_v2_0_24.uartlite_tx [\uartlite_tx(c_family="kintex7")...]
+Compiling architecture rtl of entity axi_uartlite_v2_0_24.uartlite_core [\uartlite_core(c_family="kintex7...]
+Compiling architecture imp of entity axi_lite_ipif_v3_0_4.pselect_f [\pselect_f(c_ab=2,c_aw=2,c_bar="...]
+Compiling architecture imp of entity axi_lite_ipif_v3_0_4.pselect_f [\pselect_f(c_ab=2,c_aw=2,c_bar="...]
+Compiling architecture imp of entity axi_lite_ipif_v3_0_4.pselect_f [\pselect_f(c_ab=2,c_aw=2,c_bar="...]
+Compiling architecture imp of entity axi_lite_ipif_v3_0_4.pselect_f [\pselect_f(c_ab=2,c_aw=2,c_bar="...]
+Compiling architecture imp of entity axi_lite_ipif_v3_0_4.address_decoder [\address_decoder(c_bus_awidth=4,...]
+Compiling architecture imp of entity axi_lite_ipif_v3_0_4.slave_attachment [\slave_attachment(c_ard_addr_ran...]
+Compiling architecture imp of entity axi_lite_ipif_v3_0_4.axi_lite_ipif [\axi_lite_ipif(c_s_axi_addr_widt...]
+Compiling architecture rtl of entity axi_uartlite_v2_0_24.axi_uartlite [\axi_uartlite(c_family="kintex7"...]
+Compiling architecture axi_uartlite_0_arch of entity xil_defaultlib.axi_uartlite_0 [axi_uartlite_0_default]
+Compiling architecture behavioral of entity xil_defaultlib.uart_transmit_with_uartlite [uart_transmit_with_uartlite_defa...]
+Compiling architecture bench of entity xil_defaultlib.uart_transmit_with_uartlite_tb
+Built simulation snapshot uart_transmit_with_uartlite_tb_behav

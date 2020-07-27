@@ -1,15 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7k70tfbv676-1" LaunchTime="1594885467">
-  <File Type="PA-TCL" Name="bram.tcl"/>
-  <File Type="REPORTS-TCL" Name="bram_reports.tcl"/>
-  <File Type="RDS-RDS" Name="bram.vds"/>
-  <File Type="RDS-UTIL" Name="bram_utilization_synth.rpt"/>
-  <File Type="RDS-UTIL-PB" Name="bram_utilization_synth.pb"/>
-  <File Type="RDS-DCP" Name="bram.dcp"/>
+<GenRun Id="synth_1" LaunchPart="xc7k70tfbv676-1" LaunchTime="1595846010">
+  <File Type="PA-TCL" Name="uart_transmit_with_uartlite.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="uart_transmit_with_uartlite_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="uart_transmit_with_uartlite_reports.tcl"/>
+  <File Type="RDS-RDS" Name="uart_transmit_with_uartlite.vds"/>
+  <File Type="RDS-UTIL" Name="uart_transmit_with_uartlite_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="uart_transmit_with_uartlite_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="uart_transmit_with_uartlite.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="uart_transmit_with_uartlite_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="uart_transmit_with_uartlite_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/uart_transmit.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/uart_transmit_with_uartlite.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
     <File Path="$PSRCDIR/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci">
       <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -17,6 +33,7 @@
     </File>
     <File Path="$PSRCDIR/sources_1/new/bram.vhd">
       <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
@@ -48,10 +65,16 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
+    <File Path="$PSRCDIR/sources_1/new/uart_comm_unit.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
-      <Option Name="TopModule" Val="bram"/>
-      <Option Name="TopAutoSet" Val="TRUE"/>
+      <Option Name="TopModule" Val="uart_transmit_with_uartlite"/>
     </Config>
   </FileSet>
   <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
@@ -70,4 +93,5 @@
     <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019"/>
     <Step Id="synth_design"/>
   </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="axi_uartlite_0"/>
 </GenRun>

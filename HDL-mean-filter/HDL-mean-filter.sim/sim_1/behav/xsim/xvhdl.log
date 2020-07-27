@@ -1,4 +1,8 @@
-INFO: [VRFC 10-163] Analyzing VHDL file "D:/MyStuff/Projects/Vivado/HDL-project/HDL-mean-filter/HDL-mean-filter.srcs/sources_1/new/bram.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'bram'
-INFO: [VRFC 10-163] Analyzing VHDL file "D:/MyStuff/Projects/Vivado/HDL-project/HDL-mean-filter/HDL-mean-filter.sim/new/bram_tb.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'bram_tb'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/MyStuff/Projects/Vivado/HDL-project/HDL-mean-filter/HDL-mean-filter.srcs/sources_1/ip/axi_uartlite_0/sim/axi_uartlite_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'axi_uartlite_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/MyStuff/Projects/Vivado/HDL-project/HDL-mean-filter/HDL-mean-filter.srcs/sources_1/new/uart_transmit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'uart_transmit'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/MyStuff/Projects/Vivado/HDL-project/HDL-mean-filter/HDL-mean-filter.srcs/sources_1/new/uart_transmit_with_uartlite.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'uart_transmit_with_uartlite'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/MyStuff/Projects/Vivado/HDL-project/HDL-mean-filter/HDL-mean-filter.srcs/sim_1/new/uart_transmit_with_uartlite_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'uart_transmit_with_uartlite_tb'

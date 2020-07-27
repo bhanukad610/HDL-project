@@ -1,6 +1,6 @@
 
 *** Running vivado
-    with args -log bram.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source bram.tcl
+    with args -log uart_transmit_with_uartlite.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source uart_transmit_with_uartlite.tcl
 
 
 ****** Vivado v2019.2 (64-bit)
@@ -8,24 +8,66 @@
   **** IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
     ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 
-source bram.tcl -notrace
-Command: synth_design -top bram -part xc7k70tfbv676-1
+source uart_transmit_with_uartlite.tcl -notrace
+Command: synth_design -top uart_transmit_with_uartlite -part xc7k70tfbv676-1
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7k70t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7k70t'
 INFO: [Device 21-403] Loading part xc7k70tfbv676-1
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 3032 
+INFO: Helper process launched with PID 12384 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 845.547 ; gain = 234.105
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 845.305 ; gain = 234.445
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'bram' [D:/MyStuff/Projects/Vivado/HDL-project/HDL-mean-filter/HDL-mean-filter.srcs/sources_1/new/bram.vhd:43]
-INFO: [Synth 8-3491] module 'blk_mem_gen_0' declared at 'D:/MyStuff/Projects/Vivado/HDL-project/HDL-mean-filter/HDL-mean-filter.runs/synth_1/.Xil/Vivado-1268-DESKTOP-U5NAAV0/realtime/blk_mem_gen_0_stub.v:6' bound to instance 'mem_block_1' of component 'blk_mem_gen_0' [D:/MyStuff/Projects/Vivado/HDL-project/HDL-mean-filter/HDL-mean-filter.srcs/sources_1/new/bram.vhd:56]
-INFO: [Synth 8-6157] synthesizing module 'blk_mem_gen_0' [D:/MyStuff/Projects/Vivado/HDL-project/HDL-mean-filter/HDL-mean-filter.runs/synth_1/.Xil/Vivado-1268-DESKTOP-U5NAAV0/realtime/blk_mem_gen_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'blk_mem_gen_0' (1#1) [D:/MyStuff/Projects/Vivado/HDL-project/HDL-mean-filter/HDL-mean-filter.runs/synth_1/.Xil/Vivado-1268-DESKTOP-U5NAAV0/realtime/blk_mem_gen_0_stub.v:6]
-INFO: [Synth 8-256] done synthesizing module 'bram' (2#1) [D:/MyStuff/Projects/Vivado/HDL-project/HDL-mean-filter/HDL-mean-filter.srcs/sources_1/new/bram.vhd:43]
+INFO: [Synth 8-638] synthesizing module 'uart_transmit_with_uartlite' [D:/MyStuff/Projects/Vivado/HDL-project/HDL-mean-filter/HDL-mean-filter.srcs/sources_1/new/uart_transmit_with_uartlite.vhd:43]
+INFO: [Synth 8-3491] module 'uart_transmit' declared at 'D:/MyStuff/Projects/Vivado/HDL-project/HDL-mean-filter/HDL-mean-filter.srcs/sources_1/new/uart_transmit.vhd:35' bound to instance 'uart_transmit_1' of component 'uart_transmit' [D:/MyStuff/Projects/Vivado/HDL-project/HDL-mean-filter/HDL-mean-filter.srcs/sources_1/new/uart_transmit_with_uartlite.vhd:160]
+INFO: [Synth 8-638] synthesizing module 'uart_transmit' [D:/MyStuff/Projects/Vivado/HDL-project/HDL-mean-filter/HDL-mean-filter.srcs/sources_1/new/uart_transmit.vhd:90]
+WARNING: [Synth 8-613] shared variable will be implemented as local to architecture [D:/MyStuff/Projects/Vivado/HDL-project/HDL-mean-filter/HDL-mean-filter.srcs/sources_1/new/uart_transmit.vhd:105]
+INFO: [Synth 8-256] done synthesizing module 'uart_transmit' (1#1) [D:/MyStuff/Projects/Vivado/HDL-project/HDL-mean-filter/HDL-mean-filter.srcs/sources_1/new/uart_transmit.vhd:90]
+INFO: [Synth 8-3491] module 'axi_uartlite_0' declared at 'D:/MyStuff/Projects/Vivado/HDL-project/HDL-mean-filter/HDL-mean-filter.runs/synth_1/.Xil/Vivado-9644-DESKTOP-U5NAAV0/realtime/axi_uartlite_0_stub.v:6' bound to instance 'uartlite_1' of component 'axi_uartlite_0' [D:/MyStuff/Projects/Vivado/HDL-project/HDL-mean-filter/HDL-mean-filter.srcs/sources_1/new/uart_transmit_with_uartlite.vhd:184]
+INFO: [Synth 8-6157] synthesizing module 'axi_uartlite_0' [D:/MyStuff/Projects/Vivado/HDL-project/HDL-mean-filter/HDL-mean-filter.runs/synth_1/.Xil/Vivado-9644-DESKTOP-U5NAAV0/realtime/axi_uartlite_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'axi_uartlite_0' (2#1) [D:/MyStuff/Projects/Vivado/HDL-project/HDL-mean-filter/HDL-mean-filter.runs/synth_1/.Xil/Vivado-9644-DESKTOP-U5NAAV0/realtime/axi_uartlite_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'uart_transmit_with_uartlite' (3#1) [D:/MyStuff/Projects/Vivado/HDL-project/HDL-mean-filter/HDL-mean-filter.srcs/sources_1/new/uart_transmit_with_uartlite.vhd:43]
+WARNING: [Synth 8-3331] design uart_transmit has unconnected port uart_s_axi_bresp_in[1]
+WARNING: [Synth 8-3331] design uart_transmit has unconnected port uart_s_axi_bresp_in[0]
+WARNING: [Synth 8-3331] design uart_transmit has unconnected port uart_s_axi_arready_in
+WARNING: [Synth 8-3331] design uart_transmit has unconnected port uart_s_axi_rdata_in[31]
+WARNING: [Synth 8-3331] design uart_transmit has unconnected port uart_s_axi_rdata_in[30]
+WARNING: [Synth 8-3331] design uart_transmit has unconnected port uart_s_axi_rdata_in[29]
+WARNING: [Synth 8-3331] design uart_transmit has unconnected port uart_s_axi_rdata_in[28]
+WARNING: [Synth 8-3331] design uart_transmit has unconnected port uart_s_axi_rdata_in[27]
+WARNING: [Synth 8-3331] design uart_transmit has unconnected port uart_s_axi_rdata_in[26]
+WARNING: [Synth 8-3331] design uart_transmit has unconnected port uart_s_axi_rdata_in[25]
+WARNING: [Synth 8-3331] design uart_transmit has unconnected port uart_s_axi_rdata_in[24]
+WARNING: [Synth 8-3331] design uart_transmit has unconnected port uart_s_axi_rdata_in[23]
+WARNING: [Synth 8-3331] design uart_transmit has unconnected port uart_s_axi_rdata_in[22]
+WARNING: [Synth 8-3331] design uart_transmit has unconnected port uart_s_axi_rdata_in[21]
+WARNING: [Synth 8-3331] design uart_transmit has unconnected port uart_s_axi_rdata_in[20]
+WARNING: [Synth 8-3331] design uart_transmit has unconnected port uart_s_axi_rdata_in[19]
+WARNING: [Synth 8-3331] design uart_transmit has unconnected port uart_s_axi_rdata_in[18]
+WARNING: [Synth 8-3331] design uart_transmit has unconnected port uart_s_axi_rdata_in[17]
+WARNING: [Synth 8-3331] design uart_transmit has unconnected port uart_s_axi_rdata_in[16]
+WARNING: [Synth 8-3331] design uart_transmit has unconnected port uart_s_axi_rdata_in[15]
+WARNING: [Synth 8-3331] design uart_transmit has unconnected port uart_s_axi_rdata_in[14]
+WARNING: [Synth 8-3331] design uart_transmit has unconnected port uart_s_axi_rdata_in[13]
+WARNING: [Synth 8-3331] design uart_transmit has unconnected port uart_s_axi_rdata_in[12]
+WARNING: [Synth 8-3331] design uart_transmit has unconnected port uart_s_axi_rdata_in[11]
+WARNING: [Synth 8-3331] design uart_transmit has unconnected port uart_s_axi_rdata_in[10]
+WARNING: [Synth 8-3331] design uart_transmit has unconnected port uart_s_axi_rdata_in[9]
+WARNING: [Synth 8-3331] design uart_transmit has unconnected port uart_s_axi_rdata_in[8]
+WARNING: [Synth 8-3331] design uart_transmit has unconnected port uart_s_axi_rdata_in[7]
+WARNING: [Synth 8-3331] design uart_transmit has unconnected port uart_s_axi_rdata_in[6]
+WARNING: [Synth 8-3331] design uart_transmit has unconnected port uart_s_axi_rdata_in[5]
+WARNING: [Synth 8-3331] design uart_transmit has unconnected port uart_s_axi_rdata_in[4]
+WARNING: [Synth 8-3331] design uart_transmit has unconnected port uart_s_axi_rdata_in[3]
+WARNING: [Synth 8-3331] design uart_transmit has unconnected port uart_s_axi_rdata_in[2]
+WARNING: [Synth 8-3331] design uart_transmit has unconnected port uart_s_axi_rdata_in[1]
+WARNING: [Synth 8-3331] design uart_transmit has unconnected port uart_s_axi_rdata_in[0]
+WARNING: [Synth 8-3331] design uart_transmit has unconnected port uart_s_axi_rresp_in[1]
+WARNING: [Synth 8-3331] design uart_transmit has unconnected port uart_s_axi_rresp_in[0]
+WARNING: [Synth 8-3331] design uart_transmit has unconnected port uart_s_axi_rvalid_in
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 921.383 ; gain = 309.941
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 918.531 ; gain = 307.672
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -38,46 +80,47 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 921.383 ; gain = 309.941
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 918.531 ; gain = 307.672
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 921.383 ; gain = 309.941
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 918.531 ; gain = 307.672
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 921.383 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 918.531 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [d:/MyStuff/Projects/Vivado/HDL-project/HDL-mean-filter/HDL-mean-filter.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'mem_block_1'
-Finished Parsing XDC File [d:/MyStuff/Projects/Vivado/HDL-project/HDL-mean-filter/HDL-mean-filter.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'mem_block_1'
-Parsing XDC File [D:/MyStuff/Projects/Vivado/HDL-project/HDL-mean-filter/HDL-mean-filter.runs/synth_1/dont_touch.xdc]
-Finished Parsing XDC File [D:/MyStuff/Projects/Vivado/HDL-project/HDL-mean-filter/HDL-mean-filter.runs/synth_1/dont_touch.xdc]
+Parsing XDC File [d:/MyStuff/Projects/Vivado/HDL-project/HDL-mean-filter/HDL-mean-filter.srcs/sources_1/ip/axi_uartlite_0/axi_uartlite_0/axi_uartlite_0_in_context.xdc] for cell 'uartlite_1'
+Finished Parsing XDC File [d:/MyStuff/Projects/Vivado/HDL-project/HDL-mean-filter/HDL-mean-filter.srcs/sources_1/ip/axi_uartlite_0/axi_uartlite_0/axi_uartlite_0_in_context.xdc] for cell 'uartlite_1'
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 949.539 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 989.113 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 949.539 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.030 . Memory (MB): peak = 989.113 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 949.539 ; gain = 338.098
+Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 989.113 ; gain = 378.254
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7k70tfbv676-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 949.539 ; gain = 338.098
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 989.113 ; gain = 378.254
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
-Applied set_property DONT_TOUCH = true for mem_block_1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for uartlite_1. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 949.539 ; gain = 338.098
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 989.113 ; gain = 378.254
 ---------------------------------------------------------------------------------
+INFO: [Synth 8-4471] merging register 'uart_s_axi_wvalid_out_reg' into 'uart_s_axi_awvalid_out_reg' [D:/MyStuff/Projects/Vivado/HDL-project/HDL-mean-filter/HDL-mean-filter.srcs/sources_1/new/uart_transmit.vhd:159]
+INFO: [Synth 8-802] inferred FSM for state register 'axi_set_cr_sub_state_reg' in module 'uart_transmit'
+INFO: [Synth 8-802] inferred FSM for state register 'axi_tx_sub_state_reg' in module 'uart_transmit'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 949.539 ; gain = 338.098
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 989.113 ; gain = 378.254
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -89,6 +132,18 @@ Report RTL Partitions:
 Start RTL Component Statistics 
 ---------------------------------------------------------------------------------
 Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+	                4 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 1     
+	   7 Input      4 Bit        Muxes := 2     
+	   4 Input      4 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 12    
+	   7 Input      1 Bit        Muxes := 13    
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -96,6 +151,20 @@ Finished RTL Component Statistics
 Start RTL Hierarchical Component Statistics 
 ---------------------------------------------------------------------------------
 Hierarchical RTL Component report 
+Module uart_transmit 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+	                4 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 1     
+	   7 Input      4 Bit        Muxes := 2     
+	   4 Input      4 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 12    
+	   7 Input      1 Bit        Muxes := 13    
 ---------------------------------------------------------------------------------
 Finished RTL Hierarchical Component Statistics
 ---------------------------------------------------------------------------------
@@ -112,8 +181,52 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\uart_transmit_1/uart_s_axi_wstrb_out_reg[0] )
+INFO: [Synth 8-3886] merging instance 'uart_transmit_1/uart_s_axi_wstrb_out_reg[1]' (FDE) to 'uart_transmit_1/uart_s_axi_wstrb_out_reg[2]'
+INFO: [Synth 8-3886] merging instance 'uart_transmit_1/uart_s_axi_wstrb_out_reg[2]' (FDE) to 'uart_transmit_1/uart_s_axi_wstrb_out_reg[3]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\uart_transmit_1/uart_s_axi_wstrb_out_reg[3] )
+INFO: [Synth 8-3886] merging instance 'uart_transmit_1/uart_s_axi_wdata_out_reg[2]' (FDE) to 'uart_transmit_1/uart_s_axi_wdata_out_reg[3]'
+INFO: [Synth 8-3886] merging instance 'uart_transmit_1/uart_s_axi_wdata_out_reg[3]' (FDE) to 'uart_transmit_1/uart_s_axi_wdata_out_reg[5]'
+INFO: [Synth 8-3886] merging instance 'uart_transmit_1/uart_s_axi_wdata_out_reg[4]' (FDE) to 'uart_transmit_1/uart_s_axi_awaddr_out_reg[3]'
+INFO: [Synth 8-3886] merging instance 'uart_transmit_1/uart_s_axi_wdata_out_reg[5]' (FDE) to 'uart_transmit_1/uart_s_axi_wdata_out_reg[7]'
+INFO: [Synth 8-3886] merging instance 'uart_transmit_1/uart_s_axi_wdata_out_reg[7]' (FDE) to 'uart_transmit_1/uart_s_axi_wdata_out_reg[8]'
+INFO: [Synth 8-3886] merging instance 'uart_transmit_1/uart_s_axi_wdata_out_reg[8]' (FDE) to 'uart_transmit_1/uart_s_axi_wdata_out_reg[9]'
+INFO: [Synth 8-3886] merging instance 'uart_transmit_1/uart_s_axi_wdata_out_reg[9]' (FDE) to 'uart_transmit_1/uart_s_axi_wdata_out_reg[10]'
+INFO: [Synth 8-3886] merging instance 'uart_transmit_1/uart_s_axi_wdata_out_reg[10]' (FDE) to 'uart_transmit_1/uart_s_axi_wdata_out_reg[11]'
+INFO: [Synth 8-3886] merging instance 'uart_transmit_1/uart_s_axi_wdata_out_reg[11]' (FDE) to 'uart_transmit_1/uart_s_axi_wdata_out_reg[12]'
+INFO: [Synth 8-3886] merging instance 'uart_transmit_1/uart_s_axi_wdata_out_reg[12]' (FDE) to 'uart_transmit_1/uart_s_axi_wdata_out_reg[13]'
+INFO: [Synth 8-3886] merging instance 'uart_transmit_1/uart_s_axi_wdata_out_reg[13]' (FDE) to 'uart_transmit_1/uart_s_axi_wdata_out_reg[14]'
+INFO: [Synth 8-3886] merging instance 'uart_transmit_1/uart_s_axi_wdata_out_reg[14]' (FDE) to 'uart_transmit_1/uart_s_axi_wdata_out_reg[15]'
+INFO: [Synth 8-3886] merging instance 'uart_transmit_1/uart_s_axi_wdata_out_reg[15]' (FDE) to 'uart_transmit_1/uart_s_axi_wdata_out_reg[16]'
+INFO: [Synth 8-3886] merging instance 'uart_transmit_1/uart_s_axi_wdata_out_reg[16]' (FDE) to 'uart_transmit_1/uart_s_axi_wdata_out_reg[17]'
+INFO: [Synth 8-3886] merging instance 'uart_transmit_1/uart_s_axi_wdata_out_reg[17]' (FDE) to 'uart_transmit_1/uart_s_axi_wdata_out_reg[18]'
+INFO: [Synth 8-3886] merging instance 'uart_transmit_1/uart_s_axi_wdata_out_reg[18]' (FDE) to 'uart_transmit_1/uart_s_axi_wdata_out_reg[19]'
+INFO: [Synth 8-3886] merging instance 'uart_transmit_1/uart_s_axi_wdata_out_reg[19]' (FDE) to 'uart_transmit_1/uart_s_axi_wdata_out_reg[20]'
+INFO: [Synth 8-3886] merging instance 'uart_transmit_1/uart_s_axi_wdata_out_reg[20]' (FDE) to 'uart_transmit_1/uart_s_axi_wdata_out_reg[21]'
+INFO: [Synth 8-3886] merging instance 'uart_transmit_1/uart_s_axi_wdata_out_reg[21]' (FDE) to 'uart_transmit_1/uart_s_axi_wdata_out_reg[22]'
+INFO: [Synth 8-3886] merging instance 'uart_transmit_1/uart_s_axi_wdata_out_reg[22]' (FDE) to 'uart_transmit_1/uart_s_axi_wdata_out_reg[23]'
+INFO: [Synth 8-3886] merging instance 'uart_transmit_1/uart_s_axi_wdata_out_reg[23]' (FDE) to 'uart_transmit_1/uart_s_axi_wdata_out_reg[24]'
+INFO: [Synth 8-3886] merging instance 'uart_transmit_1/uart_s_axi_wdata_out_reg[24]' (FDE) to 'uart_transmit_1/uart_s_axi_wdata_out_reg[25]'
+INFO: [Synth 8-3886] merging instance 'uart_transmit_1/uart_s_axi_wdata_out_reg[25]' (FDE) to 'uart_transmit_1/uart_s_axi_wdata_out_reg[26]'
+INFO: [Synth 8-3886] merging instance 'uart_transmit_1/uart_s_axi_wdata_out_reg[26]' (FDE) to 'uart_transmit_1/uart_s_axi_wdata_out_reg[27]'
+INFO: [Synth 8-3886] merging instance 'uart_transmit_1/uart_s_axi_wdata_out_reg[27]' (FDE) to 'uart_transmit_1/uart_s_axi_wdata_out_reg[28]'
+INFO: [Synth 8-3886] merging instance 'uart_transmit_1/uart_s_axi_wdata_out_reg[28]' (FDE) to 'uart_transmit_1/uart_s_axi_wdata_out_reg[29]'
+INFO: [Synth 8-3886] merging instance 'uart_transmit_1/uart_s_axi_wdata_out_reg[29]' (FDE) to 'uart_transmit_1/uart_s_axi_wdata_out_reg[30]'
+INFO: [Synth 8-3886] merging instance 'uart_transmit_1/uart_s_axi_wdata_out_reg[30]' (FDE) to 'uart_transmit_1/uart_s_axi_wdata_out_reg[31]'
+INFO: [Synth 8-3886] merging instance 'uart_transmit_1/uart_s_axi_wdata_out_reg[31]' (FDE) to 'uart_transmit_1/uart_s_axi_awaddr_out_reg[0]'
+INFO: [Synth 8-3886] merging instance 'uart_transmit_1/uart_s_axi_awaddr_out_reg[0]' (FDE) to 'uart_transmit_1/uart_s_axi_awaddr_out_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\uart_transmit_1/uart_s_axi_awaddr_out_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\uart_transmit_1/comm_state_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\uart_transmit_1/axi_tx_sub_state_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\uart_transmit_1/axi_tx_sub_state_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\uart_transmit_1/axi_tx_sub_state_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\uart_transmit_1/axi_tx_sub_state_reg[3] )
+INFO: [Synth 8-3886] merging instance 'uart_transmit_1/uart_s_axi_wdata_out_reg[0]' (FDE) to 'uart_transmit_1/uart_s_axi_wdata_out_reg[1]'
+INFO: [Synth 8-3886] merging instance 'uart_transmit_1/uart_s_axi_awaddr_out_reg[1]' (FDE) to 'uart_transmit_1/uart_s_axi_wdata_out_reg[6]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\uart_transmit_1/uart_s_axi_wdata_out_reg[6] )
+INFO: [Synth 8-3886] merging instance 'uart_transmit_1/uart_s_axi_awaddr_out_reg[2]' (FDE) to 'uart_transmit_1/uart_s_axi_awaddr_out_reg[3]'
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:27 . Memory (MB): peak = 949.539 ; gain = 338.098
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 989.113 ; gain = 378.254
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -125,13 +238,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:37 ; elapsed = 00:00:41 . Memory (MB): peak = 983.625 ; gain = 372.184
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 995.758 ; gain = 384.898
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:37 ; elapsed = 00:00:41 . Memory (MB): peak = 983.625 ; gain = 372.184
+Finished Timing Optimization : Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 995.832 ; gain = 384.973
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -143,7 +256,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:37 ; elapsed = 00:00:41 . Memory (MB): peak = 993.418 ; gain = 381.977
+Finished Technology Mapping : Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 1014.887 ; gain = 404.027
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -167,13 +280,13 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:46 ; elapsed = 00:00:50 . Memory (MB): peak = 1009.223 ; gain = 397.781
+Finished IO Insertion : Time (s): cpu = 00:00:31 ; elapsed = 00:00:34 . Memory (MB): peak = 1020.676 ; gain = 409.816
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:46 ; elapsed = 00:00:50 . Memory (MB): peak = 1009.223 ; gain = 397.781
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:31 ; elapsed = 00:00:34 . Memory (MB): peak = 1020.676 ; gain = 409.816
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -192,73 +305,84 @@ Report Check Netlist:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:46 ; elapsed = 00:00:50 . Memory (MB): peak = 1009.223 ; gain = 397.781
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:31 ; elapsed = 00:00:34 . Memory (MB): peak = 1020.676 ; gain = 409.816
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:46 ; elapsed = 00:00:50 . Memory (MB): peak = 1009.223 ; gain = 397.781
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:31 ; elapsed = 00:00:34 . Memory (MB): peak = 1020.676 ; gain = 409.816
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:46 ; elapsed = 00:00:50 . Memory (MB): peak = 1009.223 ; gain = 397.781
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:31 ; elapsed = 00:00:34 . Memory (MB): peak = 1020.676 ; gain = 409.816
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:46 ; elapsed = 00:00:50 . Memory (MB): peak = 1009.223 ; gain = 397.781
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:31 ; elapsed = 00:00:34 . Memory (MB): peak = 1020.676 ; gain = 409.816
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
 ---------------------------------------------------------------------------------
 
 Report BlackBoxes: 
-+------+--------------+----------+
-|      |BlackBox name |Instances |
-+------+--------------+----------+
-|1     |blk_mem_gen_0 |         1|
-+------+--------------+----------+
++------+---------------+----------+
+|      |BlackBox name  |Instances |
++------+---------------+----------+
+|1     |axi_uartlite_0 |         1|
++------+---------------+----------+
 
 Report Cell Usage: 
-+------+--------------+------+
-|      |Cell          |Count |
-+------+--------------+------+
-|1     |blk_mem_gen_0 |     1|
-|2     |IBUF          |    20|
-|3     |OBUF          |     8|
-+------+--------------+------+
++------+---------------+------+
+|      |Cell           |Count |
++------+---------------+------+
+|1     |axi_uartlite_0 |     1|
+|2     |BUFG           |     1|
+|3     |LUT1           |     2|
+|4     |LUT2           |     2|
+|5     |LUT3           |     5|
+|6     |LUT4           |     1|
+|7     |LUT5           |     5|
+|8     |LUT6           |     3|
+|9     |FDCE           |     1|
+|10    |FDPE           |     1|
+|11    |FDRE           |     8|
+|12    |IBUF           |     4|
+|13    |OBUF           |     2|
++------+---------------+------+
 
 Report Instance Areas: 
-+------+---------+-------+------+
-|      |Instance |Module |Cells |
-+------+---------+-------+------+
-|1     |top      |       |    36|
-+------+---------+-------+------+
++------+------------------+--------------+------+
+|      |Instance          |Module        |Cells |
++------+------------------+--------------+------+
+|1     |top               |              |    78|
+|2     |  uart_transmit_1 |uart_transmit |    28|
++------+------------------+--------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:46 ; elapsed = 00:00:50 . Memory (MB): peak = 1009.223 ; gain = 397.781
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:31 ; elapsed = 00:00:34 . Memory (MB): peak = 1020.676 ; gain = 409.816
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:32 ; elapsed = 00:00:47 . Memory (MB): peak = 1009.223 ; gain = 369.625
-Synthesis Optimization Complete : Time (s): cpu = 00:00:46 ; elapsed = 00:00:50 . Memory (MB): peak = 1009.223 ; gain = 397.781
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:22 ; elapsed = 00:00:30 . Memory (MB): peak = 1020.676 ; gain = 339.234
+Synthesis Optimization Complete : Time (s): cpu = 00:00:31 ; elapsed = 00:00:34 . Memory (MB): peak = 1020.676 ; gain = 409.816
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1009.223 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1032.746 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1018.453 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1035.727 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-14 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+64 Infos, 39 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:56 ; elapsed = 00:01:02 . Memory (MB): peak = 1018.453 ; gain = 679.547
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1018.453 ; gain = 0.000
+synth_design: Time (s): cpu = 00:00:37 ; elapsed = 00:00:42 . Memory (MB): peak = 1035.727 ; gain = 697.074
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1035.727 ; gain = 0.000
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
-INFO: [Common 17-1381] The checkpoint 'D:/MyStuff/Projects/Vivado/HDL-project/HDL-mean-filter/HDL-mean-filter.runs/synth_1/bram.dcp' has been generated.
-INFO: [runtcl-4] Executing : report_utilization -file bram_utilization_synth.rpt -pb bram_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Thu Jul 16 13:15:44 2020...
+INFO: [Common 17-1381] The checkpoint 'D:/MyStuff/Projects/Vivado/HDL-project/HDL-mean-filter/HDL-mean-filter.runs/synth_1/uart_transmit_with_uartlite.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file uart_transmit_with_uartlite_utilization_synth.rpt -pb uart_transmit_with_uartlite_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Jul 27 16:04:20 2020...

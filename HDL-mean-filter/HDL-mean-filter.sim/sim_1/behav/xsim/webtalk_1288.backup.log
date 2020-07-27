@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Webtalk v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Thu Jul 16 11:05:43 2020
+# Process ID: 1288
+# Current directory: D:/MyStuff/Projects/Vivado/HDL-project/HDL-mean-filter/HDL-mean-filter.sim/sim_1/behav/xsim
+# Command line: wbtcv.exe -mode batch -source D:/MyStuff/Projects/Vivado/HDL-project/HDL-mean-filter/HDL-mean-filter.sim/sim_1/behav/xsim/xsim.dir/bram_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: D:/MyStuff/Projects/Vivado/HDL-project/HDL-mean-filter/HDL-mean-filter.sim/sim_1/behav/xsim/webtalk.log
+# Journal file: D:/MyStuff/Projects/Vivado/HDL-project/HDL-mean-filter/HDL-mean-filter.sim/sim_1/behav/xsim\webtalk.jou
+#-----------------------------------------------------------
+source D:/MyStuff/Projects/Vivado/HDL-project/HDL-mean-filter/HDL-mean-filter.sim/sim_1/behav/xsim/xsim.dir/bram_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'D:/MyStuff/Projects/Vivado/HDL-project/HDL-mean-filter/HDL-mean-filter.sim/sim_1/behav/xsim/xsim.dir/bram_tb_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Thu Jul 16 11:05:48 2020. For additional details about this file, please refer to the WebTalk help file at D:/Windows/ProgramFiles/Xilinx/Vivado/2019.2/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Thu Jul 16 11:05:48 2020...

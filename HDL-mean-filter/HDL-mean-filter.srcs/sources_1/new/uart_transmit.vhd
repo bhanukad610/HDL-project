@@ -227,6 +227,7 @@ process (clk, rst_n)
                                 if (uart_interrupt_in = '1') then
                                     axi_tx_sub_state <= Set_Tx_Write_Up;
                                 end if;
+                                finished_op_out <= '1';
                             when others =>
                                 null;
                         end case;

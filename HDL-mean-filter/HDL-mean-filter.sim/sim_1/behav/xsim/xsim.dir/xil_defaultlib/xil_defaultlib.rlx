@@ -4,5 +4,9 @@ Nov  6 2019
 21:57:16
 D:/MyStuff/Projects/Vivado/HDL-project/HDL-mean-filter/HDL-mean-filter.sim/new/bram_tb.vhd,1594882904,vhdl,,,,bram_tb,,,,,,,,
 D:/MyStuff/Projects/Vivado/HDL-project/HDL-mean-filter/HDL-mean-filter.sim/sim_1/behav/xsim/glbl.v,1594882904,verilog,,,,glbl,,,,,,,,
+D:/MyStuff/Projects/Vivado/HDL-project/HDL-mean-filter/HDL-mean-filter.srcs/sim_1/new/uart_transmit_with_uartlite_tb.vhd,1595847463,vhdl,,,,uart_transmit_with_uartlite_tb,,,,,,,,
+D:/MyStuff/Projects/Vivado/HDL-project/HDL-mean-filter/HDL-mean-filter.srcs/sources_1/ip/axi_uartlite_0/sim/axi_uartlite_0.vhd,1595724588,vhdl,,,,axi_uartlite_0,,,,,,,,
 D:/MyStuff/Projects/Vivado/HDL-project/HDL-mean-filter/HDL-mean-filter.srcs/sources_1/ip/blk_mem_gen_0/sim/blk_mem_gen_0.v,1594885560,verilog,,,,blk_mem_gen_0,,,,,,,,
 D:/MyStuff/Projects/Vivado/HDL-project/HDL-mean-filter/HDL-mean-filter.srcs/sources_1/new/bram.vhd,1594882904,vhdl,,,,bram,,,,,,,,
+D:/MyStuff/Projects/Vivado/HDL-project/HDL-mean-filter/HDL-mean-filter.srcs/sources_1/new/uart_transmit.vhd,1595840047,vhdl,,,,uart_transmit,,,,,,,,
+D:/MyStuff/Projects/Vivado/HDL-project/HDL-mean-filter/HDL-mean-filter.srcs/sources_1/new/uart_transmit_with_uartlite.vhd,1595846003,vhdl,,,,uart_transmit_with_uartlite,,,,,,,,
