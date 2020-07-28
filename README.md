@@ -90,9 +90,8 @@ UART Communication is achieved by doing read operations and write operations to 
 | 31-5 | Reserved | N/A | 0h | Reserved |
 | 4 | Eable Intr | Write | 0h | Enable interrupt for the AXI UART Lite0 = Disable interrupt signal1 = Enable interrupt signal |
 | 3-2 | Reserved | N/A | 0h | Reserved |
-| 1 | Rst Rx FIFO | Write | 0h | Reset/clear the receive FIFOWriting a 1 to this bit position clears the receive FIFO0 = Do nothing1 = Clear the receive FIFO
- |
- | 0 | Rst Tx FIFO | Write | 0h | Reset/clear the transmit FIFOWriting a 1 to this bit position clears the transmit FIFO0 = Do nothing1 = Clear the transmit FIFO |
+| 1 | Rst Rx FIFO | Write | 0h | Reset/clear the receive FIFOWriting a 1 to this bit position clears the receive FIFO0 = Do nothing1 = Clear the receive FIFO |
+| 0 | Rst Tx FIFO | Write | 0h | Reset/clear the transmit FIFOWriting a 1 to this bit position clears the transmit FIFO0 = Do nothing1 = Clear the transmit FIFO |
 
 ### Component Overview 
 ![alt text](https://github.com/bhanukad610/HDL-project/blob/master/Images/UARTLite.PNG?raw=true)
