@@ -16,6 +16,7 @@ architecture bench of mean_filter_tb is
              pixel_in : in STD_LOGIC_VECTOR (7 downto 0);
              pixel_out :out STD_LOGIC_VECTOR (7 downto 0);
              clk  : in STD_LOGIC;
+             total : out STD_LOGIC_VECTOR (7 downto 0);
              reset_in :in STD_LOGIC);
   end component;
 
@@ -28,6 +29,7 @@ architecture bench of mean_filter_tb is
   signal pixel_out: STD_LOGIC_VECTOR (7 downto 0);
   signal clk: STD_LOGIC;
   signal reset_in: STD_LOGIC;
+  signal total :  STD_LOGIC_VECTOR (7 downto 0);
 
   constant clock_period: time := 10 ns;
   signal stop_the_clock: boolean;
@@ -42,6 +44,7 @@ begin
                               pixel_in     => pixel_in,
                               pixel_out    => pixel_out,
                               clk          => clk,
+                              total => total,
                               reset_in     => reset_in );
 
   stimulus: process
@@ -65,6 +68,10 @@ begin
     pixel_in <= "10010100";
     wait for 20ns;
     pixel_in <= "10011100";
+    wait for 20ns;
+    pixel_in <= "10110100";
+    wait for 20ns;
+    pixel_in <= "10110100";
     wait for 20ns;
     pixel_in <= "10110100";
     

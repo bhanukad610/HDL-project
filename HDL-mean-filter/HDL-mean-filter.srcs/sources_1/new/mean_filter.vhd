@@ -41,6 +41,7 @@ entity mean_filter is
            pixel_in : in STD_LOGIC_VECTOR (7 downto 0);
            pixel_out :out STD_LOGIC_VECTOR (7 downto 0);
            clk  : in STD_LOGIC;
+           total : out STD_LOGIC_VECTOR (7 downto 0);
            reset_in :in STD_LOGIC);
 end mean_filter;
 
@@ -52,6 +53,7 @@ signal col_dec : integer;
 signal addr_int : integer;
 signal dout_bram : STD_LOGIC_VECTOR (7 downto 0);
 signal clock : STD_LOGIC_VECTOR (1 downto 0);
+
 
 begin
 
@@ -81,11 +83,14 @@ col_dec <= to_integer(signed(col)) + 1;
             elsif ctrl_tick_v=2 then
                 dout_bram <= pixel_in;
                 sum := sum + to_integer(signed(dout_bram));
+                total <= std_logic_vector(to_unsigned(sum, total'length));
                 col_offset := col_offset + 1;
                 
                 if col_offset = 1 then
-                    col_offset := -1;
-                    row_offset := row_offset + 1;
+                    if row_offset /= 1 then
+                        col_offset := -1;
+                        row_offset := row_offset + 1;
+                    end if;
                 end if;
      if (row_offset = 1 and col_offset = 1) then
           sum := sum / 9;

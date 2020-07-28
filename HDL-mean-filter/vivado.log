@@ -1,0 +1,30 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Tue Jul 28 11:40:17 2020
+# Process ID: 2132
+# Current directory: E:/Acadamics/Semester 7/HDL/HDL-project/HDL-mean-filter
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5840 E:\Acadamics\Semester 7\HDL\HDL-project\HDL-mean-filter\HDL-mean-filter.xpr
+# Log file: E:/Acadamics/Semester 7/HDL/HDL-project/HDL-mean-filter/vivado.log
+# Journal file: E:/Acadamics/Semester 7/HDL/HDL-project/HDL-mean-filter\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {E:/Acadamics/Semester 7/HDL/HDL-project/HDL-mean-filter/HDL-mean-filter.xpr}
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'F:/xilinx/Vivado/2019.2/data/ip'.
+open_project: Time (s): cpu = 00:00:13 ; elapsed = 00:00:22 . Memory (MB): peak = 737.598 ; gain = 128.551
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files {{E:/Acadamics/Semester 7/HDL/HDL-project/HDL-mean-filter/HDL-mean-filter.srcs/sources_1/new/filter.vhd}}] -no_script -reset -force -quiet
+remove_files  {{E:/Acadamics/Semester 7/HDL/HDL-project/HDL-mean-filter/HDL-mean-filter.srcs/sources_1/new/filter.vhd}}
+remove_files  {{E:/Acadamics/Semester 7/HDL/HDL-project/HDL-mean-filter/HDL-mean-filter.srcs/sources_1/new/filter.vhd}}
+WARNING: [Vivado 12-818] No files matched 'E:/Acadamics/Semester 7/HDL/HDL-project/HDL-mean-filter/HDL-mean-filter.srcs/sources_1/new/filter.vhd'
+file delete -force {E:/Acadamics/Semester 7/HDL/HDL-project/HDL-mean-filter/HDL-mean-filter.srcs/sources_1/new/filter.vhd}
+export_ip_user_files -of_objects  [get_files {{E:/Acadamics/Semester 7/HDL/HDL-project/HDL-mean-filter/HDL-mean-filter.srcs/sources_1/new/memory_locations.vhd}}] -no_script -reset -force -quiet
+remove_files  {{E:/Acadamics/Semester 7/HDL/HDL-project/HDL-mean-filter/HDL-mean-filter.srcs/sources_1/new/memory_locations.vhd}}
+file delete -force {E:/Acadamics/Semester 7/HDL/HDL-project/HDL-mean-filter/HDL-mean-filter.srcs/sources_1/new/memory_locations.vhd}
+remove_files  {{E:/Acadamics/Semester 7/HDL/HDL-project/HDL-mean-filter/HDL-mean-filter.srcs/sources_1/new/memory_locations.vhd}}
+WARNING: [Vivado 12-818] No files matched 'E:/Acadamics/Semester 7/HDL/HDL-project/HDL-mean-filter/HDL-mean-filter.srcs/sources_1/new/memory_locations.vhd'

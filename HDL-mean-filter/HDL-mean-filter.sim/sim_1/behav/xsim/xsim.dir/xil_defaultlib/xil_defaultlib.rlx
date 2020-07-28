@@ -4,9 +4,9 @@ Nov  6 2019
 21:57:16
 E:/Acadamics/Semester 7/HDL/HDL-project/HDL-mean-filter/HDL-mean-filter.sim/new/bram_tb.vhd,1594882254,vhdl,,,,bram_tb,,,,,,,,
 E:/Acadamics/Semester 7/HDL/HDL-project/HDL-mean-filter/HDL-mean-filter.sim/sim_1/behav/xsim/glbl.v,1594882254,verilog,,,,glbl,,,,,,,,
-E:/Acadamics/Semester 7/HDL/HDL-project/HDL-mean-filter/HDL-mean-filter.srcs/sim_1/new/mean_filter_tb.vhd,1595848313,vhdl,,,,mean_filter_tb,,,,,,,,
+E:/Acadamics/Semester 7/HDL/HDL-project/HDL-mean-filter/HDL-mean-filter.srcs/sim_1/new/mean_filter_tb.vhd,1595873881,vhdl,,,,mean_filter_tb,,,,,,,,
 E:/Acadamics/Semester 7/HDL/HDL-project/HDL-mean-filter/HDL-mean-filter.srcs/sim_1/new/mean_filter_with_bram_tb.vhd,1595677322,vhdl,,,,mean_filter_with_bram_tb,,,,,,,,
 E:/Acadamics/Semester 7/HDL/HDL-project/HDL-mean-filter/HDL-mean-filter.srcs/sources_1/ip/blk_mem_gen_0/sim/blk_mem_gen_0.v,1594882360,verilog,,,,blk_mem_gen_0,,,,,,,,
 E:/Acadamics/Semester 7/HDL/HDL-project/HDL-mean-filter/HDL-mean-filter.srcs/sources_1/new/bram.vhd,1594882255,vhdl,,,,bram,,,,,,,,
-E:/Acadamics/Semester 7/HDL/HDL-project/HDL-mean-filter/HDL-mean-filter.srcs/sources_1/new/mean_filter.vhd,1595846195,vhdl,,,,mean_filter,,,,,,,,
+E:/Acadamics/Semester 7/HDL/HDL-project/HDL-mean-filter/HDL-mean-filter.srcs/sources_1/new/mean_filter.vhd,1595873802,vhdl,,,,mean_filter,,,,,,,,
 E:/Acadamics/Semester 7/HDL/HDL-project/HDL-mean-filter/HDL-mean-filter.srcs/sources_1/new/mean_filter_with_bram.vhd,1595674586,vhdl,,,,mean_filter_with_bram,,,,,,,,
