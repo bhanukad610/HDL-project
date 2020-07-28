@@ -1,8 +1,13 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+<<<<<<< HEAD
 | Date         : Sat Jul 25 16:27:22 2020
 | Host         : DESKTOP-5GV2NU3 running 64-bit major release  (build 9200)
+=======
+| Date         : Fri Jul 17 12:23:43 2020
+| Host         : DESKTOP-U5NAAV0 running 64-bit major release  (build 9200)
+>>>>>>> scheduler
 | Command      : report_utilization -file mean_filter_with_bram_utilization_synth.rpt -pb mean_filter_with_bram_utilization_synth.pb
 | Design       : mean_filter_with_bram
 | Device       : 7k70tfbv676-1

@@ -1,5 +1,9 @@
 <?xml version="1.0"?>
 <ProcessHandle Version="1" Minor="0">
+<<<<<<< HEAD
     <Process Command="vivado.bat" Owner="Bhanuka Dissanayake" Host="DESKTOP-5GV2NU3" Pid="1744" HostCore="8" HostMemory="08434044928">
+=======
+    <Process Command="vivado.bat" Owner="SAHAN" Host="DESKTOP-U5NAAV0" Pid="13424" HostCore="4" HostMemory="017041690624">
+>>>>>>> scheduler
     </Process>
 </ProcessHandle>
