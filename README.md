@@ -11,7 +11,7 @@ The high level architecture of the system is as follows.
 
 ## Scheduler
 ### Module description
-The main task of the scheduler is to manage each component. The scheduler initiates the process from the user input. To initiate the process, a flag from the UART handler should be raised that says there are enough pixel values that are loaded to the first BRAM. Then the scheduler gives row and column to the mean filter that needs to calculate. Furthermore, scheduler tells UART handler to send to the resulted image after finishing the process
+The main task of the scheduler is to manage the image convolution process. The process is initiated by the scheduler in the process when user input is given. Then the row and column values of the pixel that the mean value should be obtained are fed to the Mean Filter module and the init_single_op flag is raised. All the row and column values of the pixels are fed to the Mean Filter module pixel by pixel.
 
 ### Module overview 
 ![alt text](https://github.com/bhanukad610/HDL-project/blob/master/Images/scheduler.png?raw=true)
@@ -37,13 +37,23 @@ Final value for the output image is gained by dividing it by 9 which is the kern
 
 ## BRAM
 ### Component Description
-2 BRAMs are used. One is to store the input image pixel values after adding the padding. And second one for storing the output image’s pixel values.
+Block Rams are used to store the input image and the calculated output image. BRams are created using the Block Memory Generator IP core. The BRams were configured using the following settings.
+
+| Parameter  | Value |
+| -------------   | ------------- | 
+| Interface Type  | Native |
+| Memory Type  | Simple Dual-Port RAM |
+| Write Width  | 8 |
+| Write Depth  | 324 |
+
+The data of the input image is written to Block Ram 1 by the UART Handler module which is received by UART and the data is read by the Mean Filter module. Furthermore, the data of the calculated output image is written to the Block Ram 2 by Mean FIlter module and the data is read by the UART Handler module to transmit using UART.
+
 ### Component Overview
 ![alt text](https://github.com/bhanukad610/HDL-project/blob/master/Images/BRam_2.PNG?raw=true)
 
 ## UART Lite
 ### Component Description
-UART lite IP core has four registers
+The UART Communication between the Computer and FPGA is achieved by the UART Lite IP and it has four registers to conduct this UART communication as follows.
 
 | Address Offset  | Register Name | Description |
 | -------------   | ------------- | ---------- |
@@ -52,7 +62,7 @@ UART lite IP core has four registers
 | 08h | STAT_REG| UART Lite status register |
 | 0Ch | CTRL_REG | UART Lite control register |
 
-UART Communication is achieved by doing read operations and write operations to the above four registers. The read operations and write operations are done using AXI protocol which is a protocol used to communicate in networks on chip systems.
+UART Communication is achieved by doing read operations and write operations to the above four registers. The read operations and write operations are done using AXI protocol which is a protocol used to communicate in network-on-chip systems.
 
 ### Component Overview 
 ![alt text](https://github.com/bhanukad610/HDL-project/blob/master/Images/UARTLite.PNG?raw=true)
