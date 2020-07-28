@@ -14,6 +14,7 @@ The high level architecture of the system is as follows.
 The main task of the scheduler is to manage each component. The scheduler initiates the process from the user input. To initiate the process, a flag from the UART handler should be raised that says there are enough pixel values that are loaded to the first BRAM. Then the scheduler gives row and column to the mean filter that needs to calculate. Furthermore, scheduler tells UART handler to send to the resulted image after finishing the process
 
 ### Module overview 
+![alt text](https://github.com/bhanukad610/HDL-project/blob/master/Images/scheduler.png?raw=true)
 
 ## Mean Filter
 ### Module description
@@ -52,6 +53,46 @@ UART lite IP core has four registers
 | 0Ch | CTRL_REG | UART Lite control register |
 
 UART Communication is achieved by doing read operations and write operations to the above four registers. The read operations and write operations are done using AXI protocol which is a protocol used to communicate in networks on chip systems. Properties of each register will be described as follows.
+
+#### Rx FIFO
+![alt text](https://github.com/bhanukad610/HDL-project/blob/master/Images/rx_fifo.PNG?raw=true)
+| Bits  | Name | Access | Reset Value | Description |
+| -------------   | ------------- | ---------- | ------------- | ---------- |
+| 31-Data Bits | Reserved | N/A | 0h | Reserved |
+| [Data Bits-1] - 0 | Rx Data | Read | 0h | UART receive data |
+
+#### Tx FIFO
+![alt text](https://github.com/bhanukad610/HDL-project/blob/master/Images/tx_fifo.PNG?raw=true)
+| Bits  | Name | Access | Reset Value | Description |
+| -------------   | ------------- | ---------- | ------------- | ---------- |
+| 31-Data Bits | Reserved | N/A | 0h | Reserved |
+| [Data Bits-1] - 0 | Tx Data | Write | 0h | UART receive data |
+
+
+#### STAT REG
+![alt text](https://github.com/bhanukad610/HDL-project/blob/master/Images/stat_reg.PNG?raw=true)
+| Bits  | Name | Access | Reset Value | Description |
+| -------------   | ------------- | ---------- | ------------- | ---------- |
+| 31-8 | Reserved | N/A | 0h | Reserved |
+| 7 | Parity Error | Read | 0h | Indicates that a parity error has occurred after the last time the status register was read. If the UART is configured without any parity handling, this bit is always 0.The received character is written into the receive FIFO.This bit is cleared when the status register is read.0 = No parity error has occurred1 = Parity error has occurred |
+| 6 | Frame Error | Read | 0h | Indicates that a frame error has occurred after the last time the status register was read. Frame error is defined as detection of a stop bit with the value 0. The receive character is ignored and not written to the receive FIFO.This bit is cleared when the status register is read.0 = No frame error has occurred1 = Frame error has occurred |
+| 5 | Overrun Error | Read | 0h | Indicates that an overrun error has occurred after the last time the status register was read. Overrun is when a new character has been received but the receive FIFO is full. The received character is ignored and not written into the receive FIFO. This bit is cleared when the status register is read.0 = No overrun error has occurred1 = Overrun error has occurred |
+| 4 | Intr Enable | Read | 0h | Indicates that interrupts is enabled.0 = Interrupt is disabled1 = Interrupt is enabled |
+| 3 | Tx FIFO Full | Read | 0h | Indicates if the transmit FIFO is full.0 = Transmit FIFO is not full1 = Transmit FIFO is full |
+| 2 | Tx FIFO Empty | Read | 0h | Indicates if the transmit FIFO is empty.0 = Transmit FIFO is not empty1 = Transmit FIFO is empty |
+| 1 | Rx FIFO Full | Read | 0h | Indicates if the receive FIFO is full.0 = Receive FIFO is not full1 = Receive FIFO is full |
+| 0 | Rx FIFO Valid Data | Read | 0h | Indicates if the receive FIFO has data.0 = Receive FIFO is empty1 = Receive FIFO has dataSend Feedback |
+
+#### CTRL_REG
+![alt text](https://github.com/bhanukad610/HDL-project/blob/master/Images/tx_fifo.PNG?raw=true)
+| Bits  | Name | Access | Reset Value | Description |
+| -------------   | ------------- | ---------- | ------------- | ---------- |
+| 31-5 | Reserved | N/A | 0h | Reserved |
+| 4 | Eable Intr | Write | 0h | Enable interrupt for the AXI UART Lite0 = Disable interrupt signal1 = Enable interrupt signal |
+| 3-2 | Reserved | N/A | 0h | Reserved |
+| 1 | Rst Rx FIFO | Write | 0h | Reset/clear the receive FIFOWriting a 1 to this bit position clears the receive FIFO0 = Do nothing1 = Clear the receive FIFO
+ |
+ | 0 | Rst Tx FIFO | Write | 0h | Reset/clear the transmit FIFOWriting a 1 to this bit position clears the transmit FIFO0 = Do nothing1 = Clear the transmit FIFO |
 
 ### Component Overview 
 ![alt text](https://github.com/bhanukad610/HDL-project/blob/master/Images/UARTLite.PNG?raw=true)
