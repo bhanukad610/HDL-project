@@ -1,6 +1,6 @@
 Vivado Simulator 2019.2
 Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
-Running: F:/xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 0c1efe39b5044287b7305e71e5c7efd0 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip -L xpm --snapshot mean_filter_tb_behav xil_defaultlib.mean_filter_tb -log elaborate.log 
+Running: D:/Windows/ProgramFiles/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 0c1efe39b5044287b7305e71e5c7efd0 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip -L xpm --snapshot mean_filter2_tb_behav xil_defaultlib.mean_filter2_tb -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
 Completed static elaboration
@@ -11,6 +11,6 @@ Compiling package std.standard
 Compiling package std.textio
 Compiling package ieee.std_logic_1164
 Compiling package ieee.numeric_std
-Compiling architecture behavioral of entity xil_defaultlib.mean_filter [mean_filter_default]
-Compiling architecture bench of entity xil_defaultlib.mean_filter_tb
-Built simulation snapshot mean_filter_tb_behav
+Compiling architecture behavioral of entity xil_defaultlib.mean_filter2 [mean_filter2_default]
+Compiling architecture bench of entity xil_defaultlib.mean_filter2_tb
+Built simulation snapshot mean_filter2_tb_behav

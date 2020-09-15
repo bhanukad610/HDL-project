@@ -1,19 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="impl_1" LaunchPart="xc7k70tfbv676-1" LaunchTime="1595674672">
-  <File Type="BITSTR-BMM" Name="mean_filter_with_bram_bd.bmm"/>
-  <File Type="ROUTE-PWR" Name="mean_filter_with_bram_power_routed.rpt"/>
   <File Type="PA-TCL" Name="mean_filter_with_bram.tcl"/>
-  <File Type="OPT-DCP" Name="mean_filter_with_bram_opt.dcp"/>
-  <File Type="ROUTE-PWR-SUM" Name="mean_filter_with_bram_power_summary_routed.pb"/>
+  <File Type="BITSTR-BMM" Name="mean_filter_with_bram_bd.bmm"/>
   <File Type="REPORTS-TCL" Name="mean_filter_with_bram_reports.tcl"/>
-  <File Type="OPT-DRC" Name="mean_filter_with_bram_drc_opted.rpt"/>
+  <File Type="OPT-DCP" Name="mean_filter_with_bram_opt.dcp"/>
   <File Type="OPT-HWDEF" Name="mean_filter_with_bram.hwdef"/>
   <File Type="PWROPT-DCP" Name="mean_filter_with_bram_pwropt.dcp"/>
   <File Type="PLACE-DCP" Name="mean_filter_with_bram_placed.dcp"/>
-  <File Type="PLACE-IO" Name="mean_filter_with_bram_io_placed.rpt"/>
-  <File Type="PLACE-UTIL" Name="mean_filter_with_bram_utilization_placed.rpt"/>
-  <File Type="PLACE-UTIL-PB" Name="mean_filter_with_bram_utilization_placed.pb"/>
-  <File Type="PLACE-CTRL" Name="mean_filter_with_bram_control_sets_placed.rpt"/>
   <File Type="PLACE-PRE-SIMILARITY" Name="mean_filter_with_bram_incremental_reuse_pre_placed.rpt"/>
   <File Type="POSTPLACE-PWROPT-DCP" Name="mean_filter_with_bram_postplace_pwropt.dcp"/>
   <File Type="BG-BIN" Name="mean_filter_with_bram.bin"/>
@@ -22,26 +15,11 @@
   <File Type="ROUTE-ERROR-DCP" Name="mean_filter_with_bram_routed_error.dcp"/>
   <File Type="ROUTE-DCP" Name="mean_filter_with_bram_routed.dcp"/>
   <File Type="ROUTE-BLACKBOX-DCP" Name="mean_filter_with_bram_routed_bb.dcp"/>
-  <File Type="ROUTE-DRC" Name="mean_filter_with_bram_drc_routed.rpt"/>
-  <File Type="ROUTE-DRC-PB" Name="mean_filter_with_bram_drc_routed.pb"/>
   <File Type="BITSTR-LTX" Name="mean_filter_with_bram.ltx"/>
-  <File Type="ROUTE-DRC-RPX" Name="mean_filter_with_bram_drc_routed.rpx"/>
   <File Type="BITSTR-MMI" Name="mean_filter_with_bram.mmi"/>
-  <File Type="ROUTE-METHODOLOGY-DRC" Name="mean_filter_with_bram_methodology_drc_routed.rpt"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="mean_filter_with_bram_methodology_drc_routed.rpx"/>
   <File Type="BITSTR-SYSDEF" Name="mean_filter_with_bram.sysdef"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="mean_filter_with_bram_methodology_drc_routed.pb"/>
-  <File Type="ROUTE-PWR-RPX" Name="mean_filter_with_bram_power_routed.rpx"/>
-  <File Type="ROUTE-STATUS" Name="mean_filter_with_bram_route_status.rpt"/>
-  <File Type="ROUTE-STATUS-PB" Name="mean_filter_with_bram_route_status.pb"/>
-  <File Type="ROUTE-TIMINGSUMMARY" Name="mean_filter_with_bram_timing_summary_routed.rpt"/>
   <File Type="ROUTE-TIMING-PB" Name="mean_filter_with_bram_timing_summary_routed.pb"/>
-  <File Type="ROUTE-TIMING-RPX" Name="mean_filter_with_bram_timing_summary_routed.rpx"/>
   <File Type="RDI-RDI" Name="mean_filter_with_bram.vdi"/>
-  <File Type="ROUTE-CLK" Name="mean_filter_with_bram_clock_utilization_routed.rpt"/>
-  <File Type="ROUTE-BUS-SKEW" Name="mean_filter_with_bram_bus_skew_routed.rpt"/>
-  <File Type="ROUTE-BUS-SKEW-PB" Name="mean_filter_with_bram_bus_skew_routed.pb"/>
-  <File Type="ROUTE-BUS-SKEW-RPX" Name="mean_filter_with_bram_bus_skew_routed.rpx"/>
   <File Type="POSTROUTE-PHYSOPT-DCP" Name="mean_filter_with_bram_postroute_physopt.dcp"/>
   <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="mean_filter_with_bram_postroute_physopt_bb.dcp"/>
   <File Type="BG-BIT" Name="mean_filter_with_bram.bit"/>
@@ -49,8 +27,8 @@
   <File Type="BITSTR-NKY" Name="mean_filter_with_bram.nky"/>
   <File Type="PDI-FILE" Name="mean_filter_with_bram.pdi"/>
   <File Type="RCFI_FILE" Name="mean_filter_with_bram.rcfi"/>
-  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
   <File Type="CFI_FILE" Name="mean_filter_with_bram.cfi"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
   <File Type="RNPI_FILE" Name="mean_filter_with_bram.rnpi"/>
   <File Type="NPI_FILE" Name="mean_filter_with_bram.npi"/>
   <File Type="RBD_FILE" Name="mean_filter_with_bram.rbd"/>
