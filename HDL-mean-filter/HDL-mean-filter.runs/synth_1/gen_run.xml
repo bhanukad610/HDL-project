@@ -3,8 +3,6 @@
   <File Type="PA-TCL" Name="mean_filter_with_bram.tcl"/>
   <File Type="REPORTS-TCL" Name="mean_filter_with_bram_reports.tcl"/>
   <File Type="RDS-RDS" Name="mean_filter_with_bram.vds"/>
-  <File Type="RDS-UTIL" Name="mean_filter_with_bram_utilization_synth.rpt"/>
-  <File Type="RDS-UTIL-PB" Name="mean_filter_with_bram_utilization_synth.pb"/>
   <File Type="RDS-DCP" Name="mean_filter_with_bram.dcp"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
