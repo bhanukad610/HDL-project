@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <GenRun Id="synth_1" LaunchPart="xc7k70tfbv676-1" LaunchTime="1595674595">
+=======
+<GenRun Id="synth_1" LaunchPart="xc7k70tfbv676-1" LaunchTime="1594968749">
+>>>>>>> scheduler
   <File Type="PA-TCL" Name="mean_filter_with_bram.tcl"/>
   <File Type="REPORTS-TCL" Name="mean_filter_with_bram_reports.tcl"/>
   <File Type="RDS-RDS" Name="mean_filter_with_bram.vds"/>
@@ -47,6 +51,13 @@
     </File>
     <File Path="$PSRCDIR/sources_1/ip/blk_mem_gen_0/test.coe">
       <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/counter.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
