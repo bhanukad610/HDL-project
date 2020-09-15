@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="impl_1" LaunchPart="xc7k70tfbv676-1" LaunchTime="1595674672">
-  <File Type="BITSTR-BMM" Name="mean_filter_with_bram_bd.bmm"/>
   <File Type="PA-TCL" Name="mean_filter_with_bram.tcl"/>
-  <File Type="OPT-DCP" Name="mean_filter_with_bram_opt.dcp"/>
+  <File Type="BITSTR-BMM" Name="mean_filter_with_bram_bd.bmm"/>
   <File Type="REPORTS-TCL" Name="mean_filter_with_bram_reports.tcl"/>
+  <File Type="OPT-DCP" Name="mean_filter_with_bram_opt.dcp"/>
   <File Type="OPT-HWDEF" Name="mean_filter_with_bram.hwdef"/>
   <File Type="PWROPT-DCP" Name="mean_filter_with_bram_pwropt.dcp"/>
   <File Type="PLACE-DCP" Name="mean_filter_with_bram_placed.dcp"/>
@@ -27,8 +27,8 @@
   <File Type="BITSTR-NKY" Name="mean_filter_with_bram.nky"/>
   <File Type="PDI-FILE" Name="mean_filter_with_bram.pdi"/>
   <File Type="RCFI_FILE" Name="mean_filter_with_bram.rcfi"/>
-  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
   <File Type="CFI_FILE" Name="mean_filter_with_bram.cfi"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
   <File Type="RNPI_FILE" Name="mean_filter_with_bram.rnpi"/>
   <File Type="NPI_FILE" Name="mean_filter_with_bram.npi"/>
   <File Type="RBD_FILE" Name="mean_filter_with_bram.rbd"/>

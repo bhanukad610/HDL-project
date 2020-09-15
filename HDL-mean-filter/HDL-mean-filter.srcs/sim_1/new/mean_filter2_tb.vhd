@@ -22,7 +22,8 @@ architecture bench of mean_filter2_tb is
            pixel_in : in STD_LOGIC_VECTOR (data_width downto 0);
            pixel_out :out STD_LOGIC_VECTOR (data_width downto 0);
            clk  : in STD_LOGIC;
-           reset_in :in STD_LOGIC);
+           reset_in :in STD_LOGIC;
+           we : out STD_LOGIC_VECTOR (0 downto 0) := "0");
   end component;
 
 signal row : STD_LOGIC_VECTOR (row_n_width downto 0);
@@ -35,6 +36,7 @@ signal pixel_in : STD_LOGIC_VECTOR (data_width downto 0);
 signal pixel_out : STD_LOGIC_VECTOR (data_width downto 0);
 signal clk  : STD_LOGIC;
 signal reset_in : STD_LOGIC;
+signal we : STD_LOGIC_VECTOR (0 downto 0);
 
 constant clock_period: time := 10 ns;
 -- signal stop_the_clock: boolean;
@@ -50,7 +52,8 @@ begin
                                pixel_in => pixel_in,
                                pixel_out =>  pixel_out,
                                clk => clk,
-                               reset_in =>  reset_in);
+                               reset_in =>  reset_in,
+                               we => we);
 
   stimulus: process
   begin
@@ -73,6 +76,34 @@ begin
     wait for 5ns;
     
     init_single_op <= '0';
+    wait for 35ns;
+    
+    pixel_in <= (others => '1');
+    wait for 10ns;
+    
+    pixel_in <= (others => '0');
+    wait for 10ns;
+    
+    pixel_in <= (7 => '1', 6 => '1', 5 => '1', 4 => '1', others => '0');
+    wait for 10ns;
+    
+    pixel_in <= (others => '0');
+    wait for 10ns;
+    
+    pixel_in <= (3 => '1', 2 => '1', 1 => '1', 0 => '1', others => '0');
+    wait for 10ns;
+    
+    pixel_in <= (others => '1');
+    wait for 10ns;
+    
+    pixel_in <= (others => '0');
+    wait for 20ns;
+    
+    pixel_in <= (others => '1');
+    wait for 10ns;
+    
+    pixel_in <= (others => '0');
+    wait for 10ns;              
     -- Put test bench stimulus code here
 
     -- stop_the_clock <= true;

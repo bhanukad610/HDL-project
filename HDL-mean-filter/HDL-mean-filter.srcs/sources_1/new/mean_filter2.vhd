@@ -43,30 +43,32 @@ entity mean_filter2 is
   Port ( row : in STD_LOGIC_VECTOR (row_n_width downto 0);
            col : in STD_LOGIC_VECTOR (row_n_width downto 0);
            init_single_op : in STD_LOGIC;
-           finish_flag_single_op : out STD_LOGIC := '0';
-           addr_in_img : out  STD_LOGIC_VECTOR (addr_width downto 0);
-           addr_out_img : out  STD_LOGIC_VECTOR (addr_width downto 0);
+           finish_flag_single_op : out STD_LOGIC := '1';
+           addr_in_img : out  STD_LOGIC_VECTOR (addr_width downto 0) := (others => '0');
+           addr_out_img : out  STD_LOGIC_VECTOR (addr_width downto 0) := (others => '0');
            pixel_in : in STD_LOGIC_VECTOR (data_width downto 0);
-           pixel_out :out STD_LOGIC_VECTOR (data_width downto 0);
+           pixel_out :out STD_LOGIC_VECTOR (data_width downto 0) := (others => '0');
            clk  : in STD_LOGIC;
-           reset_in :in STD_LOGIC);
+           reset_in :in STD_LOGIC;
+           we : out STD_LOGIC_VECTOR (0 downto 0) := "0");
 end mean_filter2;
 
 architecture Behavioral of mean_filter2 is
 
-TYPE FILTER_STATE IS (idle, wait0, wait1, accu0, accu1, accu2, accu3, accu4, accu5, accu6, accu7, accu8, div, write);
+TYPE FILTER_STATE IS (idle, wait0, wait1, wait2, accu0, accu1, accu2, accu3, accu4, accu5, accu6, accu7, accu8, div, write, resp);
 signal main_state : FILTER_STATE;
 
-signal row_dec  : integer range 0 to img_size2;
+signal row_dec : integer range 0 to img_size2;
 signal col_dec : integer range 0 to img_size2;
 
-signal iaddr_in_img : unsigned (8 downto 0);
-signal iaddr_out_img : integer;
-signal dout_bram : STD_LOGIC_VECTOR (7 downto 0);
+signal iaddr_in_img : unsigned (addr_width downto 0);
+signal iaddr_out_img : unsigned (addr_width downto 0);
+signal dout_bram : unsigned (7 downto 0);
 
 shared variable sum : INTEGER := 0;
 shared variable row_offset : INTEGER := -1;
 shared variable col_offset : INTEGER := -1;
+shared variable first_time : boolean := True;
 
 begin
 
@@ -76,88 +78,96 @@ begin
     begin
     if (reset_in = '1') then
         main_state <= idle;
-        row_dec <= to_integer(unsigned(row)) + 1;
-        col_dec <= to_integer(unsigned(col)) + 1;
-        row_offset := -1;
-        col_offset := -1;
-        iaddr_in_img <= to_unsigned((row_dec + row_offset) * img_size + (col_dec + col_offset), iaddr_in_img'length);
-        iaddr_out_img <= (to_integer(unsigned(row)) + row_offset) * img_size + (to_integer(unsigned(col)) + col_offset);
-        dout_bram <= (others => '0');
+        dout_bram <= to_unsigned(0, dout_bram'length);
         sum := 0;
+        first_time := True;
+        finish_flag_single_op <= '1';
+        addr_in_img <= (others => '0');
+        addr_out_img <= (others => '0');
+        pixel_out <= (others => '0');
+        we <= "0";
     elsif (clk'EVENT AND clk = '1') then
         case main_state is
             when idle =>
-                if (init_single_op = '1') then
+                if (init_single_op = '1') and (first_time = True) then
+                    row_dec <= to_integer(unsigned(row)) + 1;
+                    col_dec <= to_integer(unsigned(col)) + 1;
+                    first_time := False;
+                elsif (first_time = False) then
                     main_state <= wait0;
-                    -- set pixel 1 address
                     row_offset := -1;
                     col_offset := -1;
                     iaddr_in_img <= to_unsigned((row_dec + row_offset) * img_size + (col_dec + col_offset), iaddr_in_img'length);
-                    addr_in_img <= std_logic_vector(iaddr_in_img);
+                    iaddr_out_img <= to_unsigned(to_integer(unsigned(row)) * img_size + to_integer(unsigned(col)), iaddr_out_img'length);
+                    finish_flag_single_op <= '0';                  
                 end if;
             when wait0 =>
                 main_state <= wait1;
-                -- set pixel 1 address
+                addr_in_img <= std_logic_vector(iaddr_in_img);
+                -- set pixel 0 address
                 col_offset := 0;
                 iaddr_in_img <= to_unsigned((row_dec + row_offset) * img_size + (col_dec + col_offset), iaddr_in_img'length);
-                addr_in_img <= std_logic_vector(iaddr_in_img);
             when wait1 =>
+                main_state <= wait2;
+                addr_in_img <= std_logic_vector(iaddr_in_img);
+                -- set pixel 1 address
+                col_offset := 1;
+                iaddr_in_img <= to_unsigned((row_dec + row_offset) * img_size + (col_dec + col_offset), iaddr_in_img'length);                
+            when wait2 =>
                 main_state <= accu0;
+                addr_in_img <= std_logic_vector(iaddr_in_img);
                 -- read pixel 0 value and accumulate
                 sum := sum + to_integer(unsigned(pixel_in));
                 -- set pixel 2 address
-                col_offset := 1;
+                row_offset := 0;                
+                col_offset := -1;
                 iaddr_in_img <= to_unsigned((row_dec + row_offset) * img_size + (col_dec + col_offset), iaddr_in_img'length);
-                addr_in_img <= std_logic_vector(iaddr_in_img);
             when accu0 =>
                 main_state <= accu1;
+                addr_in_img <= std_logic_vector(iaddr_in_img);
                 -- read pixel 1 value and accumulate
                 sum := sum + to_integer(unsigned(pixel_in));
-                -- set pixel 3 address
-                col_offset := -1;
-                row_offset := 0;
+                -- set pixel 3 address              
+                col_offset := 0;
                 iaddr_in_img <= to_unsigned((row_dec + row_offset) * img_size + (col_dec + col_offset), iaddr_in_img'length);
-                addr_in_img <= std_logic_vector(iaddr_in_img);
             when accu1 =>
                 main_state <= accu2;
+                addr_in_img <= std_logic_vector(iaddr_in_img);
                 -- read pixel 2 value and accumulate
                 sum := sum + to_integer(unsigned(pixel_in));
                 -- set pixel 4 address
-                col_offset := 0;
+                col_offset := 1;
                 iaddr_in_img <= to_unsigned((row_dec + row_offset) * img_size + (col_dec + col_offset), iaddr_in_img'length);
-                addr_in_img <= std_logic_vector(iaddr_in_img);
             when accu2 =>
                 main_state <= accu3;
+                addr_in_img <= std_logic_vector(iaddr_in_img);
                 -- read pixel 3 value and accumulate
                 sum := sum + to_integer(unsigned(pixel_in));
                 -- set pixel 5 address
-                col_offset := 1;
+                row_offset := 1;
+                col_offset := -1;
                 iaddr_in_img <= to_unsigned((row_dec + row_offset) * img_size + (col_dec + col_offset), iaddr_in_img'length);
-                addr_in_img <= std_logic_vector(iaddr_in_img);
             when accu3 =>
                 main_state <= accu4;
+                addr_in_img <= std_logic_vector(iaddr_in_img);
                 -- read pixel 4 value and accumulate
                 sum := sum + to_integer(unsigned(pixel_in));
                 -- set pixel 6 address
-                col_offset := -1;
-                row_offset := 1;
+                col_offset := 0;
                 iaddr_in_img <= to_unsigned((row_dec + row_offset) * img_size + (col_dec + col_offset), iaddr_in_img'length);
-                addr_in_img <= std_logic_vector(iaddr_in_img);
             when accu4 =>
                 main_state <= accu5;
+                addr_in_img <= std_logic_vector(iaddr_in_img);
                 -- read pixel 5 value and accumulate
                 sum := sum + to_integer(unsigned(pixel_in));
                 -- set pixel 7 address
-                col_offset := 0;
-                iaddr_in_img <= to_unsigned((row_dec + row_offset) * img_size + (col_dec + col_offset), iaddr_in_img'length);
-                addr_in_img <= std_logic_vector(iaddr_in_img);
-            when accu5 =>
-                main_state <= accu6;
-                -- read pixel 6 value and accumulate
-                sum := sum + to_integer(unsigned(pixel_in));
-                -- set pixel 8 address
                 col_offset := 1;
                 iaddr_in_img <= to_unsigned((row_dec + row_offset) * img_size + (col_dec + col_offset), iaddr_in_img'length);
+            when accu5 =>
+                main_state <= accu6;
+                addr_in_img <= std_logic_vector(iaddr_in_img);         
+                -- read pixel 6 value and accumulate
+                sum := sum + to_integer(unsigned(pixel_in));
                 addr_in_img <= std_logic_vector(iaddr_in_img);
             when accu6 =>
                 main_state <= accu7;
@@ -170,17 +180,27 @@ begin
             when accu8 =>
                 main_state <= div;
                 -- divide value by 9
-                dout_bram <= std_logic_vector(to_unsigned((sum / 9), dout_bram'length));
+                dout_bram <= to_unsigned((sum / 9), dout_bram'length);
             when div =>
                 main_state <= write;
-                iaddr_out_img <= (to_integer(unsigned(row)) + row_offset) * img_size + (to_integer(unsigned(col)) + col_offset);
-                pixel_out <= dout_bram;
+                addr_out_img <= std_logic_vector(iaddr_out_img);
+                pixel_out <= std_logic_vector(dout_bram);
+                we <= "1";
             when write =>
-                main_state <= idle;     
+                main_state <= resp;
+                finish_flag_single_op <= '1';
+            when resp =>
+                main_state <= idle;
+                dout_bram <= to_unsigned(0, dout_bram'length);
+                sum := 0;
+                addr_in_img <= (others => '0');
+                addr_out_img <= (others => '0');
+                pixel_out <= (others => '0');
+                we <= "0"; 
+                first_time := True;                 
         end case;
     end if;
-
-    
+        
  end process;
  
 end Behavioral;

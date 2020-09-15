@@ -1,4 +1,7 @@
-Running: xsim.dir/mean_filter2_tb_behav/xsimk.exe -simmode gui -wdb mean_filter2_tb_behav.wdb -simrunnum 0 -socket 61724
+Running: xsim.dir/mean_filter2_tb_behav/xsimk.exe -simmode gui -wdb mean_filter2_tb_behav.wdb -simrunnum 0 -socket 59805
 Design successfully loaded
-Design Loading Memory Usage: 5340 KB (Peak: 5340 KB)
-Design Loading CPU Usage: 61 ms
+Design Loading Memory Usage: 5376 KB (Peak: 5376 KB)
+Design Loading CPU Usage: 62 ms
+Simulation completed
+Simulation Memory Usage: 5972 KB (Peak: 5972 KB)
+Simulation CPU Usage: 62 ms
