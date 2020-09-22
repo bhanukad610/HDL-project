@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../HDL-mean-filter.srcs/sources_1/uart/new_uart_test.vhd" \
+"../../../../HDL-mean-filter.srcs/sim_1/new/new_uart_test_tb.vhd" \
+
+# Do not sort compile order
+nosort

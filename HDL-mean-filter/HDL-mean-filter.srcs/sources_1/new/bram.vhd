@@ -36,29 +36,29 @@ entity bram is
            clk: in std_logic;
            din: in std_logic_vector (7 downto 0);
            dout : out STD_LOGIC_VECTOR (7 downto 0);
-           en: in std_logic;
+           -- en: in std_logic;
            we: in std_logic_vector (0 downto 0));
 end bram;
 
 architecture Behavioral of bram is
 
-component blk_mem_gen_0 is
+component blk_mem_gen_2 is
     Port ( addra : in STD_LOGIC_VECTOR (8 downto 0);
            clka : in STD_LOGIC;
            dina: in std_logic_vector (7 downto 0);
            douta : out STD_LOGIC_VECTOR (7 downto 0);
-           ena: in std_logic;
+           -- ena: in std_logic;
            wea: in std_logic_vector (0 downto 0));
 end component;
 
 begin
 
-mem_block_1 : blk_mem_gen_0
+mem_block_1 : blk_mem_gen_2
     port map ( addra => addr,
                clka => clk,
                dina => din,
                douta => dout,
-               ena => en,
+               -- ena => en,
                wea => we);
 
 end Behavioral;

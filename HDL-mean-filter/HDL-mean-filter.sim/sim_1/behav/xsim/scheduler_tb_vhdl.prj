@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../HDL-mean-filter.srcs/sources_1/new/scheduler.vhd" \
+"../../../new/scheduler_tb.vhd" \
+
+# Do not sort compile order
+nosort

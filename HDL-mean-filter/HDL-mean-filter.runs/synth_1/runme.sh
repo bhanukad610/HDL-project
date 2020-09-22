@@ -40,4 +40,4 @@ EAStep()
      fi
 }
 
-EAStep vivado -log mean_filter_with_bram.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source mean_filter_with_bram.tcl
+EAStep vivado -log uart_tx_only_test.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source uart_tx_only_test.tcl

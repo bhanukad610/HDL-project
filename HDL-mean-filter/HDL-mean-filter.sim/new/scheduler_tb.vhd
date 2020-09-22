@@ -3,6 +3,7 @@ use IEEE.Std_logic_1164.all;
 use IEEE.Numeric_Std.all;
 
 entity scheduler_tb is
+      Generic (row_n_width : INTEGER := 4);
 end;
 
 architecture bench of scheduler_tb is
@@ -14,8 +15,8 @@ architecture bench of scheduler_tb is
              finish_flag_single_op : in STD_LOGIC;
              init_single_op : out STD_LOGIC := '0';
              finish_flag_process : out STD_LOGIC := '0';
-             row : out STD_LOGIC_VECTOR (3 downto 0) := "0000";
-             column : out STD_LOGIC_VECTOR (3 downto 0) := "0000");
+             row : out STD_LOGIC_VECTOR (row_n_width downto 0) := (others => '0');
+             column : out STD_LOGIC_VECTOR (row_n_width downto 0) := (others => '0'));
   end component;
 
   signal clk: STD_LOGIC;
@@ -24,10 +25,10 @@ architecture bench of scheduler_tb is
   signal finish_flag_single_op: STD_LOGIC;
   signal init_single_op: STD_LOGIC := '0';
   signal finish_flag_process: STD_LOGIC := '0';
-  signal row: STD_LOGIC_VECTOR (3 downto 0) := "0000";
-  signal column: STD_LOGIC_VECTOR (3 downto 0) := "0000";
+  signal row: STD_LOGIC_VECTOR (row_n_width downto 0) := (others => '0');
+  signal column: STD_LOGIC_VECTOR (row_n_width downto 0) := (others => '0');
 
-  constant clock_period: time := 40 ns;
+  constant clock_period: time := 10 ns;
 begin
 
   uut: scheduler port map ( clk                   => clk,
